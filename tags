@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/user1/projects/react-issue-tracker/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/83342344/
+*.ts	package.json	/^    "*.ts": [$/;"	a	object:lint-staged
+0	package.json	/^        "yarn fix",$/;"	s	array:lint-staged.*.ts
+0	package.json	/^    "src"$/;"	s	array:_moduleDirectories
+1	package.json	/^        "git add"$/;"	s	array:lint-staged.*.ts
+@types/node	package.json	/^    "@types\/node": "^14.11.2"$/;"	s	object:devDependencies
+@typescript-eslint/eslint-plugin	package.json	/^    "@typescript-eslint\/eslint-plugin": "^5.42.0",$/;"	s	object:devDependencies
+@typescript-eslint/parser	package.json	/^    "@typescript-eslint\/parser": "^5.42.0",$/;"	s	object:devDependencies
+_moduleDirectories	package.json	/^  "_moduleDirectories": [$/;"	a
+author	package.json	/^  "author": "Shihab Dider <shihabdider@gmail.com>",$/;"	s
+clean	package.json	/^    "clean": "gts clean",$/;"	s	object:scripts
+compile	package.json	/^    "compile": "tsc",$/;"	s	object:scripts
+dependencies	package.json	/^  "dependencies": {$/;"	o
+description	package.json	/^  "description": "issue tracker built using react and postgreSQL",$/;"	s
+devDependencies	package.json	/^  "devDependencies": {$/;"	o
+eslint	package.json	/^    "eslint": "^8.26.0",$/;"	s	object:devDependencies
+eslint-config-airbnb-base	package.json	/^    "eslint-config-airbnb-base": "^15.0.0",$/;"	s	object:devDependencies
+eslint-config-prettier	package.json	/^    "eslint-config-prettier": "^8.5.0",$/;"	s	object:devDependencies
+eslint-plugin-import	package.json	/^    "eslint-plugin-import": "^2.26.0",$/;"	s	object:devDependencies
+eslint-plugin-prettier	package.json	/^    "eslint-plugin-prettier": "^4.2.1",$/;"	s	object:devDependencies
+fix	package.json	/^    "fix": "gts fix",$/;"	s	object:scripts
+gts	package.json	/^    "gts": "^3.1.1",$/;"	s	object:devDependencies
+hooks	package.json	/^    "hooks": {$/;"	o	object:husky
+husky	package.json	/^    "husky": "^8.0.1",$/;"	s	object:devDependencies
+husky	package.json	/^  "husky": {$/;"	o
+license	package.json	/^  "license": "MIT",$/;"	s
+lint	package.json	/^    "lint": "gts lint",$/;"	s	object:scripts
+lint-staged	package.json	/^    "lint-staged": "^13.0.3",$/;"	s	object:devDependencies
+lint-staged	package.json	/^  "lint-staged": {$/;"	o
+main	package.json	/^  "main": "src\/index.ts",$/;"	s
+module-alias	package.json	/^    "module-alias": "^2.2.2"$/;"	s	object:dependencies
+name	package.json	/^  "name": "react-issue-tracker",$/;"	s
+nodemon	package.json	/^    "nodemon": "^2.0.20",$/;"	s	object:devDependencies
+posttest	package.json	/^    "posttest": "yarn run lint"$/;"	s	object:scripts
+pre-commit	package.json	/^      "pre-commit": "lint-staged"$/;"	s	object:husky.hooks
+prepare	package.json	/^    "prepare": "yarn run compile",$/;"	s	object:scripts
+pretest	package.json	/^    "pretest": "yarn run compile",$/;"	s	object:scripts
+prettier	package.json	/^    "prettier": "^2.7.1",$/;"	s	object:devDependencies
+private	package.json	/^  "private": false,$/;"	b
+repository	package.json	/^  "repository": "https:\/\/github.com\/shihabdider\/react-issue-tracker.git",$/;"	s
+scripts	package.json	/^  "scripts": {$/;"	o
+start	package.json	/^    "start": "nodemon --exec ts-node --files src\/index.ts",$/;"	s	object:scripts
+ts-node	package.json	/^    "ts-node": "^10.9.1",$/;"	s	object:devDependencies
+typescript	package.json	/^    "typescript": "~4.7.0",$/;"	s	object:devDependencies
+version	package.json	/^  "version": "1.0.0",$/;"	s
