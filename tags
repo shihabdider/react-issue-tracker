@@ -10,46 +10,421 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/83342344/
 *.ts	package.json	/^    "*.ts": [$/;"	a	object:lint-staged
-0	package.json	/^        "yarn fix",$/;"	s	array:lint-staged.*.ts
+0	node_modules/gts/tsconfig-google.json	/^    "lib": ["es2018", "es2019"],$/;"	s	array:compilerOptions.lib
+0	node_modules/gts/tsconfig-google.json	/^    "node_modules"$/;"	s	array:exclude
+0	package.json	/^      "yarn fix",$/;"	s	array:lint-staged.*.ts
 0	package.json	/^    "src"$/;"	s	array:_moduleDirectories
-1	package.json	/^        "git add"$/;"	s	array:lint-staged.*.ts
-@types/node	package.json	/^    "@types\/node": "^14.11.2"$/;"	s	object:devDependencies
+0	tsconfig.json	/^      "lib": ["es2019"],$/;"	s	array:compilerOptions.lib
+0	tsconfig.json	/^    "src\/**\/*.ts",$/;"	s	array:include
+0	tsconfig.json	/^  "exclude": ["node_modules"],$/;"	s	array:exclude
+1	node_modules/gts/tsconfig-google.json	/^    "lib": ["es2018", "es2019"],$/;"	s	array:compilerOptions.lib
+1	package.json	/^      "git add"$/;"	s	array:lint-staged.*.ts
+1	tsconfig.json	/^    "test\/**\/*.ts"$/;"	s	array:include
+@types/cors	package.json	/^    "@types\/cors": "^2.8.12",$/;"	s	object:devDependencies
+@types/express	package.json	/^    "@types\/express": "^4.17.14",$/;"	s	object:devDependencies
+@types/faker	package.json	/^    "@types\/faker": "5.5.9",$/;"	s	object:devDependencies
+@types/jsonwebtoken	package.json	/^    "@types\/jsonwebtoken": "^8.5.9",$/;"	s	object:devDependencies
+@types/lodash	package.json	/^    "@types\/lodash": "^4.14.188",$/;"	s	object:devDependencies
+@types/node	package.json	/^    "@types\/node": "^14.11.2",$/;"	s	object:devDependencies
 @typescript-eslint/eslint-plugin	package.json	/^    "@typescript-eslint\/eslint-plugin": "^5.42.0",$/;"	s	object:devDependencies
 @typescript-eslint/parser	package.json	/^    "@typescript-eslint\/parser": "^5.42.0",$/;"	s	object:devDependencies
+App	build/src/index.js	/^const initializeApp = async () => {$/;"	c
+BACKLOG	build/src/constants/issues.d.ts	/^    BACKLOG = "backlog",$/;"	e	enum:IssueStatus
+BACKLOG	src/constants/issues.ts	/^  BACKLOG = 'backlog',$/;"	e	enum:IssueStatus
+BUG	build/src/constants/issues.d.ts	/^    BUG = "bug",$/;"	e	enum:IssueType
+BUG	src/constants/issues.ts	/^  BUG = 'bug',$/;"	e	enum:IssueType
+BUSINESS	build/src/constants/projects.d.ts	/^    BUSINESS = "business"$/;"	e	enum:ProjectCategory
+BUSINESS	src/constants/projects.ts	/^  BUSINESS = 'business',$/;"	e	enum:ProjectCategory
+BadUserInputError	src/errors/customErrors.ts	/^export class BadUserInputError extends CustomError {$/;"	c
+Binding	build/src/database/connection.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	c
+Comment	build/src/entities/Comment.d.ts	/^declare class Comment extends BaseEntity {$/;"	c
+Comment	build/src/entities/Comment.js	/^Comment = __decorate([$/;"	c
+Comment	build/src/entities/Comment.js	/^let Comment = class Comment extends typeorm_1.BaseEntity {$/;"	c
+Comment	src/entities/Comment.ts	/^class Comment extends BaseEntity {$/;"	c
+Comment	src/utils/typeorm.ts	/^  Comment,$/;"	C
+Comment_1	build/src/entities/index.js	/^var Comment_1 = require(".\/Comment");$/;"	c
+Connection	src/database/seeds/development/index.ts	/^    const Connection = await createDatabaseConnection();$/;"	C
+Constructor	src/utils/typeorm.ts	/^  const Constructor = entities[instance.constructor.name];$/;"	C
+CustomError	src/errors/customErrors.ts	/^export class CustomError extends Error {$/;"	c
+DB_DATABASE	src/types/env.d.ts	/^    DB_DATABASE: string;$/;"	p	interface:NodeJS.ProcessEnv
+DB_HOST	src/types/env.d.ts	/^    DB_HOST: string;$/;"	p	interface:NodeJS.ProcessEnv
+DB_PASSWORD	src/types/env.d.ts	/^    DB_PASSWORD: string;$/;"	p	interface:NodeJS.ProcessEnv
+DB_PORT	src/types/env.d.ts	/^    DB_PORT: string;$/;"	p	interface:NodeJS.ProcessEnv
+DB_USERNAME	src/types/env.d.ts	/^    DB_USERNAME: string;$/;"	p	interface:NodeJS.ProcessEnv
+DONE	build/src/constants/issues.d.ts	/^    DONE = "done"$/;"	e	enum:IssueStatus
+DONE	src/constants/issues.ts	/^  DONE = 'done',$/;"	e	enum:IssueStatus
+DatabaseConnection	build/src/database/connection.js	/^const createDatabaseConnection = () => (0, typeorm_1.createConnection)({$/;"	c
+DatabaseConnection	build/src/index.js	/^const establishDatabaseConnection = async () => {$/;"	c
+Default	build/src/entities/Comment.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	build/src/entities/Issue.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	build/src/entities/Project.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	build/src/entities/User.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	build/src/entities/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	build/src/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+EmptyArray	build/src/utils/validation.js	/^    notEmptyArray: () => (value) => Array.isArray(value) &&$/;"	c
+EntityConstructor	src/utils/typeorm.ts	/^export type EntityConstructor =$/;"	a
+EntityInstance	src/utils/typeorm.ts	/^export type EntityInstance = Project | User | Issue | Comment;$/;"	a
+EntityNotFoundError	src/errors/customErrors.ts	/^export class EntityNotFoundError extends CustomError {$/;"	c
+ErrorData	src/errors/customErrors.ts	/^type ErrorData = {[key: string]: any};$/;"	a
+ErrorMessage	build/src/utils/validation.d.ts	/^declare type ErrorMessage = false | string;$/;"	a
+ErrorMessage	src/utils/validation.ts	/^type ErrorMessage = false | string;$/;"	a
+Express	src/types/express.d.ts	/^declare namespace Express {$/;"	n
+FieldErrors	src/utils/validation.ts	/^type FieldErrors = {[key: string]: string};$/;"	a
+FieldValidators	src/utils/validation.ts	/^type FieldValidators = {[key: string]: Validator | Validator[]};$/;"	a
+FieldValues	build/src/utils/validation.d.ts	/^declare type FieldValues = {$/;"	a
+FieldValues	src/utils/validation.ts	/^type FieldValues = {[key: string]: Value};$/;"	a
+HIGH	build/src/constants/issues.d.ts	/^    HIGH = "4",$/;"	e	enum:IssuePriority
+HIGH	src/constants/issues.ts	/^  HIGH = '4',$/;"	e	enum:IssuePriority
+HIGHEST	build/src/constants/issues.d.ts	/^    HIGHEST = "5",$/;"	e	enum:IssuePriority
+HIGHEST	src/constants/issues.ts	/^  HIGHEST = '5',$/;"	e	enum:IssuePriority
+INPROGRESS	build/src/constants/issues.d.ts	/^    INPROGRESS = "inprogress",$/;"	e	enum:IssueStatus
+INPROGRESS	src/constants/issues.ts	/^  INPROGRESS = 'inprogress',$/;"	e	enum:IssueStatus
+InvalidTokenError	src/errors/customErrors.ts	/^export class InvalidTokenError extends CustomError {$/;"	c
+Issue	build/src/entities/Issue.d.ts	/^declare class Issue extends BaseEntity {$/;"	c
+Issue	build/src/entities/Issue.js	/^Issue = __decorate([$/;"	c
+Issue	build/src/entities/Issue.js	/^let Issue = class Issue extends typeorm_1.BaseEntity {$/;"	c
+Issue	src/entities/Issue.ts	/^class Issue extends BaseEntity {$/;"	c
+Issue	src/utils/typeorm.ts	/^  Issue,$/;"	C
+IssuePriority	build/src/constants/issues.d.ts	/^export declare enum IssuePriority {$/;"	g
+IssuePriority	build/src/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	c
+IssuePriority	build/src/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	o
+IssuePriority	src/constants/issues.ts	/^export enum IssuePriority {$/;"	g
+IssueStatus	build/src/constants/issues.d.ts	/^export declare enum IssueStatus {$/;"	g
+IssueStatus	build/src/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	c
+IssueStatus	build/src/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	o
+IssueStatus	src/constants/issues.ts	/^export enum IssueStatus {$/;"	g
+IssueType	build/src/constants/issues.d.ts	/^export declare enum IssueType {$/;"	g
+IssueType	build/src/constants/issues.js	/^})(IssueType = exports.IssueType || (exports.IssueType = {}));$/;"	c
+IssueType	build/src/constants/issues.js	/^})(IssueType = exports.IssueType || (exports.IssueType = {}));$/;"	o
+IssueType	src/constants/issues.ts	/^export enum IssueType {$/;"	g
+Issue_1	build/src/entities/index.js	/^var Issue_1 = require(".\/Issue");$/;"	c
+JWT_SECRET	src/types/env.d.ts	/^    JWT_SECRET: string;$/;"	p	interface:NodeJS.ProcessEnv
+LOW	build/src/constants/issues.d.ts	/^    LOW = "2",$/;"	e	enum:IssuePriority
+LOW	src/constants/issues.ts	/^  LOW = '2',$/;"	e	enum:IssuePriority
+LOWEST	build/src/constants/issues.d.ts	/^    LOWEST = "1"$/;"	e	enum:IssuePriority
+LOWEST	src/constants/issues.ts	/^  LOWEST = '1',$/;"	e	enum:IssuePriority
+Length	build/src/utils/validation.js	/^    maxLength: (max) => (value) => !!value && value.length > max && `Must be at most ${max} char/;"	c
+Length	build/src/utils/validation.js	/^    minLength: (min) => (value) => !!value && value.length < min && `Must be at least ${min} cha/;"	c
+MARKETING	build/src/constants/projects.d.ts	/^    MARKETING = "marketing",$/;"	e	enum:ProjectCategory
+MARKETING	src/constants/projects.ts	/^  MARKETING = 'marketing',$/;"	e	enum:ProjectCategory
+MEDIUM	build/src/constants/issues.d.ts	/^    MEDIUM = "3",$/;"	e	enum:IssuePriority
+MEDIUM	src/constants/issues.ts	/^  MEDIUM = '3',$/;"	e	enum:IssuePriority
+ModuleDefault	build/src/database/connection.js	/^var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {$/;"	c
+NilOrEmptyString	build/src/utils/validation.js	/^const isNilOrEmptyString = (value) => value === undefined || value === null || value === '';$/;"	c
+NodeJS	src/types/env.d.ts	/^declare namespace NodeJS {$/;"	n
+Of	build/src/utils/validation.js	/^    oneOf: (arr) => (value) => !!value && !arr.includes(value) && `Must be one of: ${arr.join(',/;"	c
+ProcessEnv	src/types/env.d.ts	/^  export interface ProcessEnv {$/;"	i	namespace:NodeJS
+Project	build/src/entities/Project.d.ts	/^declare class Project extends BaseEntity {$/;"	c
+Project	build/src/entities/Project.js	/^Project = __decorate([$/;"	c
+Project	build/src/entities/Project.js	/^let Project = class Project extends typeorm_1.BaseEntity {$/;"	c
+Project	src/entities/Project.ts	/^class Project extends BaseEntity {$/;"	c
+ProjectCategory	build/src/constants/projects.d.ts	/^export declare enum ProjectCategory {$/;"	g
+ProjectCategory	build/src/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	c
+ProjectCategory	build/src/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	o
+ProjectCategory	src/constants/projects.ts	/^export enum ProjectCategory {$/;"	g
+Project_1	build/src/entities/index.js	/^var Project_1 = require(".\/Project");$/;"	c
+Request	src/types/express.d.ts	/^  export interface Request {$/;"	i	namespace:Express
+Response	src/types/express.d.ts	/^  export interface Response {$/;"	i	namespace:Express
+RouteNotFoundError	src/errors/customErrors.ts	/^export class RouteNotFoundError extends CustomError {$/;"	c
+SELECTED	build/src/constants/issues.d.ts	/^    SELECTED = "selected",$/;"	e	enum:IssueStatus
+SELECTED	src/constants/issues.ts	/^  SELECTED = 'selected',$/;"	e	enum:IssueStatus
+SOFTWARE	build/src/constants/projects.d.ts	/^    SOFTWARE = "software",$/;"	e	enum:ProjectCategory
+SOFTWARE	src/constants/projects.ts	/^  SOFTWARE = 'software',$/;"	e	enum:ProjectCategory
+STORY	build/src/constants/issues.d.ts	/^    STORY = "story"$/;"	e	enum:IssueType
+STORY	src/constants/issues.ts	/^  STORY = 'story',$/;"	e	enum:IssueType
+Star	build/src/database/connection.js	/^var __importStar = (this && this.__importStar) || function (mod) {$/;"	c
+TASK	build/src/constants/issues.d.ts	/^    TASK = "task",$/;"	e	enum:IssueType
+TASK	src/constants/issues.ts	/^  TASK = 'task',$/;"	e	enum:IssueType
+User	build/src/entities/User.d.ts	/^declare class User extends BaseEntity {$/;"	c
+User	build/src/entities/User.js	/^User = __decorate([$/;"	c
+User	build/src/entities/User.js	/^let User = class User extends typeorm_1.BaseEntity {$/;"	c
+User	src/entities/User.ts	/^class User extends BaseEntity {$/;"	c
+User	src/utils/typeorm.ts	/^  User,$/;"	C
+User_1	build/src/entities/index.js	/^var User_1 = require(".\/User");$/;"	c
+Validator	src/utils/validation.ts	/^type Validator = (value: Value, fieldValues?: FieldValues) => ErrorMessage;$/;"	a
+Value	build/src/utils/validation.d.ts	/^declare type Value = any;$/;"	a
+Value	src/utils/validation.ts	/^type Value = any;$/;"	a
 _moduleDirectories	package.json	/^  "_moduleDirectories": [$/;"	a
+allowSyntheticDefaultImports	tsconfig.json	/^    "allowSyntheticDefaultImports": true,$/;"	b	object:compilerOptions
+allowUnreachableCode	node_modules/gts/tsconfig-google.json	/^    "allowUnreachableCode": false,$/;"	b	object:compilerOptions
+allowUnusedLabels	node_modules/gts/tsconfig-google.json	/^    "allowUnusedLabels": false,$/;"	b	object:compilerOptions
+alwaysStrict	tsconfig.json	/^    "alwaysStrict": true,$/;"	b	object:compilerOptions
+authenticateUser	src/middleware/authentication.ts	/^export const authenticateUser = catchErrors(async (req, _res, next) => {$/;"	C
 author	package.json	/^  "author": "Shihab Dider <shihabdider@gmail.com>",$/;"	s
+baseUrl	tsconfig.json	/^    "baseUrl": ".\/src",$/;"	s	object:compilerOptions
+body	build/src/entities/Comment.d.ts	/^    body: string;$/;"	p	class:Comment
+body	src/entities/Comment.ts	/^  body: string;$/;"	p	class:Comment
+catch	build/src/index.js	/^    catch (error) {$/;"	f
+catchErrors	src/errors/asyncCatch.ts	/^export const catchErrors = (requestHandler: RequestHandler): RequestHandler => {$/;"	C
+category	build/src/entities/Project.d.ts	/^    category: ProjectCategory;$/;"	p	class:Project
+category	src/entities/Project.ts	/^  category: ProjectCategory;$/;"	p	class:Project
 clean	package.json	/^    "clean": "gts clean",$/;"	s	object:scripts
+code	src/errors/customErrors.ts	/^    public code: string | number = 'INTERNAL_ERROR',$/;"	p	class:CustomError
+comments	build/src/entities/Issue.d.ts	/^    comments: Comment[];$/;"	p	class:Issue
+comments	build/src/entities/User.d.ts	/^    comments: Comment[];$/;"	p	class:User
+comments	src/entities/Issue.ts	/^  comments: Comment[];$/;"	p	class:Issue
+comments	src/entities/User.ts	/^  comments: Comment[];$/;"	p	class:User
 compile	package.json	/^    "compile": "tsc",$/;"	s	object:scripts
+compilerOptions	node_modules/gts/tsconfig-google.json	/^  "compilerOptions": {$/;"	o
+compilerOptions	tsconfig.json	/^  "compilerOptions": {$/;"	o
+constructor	src/errors/customErrors.ts	/^  constructor($/;"	m	class:CustomError
+constructor	src/errors/customErrors.ts	/^  constructor(entityName: string) {$/;"	m	class:EntityNotFoundError
+constructor	src/errors/customErrors.ts	/^  constructor(errorData: ErrorData) {$/;"	m	class:BadUserInputError
+constructor	src/errors/customErrors.ts	/^  constructor(message = 'Authentication token is invalid.') {$/;"	m	class:InvalidTokenError
+constructor	src/errors/customErrors.ts	/^  constructor(originalUrl: string) {$/;"	m	class:RouteNotFoundError
+cors	package.json	/^    "cors": "^2.8.5",$/;"	s	object:dependencies
+createDatabaseConnection	build/src/database/connection.d.ts	/^declare const createDatabaseConnection: () => Promise<Connection>;$/;"	C
+createDatabaseConnection	src/database/connection.ts	/^const createDatabaseConnection = (): Promise<Connection> =>$/;"	C
+createEntity	src/utils/typeorm.ts	/^export const createEntity = async <T extends EntityConstructor>($/;"	C
+createdAt	build/src/entities/Comment.d.ts	/^    createdAt: Date;$/;"	p	class:Comment
+createdAt	build/src/entities/Issue.d.ts	/^    createdAt: Date;$/;"	p	class:Issue
+createdAt	build/src/entities/Project.d.ts	/^    createdAt: Date;$/;"	p	class:Project
+createdAt	build/src/entities/User.d.ts	/^    createdAt: Date;$/;"	p	class:User
+createdAt	src/entities/Comment.ts	/^  createdAt: Date;$/;"	p	class:Comment
+createdAt	src/entities/Issue.ts	/^  createdAt: Date;$/;"	p	class:Issue
+createdAt	src/entities/Project.ts	/^  createdAt: Date;$/;"	p	class:Project
+createdAt	src/entities/User.ts	/^  createdAt: Date;$/;"	p	class:User
+currentUser	src/types/express.d.ts	/^    currentUser: import('entities').User;$/;"	p	interface:Express.Request
+db-seed	package.json	/^    "db-seed": "nodemon --exec ts-node --files src\/database\/seeds\/development\/index.ts",$/;"	s	object:scripts
+declaration	node_modules/gts/tsconfig-google.json	/^    "declaration": true,$/;"	b	object:compilerOptions
+defineProperty	build/src/entities/index.js	/^Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return __import/;"	f
+defineProperty	build/src/entities/index.js	/^Object.defineProperty(exports, "Issue", { enumerable: true, get: function () { return __importDe/;"	f
+defineProperty	build/src/entities/index.js	/^Object.defineProperty(exports, "Project", { enumerable: true, get: function () { return __import/;"	f
+defineProperty	build/src/entities/index.js	/^Object.defineProperty(exports, "User", { enumerable: true, get: function () { return __importDef/;"	f
+deleteEntity	src/utils/typeorm.ts	/^export const deleteEntity = async <T extends EntityConstructor>($/;"	C
 dependencies	package.json	/^  "dependencies": {$/;"	o
+description	build/src/entities/Issue.d.ts	/^    description: string | null;$/;"	p	class:Issue
+description	build/src/entities/Project.d.ts	/^    description: string | null;$/;"	p	class:Project
 description	package.json	/^  "description": "issue tracker built using react and postgreSQL",$/;"	s
+description	src/entities/Issue.ts	/^  description: string | null;$/;"	p	class:Issue
+description	src/entities/Project.ts	/^  description: string | null;$/;"	p	class:Project
 devDependencies	package.json	/^  "devDependencies": {$/;"	o
+dotenv	package.json	/^    "dotenv": "^16.0.3",$/;"	s	object:dependencies
+email	build/src/entities/User.d.ts	/^    email: string;$/;"	p	class:User
+email	src/entities/User.ts	/^  email: string;$/;"	p	class:User
+emitDecoratorMetadata	tsconfig.json	/^    "emitDecoratorMetadata": true,$/;"	b	object:compilerOptions
+entities	src/utils/typeorm.ts	/^const entities: {[key: string]: EntityConstructor} = {$/;"	C
+errorFields	src/utils/typeorm.ts	/^    const errorFields = generateErrors(instance, Constructor.validations);$/;"	C
+errorHandler	src/errors/errorHandler.ts	/^export const errorHandler: ErrorRequestHandler = (error, _req, res, _next) => {$/;"	C
+esModuleInterop	tsconfig.json	/^    "esModuleInterop": true,$/;"	b	object:compilerOptions
 eslint	package.json	/^    "eslint": "^8.26.0",$/;"	s	object:devDependencies
 eslint-config-airbnb-base	package.json	/^    "eslint-config-airbnb-base": "^15.0.0",$/;"	s	object:devDependencies
 eslint-config-prettier	package.json	/^    "eslint-config-prettier": "^8.5.0",$/;"	s	object:devDependencies
 eslint-plugin-import	package.json	/^    "eslint-plugin-import": "^2.26.0",$/;"	s	object:devDependencies
 eslint-plugin-prettier	package.json	/^    "eslint-plugin-prettier": "^4.2.1",$/;"	s	object:devDependencies
+establishDatabaseConnection	src/index.ts	/^const establishDatabaseConnection = async (): Promise<void> => {$/;"	C
+estimate	build/src/entities/Issue.d.ts	/^    estimate: number | null;$/;"	p	class:Issue
+estimate	src/entities/Issue.ts	/^  estimate: number | null;$/;"	p	class:Issue
+exclude	node_modules/gts/tsconfig-google.json	/^  "exclude": [$/;"	a
+exclude	tsconfig.json	/^  "exclude": ["node_modules"],$/;"	a
+experimentalDecorators	tsconfig.json	/^    "experimentalDecorators": true,$/;"	b	object:compilerOptions
+exports	.prettierrc.js	/^module.exports = {$/;"	o
+express	package.json	/^    "express": "^4.18.2",$/;"	s	object:dependencies
+express-async-handler	package.json	/^    "express-async-handler": "^1.2.0",$/;"	s	object:dependencies
+extends	.eslintrc.json	/^  "extends": ".\/node_modules\/gts\/"$/;"	s
+extends	tsconfig.json	/^  "extends": ".\/node_modules\/gts\/tsconfig-google.json",$/;"	s
+faker	package.json	/^    "faker": "5.5.3",$/;"	s	object:dependencies
+findEntityOrThrow	src/utils/typeorm.ts	/^export const findEntityOrThrow = async <T extends EntityConstructor>($/;"	C
 fix	package.json	/^    "fix": "gts fix",$/;"	s	object:scripts
+forceConsistentCasingInFileNames	node_modules/gts/tsconfig-google.json	/^    "forceConsistentCasingInFileNames": true,$/;"	b	object:compilerOptions
+forceConsistentCasingInFileNames	tsconfig.json	/^    "forceConsistentCasingInFileNames": true$/;"	b	object:compilerOptions
+function	build/src/constants/issues.js	/^(function (IssuePriority) {$/;"	f
+function	build/src/constants/issues.js	/^(function (IssueStatus) {$/;"	f
+function	build/src/constants/issues.js	/^(function (IssueType) {$/;"	f
+function	build/src/constants/projects.js	/^(function (ProjectCategory) {$/;"	f
+function	build/src/database/connection.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	f
+function	build/src/database/connection.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	f
+function	build/src/database/connection.js	/^var __importStar = (this && this.__importStar) || function (mod) {$/;"	f
+function	build/src/database/connection.js	/^var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {$/;"	f
+function	build/src/database/connection.js	/^}) : (function(o, m, k, k2) {$/;"	f
+function	build/src/database/connection.js	/^}) : function(o, v) {$/;"	f
+function	build/src/entities/Comment.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	build/src/entities/Comment.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	build/src/entities/Comment.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	build/src/entities/Issue.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	build/src/entities/Issue.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	build/src/entities/Issue.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	build/src/entities/Project.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	build/src/entities/Project.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	build/src/entities/Project.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	build/src/entities/User.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	build/src/entities/User.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	build/src/entities/User.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	build/src/entities/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	build/src/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+generateComment	src/database/seeds/development/comment.ts	/^const generateComment = (data: Partial<Comment> = {}): Partial<Comment> => ({$/;"	C
+generateErrors	src/utils/validation.ts	/^export const generateErrors = ($/;"	C
+generateIssue	src/database/seeds/development/issue.ts	/^const generateIssue = (data: Partial<Issue> = {}): Partial<Issue> => ({$/;"	C
+generateProject	src/database/seeds/development/project.ts	/^const generateProject = (data: Partial<Project> = {}): Partial<Project> => ({$/;"	C
+generateUser	src/database/seeds/development/user.ts	/^const generateUser = (data: Partial<User> = {}): Partial<User> => ({$/;"	C
+get	build/src/database/connection.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	m
+get	build/src/entities/index.js	/^Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return __import/;"	m
+get	build/src/entities/index.js	/^Object.defineProperty(exports, "Issue", { enumerable: true, get: function () { return __importDe/;"	m
+get	build/src/entities/index.js	/^Object.defineProperty(exports, "Project", { enumerable: true, get: function () { return __import/;"	m
+get	build/src/entities/index.js	/^Object.defineProperty(exports, "User", { enumerable: true, get: function () { return __importDef/;"	m
+getAuthTokenFromRequest	src/middleware/authentication.ts	/^const getAuthTokenFromRequest = (req: Request): string | null => {$/;"	C
 gts	package.json	/^    "gts": "^3.1.1",$/;"	s	object:devDependencies
 hooks	package.json	/^    "hooks": {$/;"	o	object:husky
 husky	package.json	/^    "husky": "^8.0.1",$/;"	s	object:devDependencies
 husky	package.json	/^  "husky": {$/;"	o
+id	build/src/entities/Comment.d.ts	/^    id: number;$/;"	p	class:Comment
+id	build/src/entities/Issue.d.ts	/^    id: number;$/;"	p	class:Issue
+id	build/src/entities/Project.d.ts	/^    id: number;$/;"	p	class:Project
+id	build/src/entities/User.d.ts	/^    id: number;$/;"	p	class:User
+id	src/entities/Comment.ts	/^  id: number;$/;"	p	class:Comment
+id	src/entities/Issue.ts	/^  id: number;$/;"	p	class:Issue
+id	src/entities/Project.ts	/^  id: number;$/;"	p	class:Project
+id	src/entities/User.ts	/^  id: number;$/;"	p	class:User
+include	tsconfig.json	/^  "include": [$/;"	a
+initializeApp	src/index.ts	/^const initializeApp = async (): Promise<void> => {$/;"	C
+initializeExpress	src/index.ts	/^const initializeExpress = (): void => {$/;"	C
+initializeSeed	src/database/seeds/development/index.ts	/^const initializeSeed = async (): Promise<void> => {$/;"	C
+instance	src/utils/typeorm.ts	/^  const Constructor = entities[instance.constructor.name];$/;"	C
+instance	src/utils/typeorm.ts	/^  const instance = Constructor.create(input);$/;"	C
+instance	src/utils/typeorm.ts	/^  const instance = await Constructor.findOne(options);$/;"	C
+instance	src/utils/typeorm.ts	/^  const instance = await findEntityOrThrow(Constructor, {where: {id: id}});$/;"	C
+is	build/src/utils/validation.d.ts	/^declare const is: {$/;"	C
+is	src/utils/validation.ts	/^const is = {$/;"	C
+issue	build/src/entities/Comment.d.ts	/^    issue: Issue;$/;"	p	class:Comment
+issue	src/controllers/issues.ts	/^    const issue = await createEntity(Issue, req.body);$/;"	C
+issue	src/controllers/issues.ts	/^    const issue = await findEntityOrThrow(Issue, {$/;"	C
+issue	src/controllers/issues.ts	/^    const issue = deleteEntity(Issue, req.params.issueId);$/;"	C
+issue	src/controllers/issues.ts	/^    const issue = updateEntity(Issue, req.params.issueId, req.body);$/;"	C
+issue	src/entities/Comment.ts	/^  issue: Issue;$/;"	p	class:Comment
+issues	build/src/entities/Project.d.ts	/^    issues: Issue[];$/;"	p	class:Project
+issues	build/src/entities/User.d.ts	/^    issues: Issue[];$/;"	p	class:User
+issues	src/controllers/issues.ts	/^    const issues = await Issue.find();$/;"	C
+issues	src/database/seeds/development/index.ts	/^  const issues = await seedIssues(projects);$/;"	C
+issues	src/database/seeds/guestUser.ts	/^    const issues = await seedIssues(project)$/;"	C
+issues	src/entities/Project.ts	/^  issues: Issue[];$/;"	p	class:Project
+issues	src/entities/User.ts	/^  issues: Issue[];$/;"	p	class:User
+jsonwebtoken	package.json	/^    "jsonwebtoken": "^8.5.1",$/;"	s	object:dependencies
+lib	node_modules/gts/tsconfig-google.json	/^    "lib": ["es2018", "es2019"],$/;"	a	object:compilerOptions
+lib	tsconfig.json	/^      "lib": ["es2019"],$/;"	a	object:compilerOptions
 license	package.json	/^  "license": "MIT",$/;"	s
 lint	package.json	/^    "lint": "gts lint",$/;"	s	object:scripts
 lint-staged	package.json	/^    "lint-staged": "^13.0.3",$/;"	s	object:devDependencies
 lint-staged	package.json	/^  "lint-staged": {$/;"	o
+lodash	package.json	/^    "lodash": "^4.17.21",$/;"	s	object:dependencies
 main	package.json	/^  "main": "src\/index.ts",$/;"	s
-module-alias	package.json	/^    "module-alias": "^2.2.2"$/;"	s	object:dependencies
+message	src/errors/customErrors.ts	/^    public message: string,$/;"	p	class:CustomError
+mod	build/src/entities/Comment.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	build/src/entities/Issue.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	build/src/entities/Project.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	build/src/entities/User.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	build/src/entities/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	build/src/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+module	node_modules/gts/tsconfig-google.json	/^    "module": "commonjs",$/;"	s	object:compilerOptions
+module-alias	package.json	/^    "module-alias": "^2.2.2",$/;"	s	object:dependencies
+moduleResolution	tsconfig.json	/^    "moduleResolution": "node",$/;"	s	object:compilerOptions
+name	build/src/entities/Project.d.ts	/^    name: string;$/;"	p	class:Project
+name	build/src/entities/User.d.ts	/^    name: string;$/;"	p	class:User
 name	package.json	/^  "name": "react-issue-tracker",$/;"	s
+name	src/entities/Project.ts	/^  name: string;$/;"	p	class:Project
+name	src/entities/User.ts	/^  name: string;$/;"	p	class:User
+noEmitOnError	node_modules/gts/tsconfig-google.json	/^    "noEmitOnError": true,$/;"	b	object:compilerOptions
+noFallthroughCasesInSwitch	node_modules/gts/tsconfig-google.json	/^    "noFallthroughCasesInSwitch": true,$/;"	b	object:compilerOptions
+noImplicitAny	tsconfig.json	/^    "noImplicitAny": true,$/;"	b	object:compilerOptions
+noImplicitReturns	node_modules/gts/tsconfig-google.json	/^    "noImplicitReturns": true,$/;"	b	object:compilerOptions
+noImplicitThis	tsconfig.json	/^    "noImplicitThis": true,$/;"	b	object:compilerOptions
+noUnusedLocals	tsconfig.json	/^    "noUnusedLocals": true,$/;"	b	object:compilerOptions
+noUnusedParameters	tsconfig.json	/^    "noUnusedParameters": true,$/;"	b	object:compilerOptions
 nodemon	package.json	/^    "nodemon": "^2.0.20",$/;"	s	object:devDependencies
+outDir	tsconfig.json	/^    "outDir": "build",$/;"	s	object:compilerOptions
+payload	src/utils/authToken.ts	/^        const payload = jwt.verify(token, process.env.JWT_SECRET)$/;"	C
+pg	package.json	/^    "pg": "^8.8.0",$/;"	s	object:dependencies
 posttest	package.json	/^    "posttest": "yarn run lint"$/;"	s	object:scripts
 pre-commit	package.json	/^      "pre-commit": "lint-staged"$/;"	s	object:husky.hooks
 prepare	package.json	/^    "prepare": "yarn run compile",$/;"	s	object:scripts
 pretest	package.json	/^    "pretest": "yarn run compile",$/;"	s	object:scripts
 prettier	package.json	/^    "prettier": "^2.7.1",$/;"	s	object:devDependencies
+pretty	node_modules/gts/tsconfig-google.json	/^    "pretty": true,$/;"	b	object:compilerOptions
+priority	build/src/entities/Issue.d.ts	/^    priority: IssuePriority;$/;"	p	class:Issue
+priority	src/entities/Issue.ts	/^  priority: IssuePriority;$/;"	p	class:Issue
 private	package.json	/^  "private": false,$/;"	b
+project	build/src/entities/Issue.d.ts	/^    project: Project;$/;"	p	class:Issue
+project	src/controllers/projects.ts	/^    const project = await createEntity(Project, req.body);$/;"	C
+project	src/controllers/projects.ts	/^    const project = await findEntityOrThrow(Project, {$/;"	C
+project	src/controllers/projects.ts	/^    const project = deleteEntity(Project, req.params.projectId);$/;"	C
+project	src/controllers/projects.ts	/^    const project = updateEntity(Project, req.params.projectId, req.body);$/;"	C
+project	src/database/seeds/guestUser.ts	/^    const project = await seedProject(user)$/;"	C
+project	src/entities/Issue.ts	/^  project: Project;$/;"	p	class:Issue
+projects	build/src/entities/User.d.ts	/^    projects: Project[];$/;"	p	class:User
+projects	src/controllers/projects.ts	/^    const projects = await Project.find();$/;"	C
+projects	src/database/seeds/development/index.ts	/^  const projects = await seedProjects(users);$/;"	C
+projects	src/entities/User.ts	/^  projects: Project[];$/;"	p	class:User
+react-isssue-tracker	README.md	/^# react-isssue-tracker$/;"	c
+removeComments	tsconfig.json	/^    "removeComments": true,$/;"	b	object:compilerOptions
+reporterId	build/src/entities/Issue.d.ts	/^    reporterId: number;$/;"	p	class:Issue
+reporterId	src/entities/Issue.ts	/^  reporterId: number;$/;"	p	class:Issue
 repository	package.json	/^  "repository": "https:\/\/github.com\/shihabdider\/react-issue-tracker.git",$/;"	s
+respond	src/types/express.d.ts	/^    respond: (data: any) => void;$/;"	p	interface:Express.Response
+rootDir	tsconfig.json	/^    "rootDir": ".",$/;"	s	object:compilerOptions
+router	src/controllers/issues.ts	/^const router = express.Router();$/;"	C
+router	src/controllers/projects.ts	/^const router = express.Router();$/;"	C
 scripts	package.json	/^  "scripts": {$/;"	o
+seedComment	src/database/seeds/guestUser.ts	/^const seedComment = (issue: Issue): Promise<Comment> =>$/;"	C
+seedComments	src/database/seeds/development/index.ts	/^const seedComments = (issues: Issue[]): Promise<Comment[]> => {$/;"	C
+seedEntities	src/database/seeds/development/index.ts	/^const seedEntities = async (): Promise<void> => {$/;"	C
+seedGuestUserEntities	src/database/seeds/guestUser.ts	/^const seedGuestUserEntities = async (user: User): Promise<void> =>{$/;"	C
+seedIssues	src/database/seeds/development/index.ts	/^const seedIssues = (projects: Project[]): Promise<Issue[]> => {$/;"	C
+seedIssues	src/database/seeds/guestUser.ts	/^const seedIssues = (project: Project): Promise<Issue[]> => {$/;"	C
+seedProject	src/database/seeds/guestUser.ts	/^const seedProject = (user: User): Promise<Project> =>$/;"	C
+seedProjects	src/database/seeds/development/index.ts	/^const seedProjects = (users: User[]): Promise<Project[]> => {$/;"	C
+seedUsers	src/database/seeds/development/index.ts	/^const seedUsers = (): Promise<User[]> => {$/;"	C
+signToken	src/utils/authToken.ts	/^export const signToken = (payload: object, options?: SignOptions): string =>$/;"	C
+sourceMap	node_modules/gts/tsconfig-google.json	/^    "sourceMap": true,$/;"	b	object:compilerOptions
 start	package.json	/^    "start": "nodemon --exec ts-node --files src\/index.ts",$/;"	s	object:scripts
+status	build/src/entities/Issue.d.ts	/^    status: IssueStatus;$/;"	p	class:Issue
+status	src/entities/Issue.ts	/^  status: IssueStatus;$/;"	p	class:Issue
+strict	node_modules/gts/tsconfig-google.json	/^    "strict": true,$/;"	b	object:compilerOptions
+strictBindCallApply	tsconfig.json	/^    "strictBindCallApply": true,$/;"	b	object:compilerOptions
+strictFunctionTypes	tsconfig.json	/^    "strictFunctionTypes": true,$/;"	b	object:compilerOptions
+strictNullChecks	tsconfig.json	/^    "strictNullChecks": true,$/;"	b	object:compilerOptions
+strictPropertyInitialization	tsconfig.json	/^    "strictPropertyInitialization": false,$/;"	b	object:compilerOptions
+target	node_modules/gts/tsconfig-google.json	/^    "target": "es2018"$/;"	s	object:compilerOptions
+title	build/src/entities/Issue.d.ts	/^    title: string;$/;"	p	class:Issue
+title	src/entities/Issue.ts	/^  title: string;$/;"	p	class:Issue
 ts-node	package.json	/^    "ts-node": "^10.9.1",$/;"	s	object:devDependencies
-typescript	package.json	/^    "typescript": "~4.7.0",$/;"	s	object:devDependencies
+type	build/src/entities/Issue.d.ts	/^    type: IssueType;$/;"	p	class:Issue
+type	src/entities/Issue.ts	/^  type: IssueType;$/;"	p	class:Issue
+typeorm	package.json	/^    "typeorm": "^0.3.10"$/;"	s	object:dependencies
+typescript	package.json	/^    "typescript": "~4.7.0"$/;"	s	object:devDependencies
+updateEntity	src/utils/typeorm.ts	/^export const updateEntity = async <T extends EntityConstructor>($/;"	C
+updatedAt	build/src/entities/Comment.d.ts	/^    updatedAt: Date;$/;"	p	class:Comment
+updatedAt	build/src/entities/Issue.d.ts	/^    updatedAt: Date;$/;"	p	class:Issue
+updatedAt	build/src/entities/Project.d.ts	/^    updatedAt: Date;$/;"	p	class:Project
+updatedAt	build/src/entities/User.d.ts	/^    updatedAt: Date;$/;"	p	class:User
+updatedAt	src/entities/Comment.ts	/^  updatedAt: Date;$/;"	p	class:Comment
+updatedAt	src/entities/Issue.ts	/^  updatedAt: Date;$/;"	p	class:Issue
+updatedAt	src/entities/Project.ts	/^  updatedAt: Date;$/;"	p	class:Project
+updatedAt	src/entities/User.ts	/^  updatedAt: Date;$/;"	p	class:User
+url	build/src/entities/Project.d.ts	/^    url: string | null;$/;"	p	class:Project
+url	src/entities/Project.ts	/^  url: string | null;$/;"	p	class:Project
+user	build/src/entities/Comment.d.ts	/^    user: User;$/;"	p	class:Comment
+user	src/entities/Comment.ts	/^  user: User;$/;"	p	class:Comment
+userId	build/src/entities/Comment.d.ts	/^    userId: number;$/;"	p	class:Comment
+userId	src/entities/Comment.ts	/^  userId: number;$/;"	p	class:Comment
+userId	src/middleware/authentication.ts	/^  const userId = verifyToken(token).sub;$/;"	C
+userIds	build/src/entities/Issue.d.ts	/^    userIds: number[];$/;"	p	class:Issue
+userIds	src/entities/Issue.ts	/^  userIds: number[];$/;"	p	class:Issue
+users	build/src/entities/Issue.d.ts	/^    users: User[];$/;"	p	class:Issue
+users	build/src/entities/Project.d.ts	/^    users: User[];$/;"	p	class:Project
+users	src/database/seeds/development/index.ts	/^  const users = await seedUsers();$/;"	C
+users	src/entities/Issue.ts	/^  users: User[];$/;"	p	class:Issue
+users	src/entities/Project.ts	/^  users: User[];$/;"	p	class:Project
+validateAndSaveEntity	src/utils/typeorm.ts	/^const validateAndSaveEntity = async <T extends EntityInstance>($/;"	C
+validations	build/src/entities/Comment.d.ts	/^    static validations: {$/;"	p	class:Comment
+validations	build/src/entities/Comment.js	/^Comment.validations = {$/;"	o
+validations	build/src/entities/Issue.d.ts	/^    static validations: {$/;"	p	class:Issue
+validations	build/src/entities/Issue.js	/^Issue.validations = {$/;"	o
+validations	build/src/entities/Project.d.ts	/^    static validations: {$/;"	p	class:Project
+validations	build/src/entities/Project.js	/^Project.validations = {$/;"	o
+validations	build/src/entities/User.d.ts	/^    static validations: {$/;"	p	class:User
+validations	build/src/entities/User.js	/^User.validations = {$/;"	o
+validations	src/entities/Comment.ts	/^  static validations = {$/;"	p	class:Comment
+validations	src/entities/Issue.ts	/^  static validations = {$/;"	p	class:Issue
+validations	src/entities/Project.ts	/^  static validations = {$/;"	p	class:Project
+validations	src/entities/User.ts	/^  static validations = {$/;"	p	class:User
+verifyToken	src/utils/authToken.ts	/^export const verifyToken = (token: string): { [key: string]: any} =>$/;"	C
 version	package.json	/^  "version": "1.0.0",$/;"	s
