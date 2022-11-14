@@ -1,17 +1,17 @@
 # vim
-*.swp
-*.swo
+**/*.swp
+**/*.swo
 
 # dependencies
-/node_modules
+**/node_modules
 
 # misc
-.DS_Store
-tags
+**/.DS_Store
+**/tags
 
 # environment config
-.env
+**/.env
 
 # production
-/build
-npm-debug.log*
+**/build
+**/npm-debug.log*

@@ -4,12 +4,12 @@ import {Project, User, Issue, Comment} from 'entities';
 import {EntityNotFoundError, BadUserInputError} from 'errors';
 import {generateErrors} from 'utils/validation';
 
-export type EntityConstructor =
+type EntityConstructor =
   | typeof Project
   | typeof User
   | typeof Issue
   | typeof Comment;
-export type EntityInstance = Project | User | Issue | Comment;
+type EntityInstance = Project | User | Issue | Comment;
 
 const entities: {[key: string]: EntityConstructor} = {
   Project,
