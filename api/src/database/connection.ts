@@ -11,7 +11,6 @@ const createDatabaseConnection = (): Promise<DataSource> =>
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     entities: Object.values(entities),
-    synchronize: true,
   }).initialize();
 
 export default createDatabaseConnection;

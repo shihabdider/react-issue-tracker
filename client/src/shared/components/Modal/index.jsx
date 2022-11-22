@@ -45,7 +45,7 @@ const Modal = ({
   const modalIdRef = useRef(uniqueIncreasingIntegerId());
 
   const closeModal = useCallback(() => {
-    if (shouldNotCloseBecauseHasOpenChildModal(modalIdRef.current)) {
+    if (hasChildModal(modalIdRef.current)) {
       return;
     }
     if (!isControlled) {
@@ -89,7 +89,7 @@ const getIdsOfAllOpenModals = () => {
   );
 };
 
-const shouldNotCloseBecauseHasOpenChildModal = modalId =>
+const hasChildModal = modalId =>
   getIdsOfAllOpenModals().some(id => id > modalId);
 
 const setBodyScrollLock = () => {

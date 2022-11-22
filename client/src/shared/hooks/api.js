@@ -13,6 +13,18 @@ const useApi = (method, url, paramsOrData = {}, { lazy = false } = {}) => {
     variables: {}
   });
 
+  const setLocalData = useCallback(
+    set =>
+      setState(currentState => ({
+        ...currentState,
+        data: set(currentState.data)
+      })),
+    []
+  );
+
+  const updateState = newState =>
+    setState(currentState => ({ ...currentState, ...newState }));
+
   const wasCalledRef = useRef(false);
 
   const paramsOrDataMemoized = useDeepCompareMemoize(paramsOrData);
@@ -22,8 +34,6 @@ const useApi = (method, url, paramsOrData = {}, { lazy = false } = {}) => {
   const makeRequest = useCallback(
     (newVariables = {}) =>
       new Promise((resolve, reject) => {
-        const updateState = newState =>
-          setState({ ...stateRef.current, ...newState });
         const variables = { ...stateRef.current.variables, ...newVariables };
 
         if (!isCalledAutomatically || wasCalledRef.current) {
@@ -56,7 +66,8 @@ const useApi = (method, url, paramsOrData = {}, { lazy = false } = {}) => {
     {
       ...state,
       wasCalled: wasCalledRef.current,
-      variables: { ...paramsOrDataMemoized, ...state.variables }
+      variables: { ...paramsOrDataMemoized, ...state.variables },
+      setLocalData
     },
     makeRequest
   ];
