@@ -1,14 +1,15 @@
 import 'module-alias/register';
+import 'reflect-metadata';
 import 'dotenv/config';
 import {times, sample} from 'lodash';
 
-import {Comment, User, Project, Issue} from 'entities';
+import {Comment, Issue, Project, User} from 'entities';
 import createDatabaseConnection from 'database/connection';
 import {createEntity} from 'utils/typeorm';
 import generateUser from './user';
-import generateComment from './comment';
 import generateProject from './project';
 import generateIssue from './issue';
+import generateComment from './comment';
 
 const seedUsers = (): Promise<User[]> => {
   const users = times(4, () => createEntity(User, generateUser()));
@@ -44,10 +45,7 @@ const seedComments = (issues: Issue[]): Promise<Comment[]> => {
   const comments = issues.map(issue =>
     createEntity(
       Comment,
-      generateComment({
-        issue,
-        user: sample(issue.project.users),
-      })
+      generateComment({issue, user: sample(issue.project.users)})
     )
   );
   return Promise.all(comments);

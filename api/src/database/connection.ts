@@ -1,9 +1,9 @@
-import {createConnection, Connection} from 'typeorm';
+import {DataSource} from 'typeorm';
 
 import * as entities from 'entities';
 
-const createDatabaseConnection = (): Promise<Connection> =>
-  createConnection({
+const createDatabaseConnection = (): Promise<DataSource> =>
+  new DataSource({
     type: 'postgres',
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
@@ -11,6 +11,7 @@ const createDatabaseConnection = (): Promise<Connection> =>
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     entities: Object.values(entities),
-  });
+    synchronize: true,
+  }).initialize();
 
 export default createDatabaseConnection;

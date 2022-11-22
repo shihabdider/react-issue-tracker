@@ -11,7 +11,7 @@ export default createGlobalStyle`
   body {
     color: ${color.textDarkest};
     -webkit-tap-highlight-color: transparent;
-    line-height: 1.2;
+    line-height: 1.4285;
     ${font.size(16)}
     ${font.regular}
   }
@@ -104,5 +104,5 @@ export default createGlobalStyle`
     touch-action: manipulation;
   }
 
-  ${mixin.placeholderColor(color.textLightBlue)}
+  ${mixin.placeholderColor(color.textLight)}
 `;

@@ -11,7 +11,7 @@ const Toast = () => {
 
   useEffect(() => {
     const addToast = ({ type = "success", title, message, duration = 5 }) => {
-      const id = uniqueId("toast-");
+      const id = uniqueId();
 
       setToasts(currentToasts => [
         ...currentToasts,
@@ -23,7 +23,6 @@ const Toast = () => {
       }
     };
     pubsub.on("toast", addToast);
-
     return () => {
       pubsub.off("toast", addToast);
     };

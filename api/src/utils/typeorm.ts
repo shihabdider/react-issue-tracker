@@ -57,7 +57,7 @@ export const updateEntity = async <T extends EntityConstructor>(
   id: number | string,
   input: Partial<InstanceType<T>>
 ): Promise<InstanceType<T>> => {
-  const instance = await findEntityOrThrow(Constructor, {where: {id: id}});
+  const instance = await findEntityOrThrow(Constructor, {where: {id}});
   Object.assign(instance, input);
   return validateAndSaveEntity(instance);
 };
@@ -66,7 +66,7 @@ export const deleteEntity = async <T extends EntityConstructor>(
   Constructor: T,
   id: number | string
 ): Promise<InstanceType<T>> => {
-  const instance = await findEntityOrThrow(Constructor, {where: {id: id}});
+  const instance = await findEntityOrThrow(Constructor, {where: {id}});
   await instance.remove();
   return instance;
 };

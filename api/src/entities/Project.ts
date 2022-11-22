@@ -6,8 +6,6 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   OneToMany,
-  ManyToMany,
-  JoinTable,
 } from 'typeorm';
 
 import is from 'utils/validation';
@@ -32,7 +30,7 @@ class Project extends BaseEntity {
   @Column('varchar', {nullable: true})
   url: string | null;
 
-  @Column({type: 'text', nullable: true})
+  @Column('text', {nullable: true})
   description: string | null;
 
   @Column('varchar')
@@ -47,8 +45,7 @@ class Project extends BaseEntity {
   @OneToMany(() => Issue, issue => issue.project)
   issues: Issue[];
 
-  @ManyToMany(() => User, user => user.projects)
-  @JoinTable()
+  @OneToMany(() => User, user => user.project)
   users: User[];
 }
 
