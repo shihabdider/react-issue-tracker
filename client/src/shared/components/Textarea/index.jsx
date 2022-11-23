@@ -26,7 +26,7 @@ const Textarea = forwardRef(
       <TextareaAutoSize
         {...textareaProps}
         onChange={event => onChange(event.target.value, event)}
-        ref={ref}
+        inputRef={ref}
       />
     </StyledTextarea>
   )

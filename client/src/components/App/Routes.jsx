@@ -1,6 +1,6 @@
 import React from "react";
-import history from "browserHistory";
 import { Router, Switch, Route, Redirect } from "react-router-dom";
+import history from "browserHistory";
 
 import PageError from "shared/components/PageError";
 

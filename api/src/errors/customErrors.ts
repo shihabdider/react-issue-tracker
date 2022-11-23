@@ -15,7 +15,7 @@ export class CustomError extends Error {
 
 export class RouteNotFoundError extends CustomError {
   constructor(originalUrl: string) {
-    super(`Route '${originalUrl}' does note exist.`, 'ROUTE_NOT_FOUND', 404);
+    super(`Route '${originalUrl}' does not exist.`, 'ROUTE_NOT_FOUND', 404);
   }
 }
 

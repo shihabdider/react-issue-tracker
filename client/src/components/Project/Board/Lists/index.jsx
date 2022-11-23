@@ -2,73 +2,52 @@ import React from "react";
 import PropTypes from "prop-types";
 import moment from "moment";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
-import { intersection } from "lodash";
+import { get, intersection } from "lodash";
 
 import api from "shared/utils/api";
+import useApi from "shared/hooks/api";
 import {
   moveItemWithinArray,
-  insertItemIntoArray,
-  updateArrayItemById
+  insertItemIntoArray
 } from "shared/utils/javascript";
-import { IssueStatus } from "shared/constants/issues";
+import { IssueStatus, IssueStatusCopy } from "shared/constants/issues";
 import Issue from "./Issue";
 import { Lists, List, Title, IssuesCount, Issues } from "./Styles";
 
 const propTypes = {
   project: PropTypes.object.isRequired,
   filters: PropTypes.object.isRequired,
-  currentUserId: PropTypes.number,
-  setLocalProjectData: PropTypes.func.isRequired
+  updateLocalIssuesArray: PropTypes.func.isRequired
 };
 
-const defaultProps = {
-  currentUserId: null
-};
+const ProjectBoardLists = ({ project, filters, updateLocalIssuesArray }) => {
+  const [{ data: currentUserData }] = useApi.get("/currentUser");
+  const currentUserId = get(currentUserData, "currentUser.id");
 
-const ProjectBoardLists = ({
-  project,
-  filters,
-  currentUserId,
-  setLocalProjectData
-}) => {
   const filteredIssues = filterIssues(project.issues, filters, currentUserId);
 
-  const handleIssueDrop = ({ draggableId, destination, source }) => {
+  const handleIssueDrop = async ({ draggableId, destination, source }) => {
     if (!destination) return;
-
     const isSameList = destination.droppableId === source.droppableId;
     const isSamePosition = destination.index === source.index;
-
     if (isSameList && isSamePosition) return;
 
     const issueId = parseInt(draggableId);
 
-    const { prevIssue, nextIssue } = getAfterDropPrevNextIssue(
-      project.issues,
-      destination,
-      isSameList,
-      issueId
-    );
-
-    const afterDropListPosition = calculateListPosition(prevIssue, nextIssue);
-
-    const issueFieldsToUpdate = {
-      status: destination.droppableId,
-      listPosition: afterDropListPosition
-    };
-
-    setLocalProjectData(data => ({
-      project: {
-        ...data.project,
-        issues: updateArrayItemById(
-          data.project.issues,
-          issueId,
-          issueFieldsToUpdate
+    api.optimisticUpdate({
+      url: `/issues/${issueId}`,
+      updatedFields: {
+        status: destination.droppableId,
+        listPosition: calculateListPosition(
+          project.issues,
+          destination,
+          isSameList,
+          issueId
         )
-      }
-    }));
-
-    api.put(`/issues/${issueId}`, issueFieldsToUpdate);
+      },
+      currentFields: project.issues.find(({ id }) => id === issueId),
+      setLocalData: fields => updateLocalIssuesArray(issueId, fields)
+    });
   };
 
   const renderList = status => {
@@ -85,16 +64,16 @@ const ProjectBoardLists = ({
         {provided => (
           <List>
             <Title>
-              {`${issueStatusCopy[status]} `}
+              {`${IssueStatusCopy[status]} `}
               <IssuesCount>{issuesCount}</IssuesCount>
             </Title>
             <Issues {...provided.droppableProps} ref={provided.innerRef}>
-              {filteredListIssues.map((issue, i) => (
+              {filteredListIssues.map((issue, index) => (
                 <Issue
                   key={issue.id}
                   projectUsers={project.users}
                   issue={issue}
-                  index={i}
+                  index={index}
                 />
               ))}
               {provided.placeholder}
@@ -106,9 +85,11 @@ const ProjectBoardLists = ({
   };
 
   return (
-    <DragDropContext onDragEnd={handleIssueDrop}>
-      <Lists>{Object.values(IssueStatus).map(renderList)}</Lists>
-    </DragDropContext>
+    <>
+      <DragDropContext onDragEnd={handleIssueDrop}>
+        <Lists>{Object.values(IssueStatus).map(renderList)}</Lists>
+      </DragDropContext>
+    </>
   );
 };
 
@@ -142,7 +123,8 @@ const getSortedListIssues = (issues, status) =>
     .filter(issue => issue.status === status)
     .sort((a, b) => a.listPosition - b.listPosition);
 
-const calculateListPosition = (prevIssue, nextIssue) => {
+const calculateListPosition = (...args) => {
+  const { prevIssue, nextIssue } = getAfterDropPrevNextIssue(...args);
   let position;
 
   if (!prevIssue && !nextIssue) {
@@ -181,14 +163,6 @@ const getAfterDropPrevNextIssue = (
   };
 };
 
-const issueStatusCopy = {
-  [IssueStatus.BACKLOG]: "Backlog",
-  [IssueStatus.SELECTED]: "Selected for development",
-  [IssueStatus.INPROGRESS]: "In progress",
-  [IssueStatus.DONE]: "Done"
-};
-
 ProjectBoardLists.propTypes = propTypes;
-ProjectBoardLists.defaultProps = defaultProps;
 
 export default ProjectBoardLists;

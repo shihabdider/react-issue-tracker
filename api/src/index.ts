@@ -38,8 +38,8 @@ const initializeExpress = (): void => {
   app.use('/', authenticationRoutes);
   app.use('/', authenticateUser);
 
-  app.use('/', projectsRoutes);
   app.use('/', issuesRoutes);
+  app.use('/', projectsRoutes);
   app.use('/', usersRoutes);
 
   app.use((req, _res, next) => next(new RouteNotFoundError(req.originalUrl)));

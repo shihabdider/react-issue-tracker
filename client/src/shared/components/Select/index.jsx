@@ -7,11 +7,9 @@ import Icon from "shared/components/Icon";
 import Dropdown from "./Dropdown";
 import {
   StyledSelect,
-  StyledIcon,
   ValueContainer,
   ChevronIcon,
   Placeholder,
-  ValueSingle,
   ValueMulti,
   ValueMultiItem,
   AddMore
@@ -19,31 +17,36 @@ import {
 
 const propTypes = {
   className: PropTypes.string,
-  icon: PropTypes.string,
-  value: PropTypes.any,
+  value: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string,
+    PropTypes.number
+  ]),
   defaultValue: PropTypes.any,
   placeholder: PropTypes.string,
   invalid: PropTypes.bool,
   options: PropTypes.array.isRequired,
   onChange: PropTypes.func.isRequired,
   onCreate: PropTypes.func,
-  isMulti: PropTypes.bool
+  isMulti: PropTypes.bool,
+  renderValue: PropTypes.func,
+  renderOption: PropTypes.func
 };
 
 const defaultProps = {
   className: undefined,
-  icon: undefined,
   value: undefined,
   defaultValue: undefined,
   placeholder: "",
   invalid: false,
   onCreate: undefined,
-  isMulti: false
+  isMulti: false,
+  renderValue: undefined,
+  renderOption: undefined
 };
 
 const Select = ({
   className,
-  icon,
   value: propsValue,
   defaultValue,
   placeholder,
@@ -51,7 +54,9 @@ const Select = ({
   options,
   onChange,
   onCreate,
-  isMulti
+  isMulti,
+  renderValue: propsRenderValue,
+  renderOption: propsRenderOption
 }) => {
   const [stateValue, setStateValue] = useState(
     defaultValue || (isMulti ? [] : null)
@@ -81,11 +86,18 @@ const Select = ({
 
   useOnOutsideClick($selectRef, isDropdownOpen, deactivateDropdown);
 
+  const ensureValueType = newValue => {
+    if (typeof value === "number") {
+      return isMulti ? newValue.map(parseInt) : parseInt(newValue);
+    }
+    return newValue;
+  };
+
   const handleChange = newValue => {
     if (!isControlled) {
-      setStateValue(newValue);
+      setStateValue(ensureValueType(newValue));
     }
-    onChange(newValue);
+    onChange(ensureValueType(newValue));
   };
 
   const removeOptionValue = optionValue => {
@@ -114,21 +126,24 @@ const Select = ({
 
   const isValueEmpty = isMulti ? !value.length : !getOption(value);
 
-  const renderSingleValue = () => (
-    <ValueSingle>{getOptionLabel(value)}</ValueSingle>
-  );
+  const renderSingleValue = () =>
+    propsRenderValue ? propsRenderValue({ value }) : getOptionLabel(value);
 
   const renderMultiValue = () => (
     <ValueMulti>
-      {value.map(optionValue => (
-        <ValueMultiItem
-          key={optionValue}
-          onClick={() => removeOptionValue(optionValue)}
-        >
-          {getOptionLabel(optionValue)}
-          <Icon type="close" />
-        </ValueMultiItem>
-      ))}
+      {value.map(optionValue =>
+        propsRenderValue ? (
+          propsRenderValue({ value: optionValue, removeOptionValue })
+        ) : (
+          <ValueMultiItem
+            key={optionValue}
+            onClick={() => removeOptionValue(optionValue)}
+          >
+            {getOptionLabel(optionValue)}
+            <Icon type="close" />
+          </ValueMultiItem>
+        )
+      )}
       <AddMore>
         <Icon type="plus" />
         Add more
@@ -141,16 +156,16 @@ const Select = ({
       className={className}
       ref={$selectRef}
       tabIndex="0"
-      hasIcon={!!icon}
       onKeyDown={handleFocusedSelectKeydown}
       invalid={invalid}
     >
       <ValueContainer onClick={activateDropdown}>
-        {icon && <StyledIcon type={icon} />}
-        {(!isMulti || isValueEmpty) && <ChevronIcon type="chevron-down" />}
         {isValueEmpty && <Placeholder>{placeholder}</Placeholder>}
         {!isValueEmpty && !isMulti && renderSingleValue()}
         {!isValueEmpty && isMulti && renderMultiValue()}
+        {(!isMulti || isValueEmpty) && (
+          <ChevronIcon type="chevron-down" top={1} />
+        )}
       </ValueContainer>
       {isDropdownOpen && (
         <Dropdown
@@ -165,6 +180,7 @@ const Select = ({
           onChange={handleChange}
           onCreate={onCreate}
           isMulti={isMulti}
+          propsRenderOption={propsRenderOption}
         />
       )}
     </StyledSelect>

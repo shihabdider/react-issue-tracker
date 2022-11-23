@@ -34,6 +34,7 @@ export default createGlobalStyle`
   }
 
   a, a:hover, a:visited, a:active {
+    color: inherit;
     text-decoration: none;
   }
 
@@ -85,7 +86,7 @@ export default createGlobalStyle`
   }
 
   p {
-    line-height: 1.6;
+    line-height: 1.4285;
     a {
       ${mixin.link()}
     }

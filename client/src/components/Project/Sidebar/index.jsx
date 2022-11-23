@@ -13,10 +13,11 @@ import {
 } from "./Styles";
 
 const propTypes = {
-  projectName: PropTypes.string.isRequired
+  projectName: PropTypes.string.isRequired,
+  matchPath: PropTypes.string.isRequired
 };
 
-const ProjectSidebar = ({ projectName }) => (
+const ProjectSidebar = ({ projectName, matchPath }) => (
   <Sidebar>
     <ProjectInfo>
       <ProjectAvatar />
@@ -25,15 +26,15 @@ const ProjectSidebar = ({ projectName }) => (
         <ProjectCategory>Software project</ProjectCategory>
       </ProjectTexts>
     </ProjectInfo>
-    <LinkItem to="/project/board">
+    <LinkItem to={`${matchPath}/board`}>
       <Icon type="board" />
       <LinkText>Kanban Board</LinkText>
     </LinkItem>
-    <LinkItem to="/project/issues">
+    <LinkItem to={`${matchPath}/issues`}>
       <Icon type="issues" />
       <LinkText>Issues and filters</LinkText>
     </LinkItem>
-    <LinkItem to="/project/settings">
+    <LinkItem to={`${matchPath}/settings`}>
       <Icon type="settings" />
       <LinkText>Project settings</LinkText>
     </LinkItem>

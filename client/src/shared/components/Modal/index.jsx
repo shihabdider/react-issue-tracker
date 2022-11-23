@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-import { uniqueId as uniqueIncreasingIntegerId } from "lodash";
 
 import useOnOutsideClick from "shared/hooks/onOutsideClick";
 import useOnEscapeKeyDown from "shared/hooks/onEscapeKeyDown";
@@ -15,6 +14,8 @@ import {
 const propTypes = {
   className: PropTypes.string,
   variant: PropTypes.oneOf(["center", "aside"]),
+  width: PropTypes.number,
+  withCloseIcon: PropTypes.bool,
   isOpen: PropTypes.bool,
   onClose: PropTypes.func,
   renderLink: PropTypes.func,
@@ -24,6 +25,8 @@ const propTypes = {
 const defaultProps = {
   className: undefined,
   variant: "center",
+  width: 600,
+  withCloseIcon: true,
   isOpen: undefined,
   onClose: () => {},
   renderLink: () => {}
@@ -32,6 +35,8 @@ const defaultProps = {
 const Modal = ({
   className,
   variant,
+  width,
+  withCloseIcon,
   isOpen: propsIsOpen,
   onClose: tellParentToClose,
   renderLink,
@@ -42,12 +47,9 @@ const Modal = ({
   const isOpen = isControlled ? propsIsOpen : stateIsOpen;
 
   const $modalRef = useRef();
-  const modalIdRef = useRef(uniqueIncreasingIntegerId());
+  const $clickableOverlayRef = useRef();
 
   const closeModal = useCallback(() => {
-    if (hasChildModal(modalIdRef.current)) {
-      return;
-    }
     if (!isControlled) {
       setStateOpen(false);
     } else {
@@ -55,15 +57,22 @@ const Modal = ({
     }
   }, [isControlled, tellParentToClose]);
 
-  useOnOutsideClick($modalRef, isOpen, closeModal);
+  useOnOutsideClick($modalRef, isOpen, closeModal, $clickableOverlayRef);
   useOnEscapeKeyDown(isOpen, closeModal);
   useEffect(setBodyScrollLock, [isOpen]);
 
   const renderModal = () => (
-    <ScrollOverlay data-jira-modal-id={modalIdRef.current}>
-      <ClickableOverlay variant={variant}>
-        <StyledModal className={className} variant={variant} ref={$modalRef}>
-          <CloseIcon type="close" variant={variant} onClick={closeModal} />
+    <ScrollOverlay data-jira-modal="true">
+      <ClickableOverlay variant={variant} ref={$clickableOverlayRef}>
+        <StyledModal
+          className={className}
+          variant={variant}
+          width={width}
+          ref={$modalRef}
+        >
+          {withCloseIcon && (
+            <CloseIcon type="close" variant={variant} onClick={closeModal} />
+          )}
           {renderContent({ close: closeModal })}
         </StyledModal>
       </ClickableOverlay>
@@ -80,20 +89,8 @@ const Modal = ({
 
 const $root = document.getElementById("root");
 
-const getIdsOfAllOpenModals = () => {
-  const $modalNodes = Array.from(
-    document.querySelectorAll("[data-jira-modal-id]")
-  );
-  return $modalNodes.map($node =>
-    parseInt($node.getAttribute("data-jira-modal-id"))
-  );
-};
-
-const hasChildModal = modalId =>
-  getIdsOfAllOpenModals().some(id => id > modalId);
-
 const setBodyScrollLock = () => {
-  const areAnyModalsOpen = getIdsOfAllOpenModals().length > 0;
+  const areAnyModalsOpen = !!document.querySelector("[data-jira-modal]");
   document.body.style.overflow = areAnyModalsOpen ? "hidden" : "visible";
 };
 

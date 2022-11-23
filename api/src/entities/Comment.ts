@@ -36,7 +36,7 @@ class Comment extends BaseEntity {
   @RelationId((comment: Comment) => comment.user)
   userId: number;
 
-  @ManyToOne(() => Issue, issue => issue.comments)
+  @ManyToOne(() => Issue, issue => issue.comments, {onDelete: 'CASCADE'})
   issue: Issue;
 }
 

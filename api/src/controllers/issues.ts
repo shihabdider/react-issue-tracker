@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 router.get(
-  './issues',
+  '/issues',
   catchErrors(async (_req, res) => {
     const issues = await Issue.find();
     res.respond({issues});
@@ -20,20 +20,20 @@ router.get(
 );
 
 router.get(
-  './issues/:issueId',
+  '/issues/:issueId',
   catchErrors(async (req, res) => {
     const issue = await findEntityOrThrow(Issue, {
       where: {
         id: req.params.issueId,
       },
-      relations: ['users', 'issues', 'issues.comments'],
+      relations: ['users', 'comments'],
     });
     res.respond({issue});
   })
 );
 
 router.post(
-  './issues',
+  '/issues',
   catchErrors(async (req, res) => {
     const issue = await createEntity(Issue, req.body);
     res.respond({issue});
