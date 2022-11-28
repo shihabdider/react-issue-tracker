@@ -35,7 +35,8 @@ router.get(
 router.post(
   '/issues',
   catchErrors(async (req, res) => {
-    const issue = await createEntity(Issue, req.body);
+    const listPosition = await calculateListPosition(req.body);
+    const issue = await createEntity(Issue, {...req.body, listPosition});
     res.respond({issue});
   })
 );
@@ -55,5 +56,17 @@ router.delete(
     res.respond({issue});
   })
 );
+
+const calculateListPosition = async (newIssue: Issue) => {
+  const issues = await Issue.find({
+    where: {projectId: newIssue.projectId, status: newIssue.status},
+  });
+  const listPositions = issues.map(({listPosition}) => listPosition);
+  if (listPositions.length > 0) {
+    return Math.min(...listPositions) - 1;
+  }
+
+  return 1;
+};
 
 export default router;

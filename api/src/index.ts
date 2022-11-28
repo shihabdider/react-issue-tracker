@@ -5,7 +5,7 @@ import cors from 'cors';
 
 import createDatabaseConnection from 'database/connection';
 import {authenticateUser} from 'middleware/authentication';
-import authenticationRoutes from 'controllers/authentication';
+//import authenticationRoutes from 'controllers/authentication';
 import commentsRoutes from 'controllers/comments';
 import projectsRoutes from 'controllers/projects';
 import issuesRoutes from 'controllers/issues';
@@ -23,7 +23,7 @@ const establishDatabaseConnection = async (): Promise<void> => {
 
 const initializeExpress = (): void => {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT || 3000;
 
   app.use(cors());
   app.use(express.json());
@@ -36,7 +36,7 @@ const initializeExpress = (): void => {
     next();
   });
 
-  app.use('/', authenticationRoutes);
+  //app.use('/', authenticationRoutes);
   app.use('/', authenticateUser);
 
   app.use('/', issuesRoutes);

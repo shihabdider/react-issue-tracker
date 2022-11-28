@@ -9,26 +9,33 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/83342344/
+*	api/tsconfig.json	/^      "*": [".\/*"]$/;"	a	object:compilerOptions.paths
 *.ts	api/package.json	/^    "*.ts": [$/;"	a	object:lint-staged
 *.{js,jsx}	client/package.json	/^    "*.{js,jsx}": [$/;"	a	object:lint-staged
 0	api/package.json	/^      "yarn fix",$/;"	s	array:lint-staged.*.ts
 0	api/package.json	/^    "src"$/;"	s	array:_moduleDirectories
-0	api/tsconfig.json	/^      "lib": ["es2019", "es2015"],$/;"	s	array:compilerOptions.lib
-0	api/tsconfig.json	/^    "src\/**\/*.ts",$/;"	s	array:include
+0	api/tsconfig.json	/^      "*": [".\/*"]$/;"	s	array:compilerOptions.paths.*
+0	api/tsconfig.json	/^    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],$/;"	s	array:compilerOptions.lib
+0	api/tsconfig.json	/^    "types": ["node"],$/;"	s	array:compilerOptions.types
 0	api/tsconfig.json	/^  "exclude": ["node_modules"],$/;"	s	array:exclude
+0	api/tsconfig.json	/^  "include": [".\/src\/**\/*.ts"]$/;"	s	array:include
 0	client/.eslintrc.json	/^    "no-param-reassign": [2, { "props": false }],$/;"	n	array:rules.no-param-reassign
 0	client/.eslintrc.json	/^    "no-return-assign": [2, "except-parens"],$/;"	n	array:rules.no-return-assign
+0	client/.eslintrc.json	/^    "react\/prop-types": [2, { "skipUndeclared": true }],$/;"	n	array:rules.react/prop-types
 0	client/.eslintrc.json	/^  "extends": ["airbnb", "prettier", "prettier\/react"],$/;"	s	array:extends
 0	client/package.json	/^      "eslint --fix",$/;"	s	array:lint-staged.*.{js,jsx}
 1	api/package.json	/^      "git add"$/;"	s	array:lint-staged.*.ts
-1	api/tsconfig.json	/^      "lib": ["es2019", "es2015"],$/;"	s	array:compilerOptions.lib
-1	api/tsconfig.json	/^    "test\/**\/*.ts"$/;"	s	array:include
+1	api/tsconfig.json	/^    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],$/;"	s	array:compilerOptions.lib
 1	client/.eslintrc.json	/^    "no-param-reassign": [2, { "props": false }],$/;"	o	array:rules.no-param-reassign
 1	client/.eslintrc.json	/^    "no-return-assign": [2, "except-parens"],$/;"	s	array:rules.no-return-assign
+1	client/.eslintrc.json	/^    "react\/prop-types": [2, { "skipUndeclared": true }],$/;"	o	array:rules.react/prop-types
 1	client/.eslintrc.json	/^  "extends": ["airbnb", "prettier", "prettier\/react"],$/;"	s	array:extends
 1	client/package.json	/^      "prettier --write",$/;"	s	array:lint-staged.*.{js,jsx}
+2	api/tsconfig.json	/^    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],$/;"	s	array:compilerOptions.lib
 2	client/.eslintrc.json	/^  "extends": ["airbnb", "prettier", "prettier\/react"],$/;"	s	array:extends
 2	client/package.json	/^      "git add"$/;"	s	array:lint-staged.*.{js,jsx}
+3	api/tsconfig.json	/^    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],$/;"	s	array:compilerOptions.lib
+4	api/tsconfig.json	/^    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],$/;"	s	array:compilerOptions.lib
 @babel/core	client/package.json	/^    "@babel\/core": "^7.7.4",$/;"	s	object:devDependencies
 @babel/plugin-proposal-class-properties	client/package.json	/^    "@babel\/plugin-proposal-class-properties": "^7.7.4",$/;"	s	object:devDependencies
 @babel/plugin-proposal-decorators	client/package.json	/^    "@babel\/plugin-proposal-decorators": "^7.7.4",$/;"	s	object:devDependencies
@@ -44,22 +51,29 @@
 @types/node	api/package.json	/^    "@types\/node": "^14.11.2",$/;"	s	object:devDependencies
 @typescript-eslint/eslint-plugin	api/package.json	/^    "@typescript-eslint\/eslint-plugin": "^5.42.0",$/;"	s	object:devDependencies
 @typescript-eslint/parser	api/package.json	/^    "@typescript-eslint\/parser": "^5.42.0",$/;"	s	object:devDependencies
-ARROW_DOWN	client/src/shared/constants/keyCodes.js	/^  ARROW_DOWN: 40$/;"	n
+ARROW_DOWN	client/src/shared/constants/keyCodes.js	/^  ARROW_DOWN: 40,$/;"	n
 ARROW_UP	client/src/shared/constants/keyCodes.js	/^  ARROW_UP: 38,$/;"	n
-Active	client/src/components/Project/Board/Filters/index.jsx	/^            isActive={userIds.includes(user.id)}$/;"	c
-Active	client/src/components/Project/Board/Filters/index.jsx	/^        isActive={myOnly}$/;"	c
-Active	client/src/components/Project/Board/Filters/index.jsx	/^        isActive={recent}$/;"	c
+ActionButton	client/src/Project/IssueCreateForm/Styles.js	/^export const ActionButton = styled(Button)`$/;"	c
+Active	client/src/Project/Board/Filters/index.jsx	/^            isActive={userIds.includes(user.id)}$/;"	c
+Active	client/src/Project/Board/Filters/index.jsx	/^        isActive={myOnly}$/;"	c
+Active	client/src/Project/Board/Filters/index.jsx	/^        isActive={recent}$/;"	c
 ActiveOptionNode	client/src/shared/components/Select/Dropdown.jsx	/^  const getActiveOptionNode = () =>$/;"	c
-AfterDropPrevNextIssue	client/src/components/Project/Board/Lists/index.jsx	/^const getAfterDropPrevNextIssue = ($/;"	c
+AfterDropPrevNextIssue	client/src/Project/Board/Lists/index.jsx	/^const getAfterDropPrevNextIssue = ($/;"	c
 AndSaveEntity	api/build/src/utils/typeorm.js	/^const validateAndSaveEntity = async (instance) => {$/;"	c
+AndSaveEntity	api/build/utils/typeorm.js	/^const validateAndSaveEntity = (instance) => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
 Api	client/src/shared/hooks/api.js	/^const useApi = (method, url, variables = {}, { lazy = false } = {}) => {$/;"	c
+App	api/build/index.js	/^const initializeApp = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
 App	api/build/src/index.js	/^const initializeApp = async () => {$/;"	c
-App	client/src/components/App/App.jsx	/^const App = () => ($/;"	c
+App	client/src/App/index.jsx	/^const App = () => ($/;"	c
 ArrayItemById	client/src/shared/utils/javascript.js	/^export const updateArrayItemById = (arr, itemId, fields) => {$/;"	c
-AssigneeAvatar	client/src/components/Project/Board/Lists/Issue/Styles.js	/^export const AssigneeAvatar = styled(Avatar)`$/;"	c
-Assignees	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^  const renderAssignees = () => ($/;"	c
+AssigneeAvatar	client/src/Project/Board/Lists/Issue/Styles.js	/^export const AssigneeAvatar = styled(Avatar)`$/;"	c
+Assignees	client/src/Project/IssueDetails/Users/index.jsx	/^  const renderAssignees = () => ($/;"	c
+AsyncMode	client/build/main-121742718436dde3a71a.js	/^ *\/var r="function"==typeof Symbol&&Symbol.for,o=r?Symbol.for("react.element"):60103,i=r?Symbol/;"	c
+AsyncMode	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	c
+Attributor	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	c
+AuthTokenFromRequest	api/build/middleware/authentication.js	/^const getAuthTokenFromRequest = (req) => {$/;"	c
 AuthTokenFromRequest	api/build/src/middleware/authentication.js	/^const getAuthTokenFromRequest = (req) => {$/;"	c
-Authenticate	client/src/components/App/Authenticate.jsx	/^const Authenticate = () => {$/;"	c
+Authenticate	client/src/App/Authenticate.jsx	/^const Authenticate = () => {$/;"	c
 Authorization	client/src/shared/utils/api.js	/^    Authorization: getStoredAuthToken()$/;"	c
 Avatar	client/src/shared/components/Avatar/index.jsx	/^const Avatar = ({ className, avatarUrl, name, size, ...otherProps }) => {$/;"	c
 BACKLOG	api/build/src/constants/issues.d.ts	/^    BACKLOG = "backlog",$/;"	e	enum:IssueStatus
@@ -70,81 +84,94 @@ BUG	api/src/constants/issues.ts	/^  BUG = 'bug',$/;"	e	enum:IssueType
 BUG	client/src/shared/constants/issues.js	/^  BUG: "bug",$/;"	n
 BUSINESS	api/build/src/constants/projects.d.ts	/^    BUSINESS = "business"$/;"	e	enum:ProjectCategory
 BUSINESS	api/src/constants/projects.ts	/^  BUSINESS = 'business',$/;"	e	enum:ProjectCategory
+BadUserInputError	api/build/errors/customErrors.js	/^class BadUserInputError extends CustomError {$/;"	c
 BadUserInputError	api/build/src/errors/customErrors.js	/^class BadUserInputError extends CustomError {$/;"	c
 BadUserInputError	api/src/errors/customErrors.ts	/^export class BadUserInputError extends CustomError {$/;"	c
-BeingDragged	client/src/components/Project/Board/Lists/Issue/index.jsx	/^            isBeingDragged={snapshot.isDragging && !snapshot.isDropAnimating}$/;"	c
+BeingDragged	client/src/Project/Board/Lists/Issue/index.jsx	/^            isBeingDragged={snapshot.isDragging && !snapshot.isDropAnimating}$/;"	c
+Binding	api/build/database/connection.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	c
+Binding	api/build/errors/index.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	c
 Binding	api/build/src/database/connection.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	c
 Binding	api/build/src/errors/index.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	c
-Blur	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^        onBlur={handleTitleChange}$/;"	c
-Board	client/src/components/Project/index.jsx	/^  const renderBoard = () => ($/;"	c
+Blur	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	c
+Blur	client/src/Project/IssueDetails/Title/index.jsx	/^        onBlur={handleTitleChange}$/;"	c
+Board	client/src/Project/index.jsx	/^  const renderBoard = () => ($/;"	c
 BodyScrollLock	client/src/shared/components/Modal/index.jsx	/^const setBodyScrollLock = () => {$/;"	c
-BottomMargin	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      withBottomMargin={withBottomMargin}$/;"	c
+BottomMargin	client/src/Project/IssueCreateForm/index.jsx	/^        withBottomMargin={!!removeOptionValue}$/;"	c
+BottomMargin	client/src/Project/IssueDetails/Users/index.jsx	/^      withBottomMargin={!!removeOptionValue}$/;"	c
 Button	client/src/shared/components/Button/index.jsx	/^const Button = forwardRef($/;"	c
 CalledRef	client/src/shared/hooks/api.js	/^  const wasCalledRef = useRef(false);$/;"	c
-Cancel	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            onCancel={() => setFormOpen(false)}$/;"	c
-Cancel	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            onCancel={() => setFormOpen(false)}$/;"	c
+Cancel	client/build/main-121742718436dde3a71a.js	/^t.read=function(e,t,n,r,o){var i,a,u=8*o-r-1,l=(1<<u)-1,c=l>>1,s=-7,f=n?o-1:0,d=n?-1:1,p=e[t+f];/;"	c
+Cancel	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            onCancel={() => setFormOpen(false)}$/;"	c
+Cancel	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            onCancel={() => setFormOpen(false)}$/;"	c
+Catch_1	api/build/errors/index.js	/^var asyncCatch_1 = require(".\/asyncCatch");$/;"	c
 Catch_1	api/build/src/errors/index.js	/^var asyncCatch_1 = require(".\/asyncCatch");$/;"	c
-Change	client/src/components/Project/Board/Filters/index.jsx	/^        onChange={value => setFiltersMerge({ searchQuery: value })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^        onChange={onChange}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            onChange={setBody}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            onChange={setBody}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^        onChange={priority => updateIssue({ priority })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^      onChange={status => updateIssue({ status })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^      onChange={stringValue => {$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        onChange={userId => updateIssue({ reporterId: userId })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        onChange={userIds => {$/;"	c
+Change	client/src/Project/Board/Filters/index.jsx	/^        onChange={value => setFiltersMerge({ searchQuery: value })}$/;"	c
+Change	client/src/Project/IssueDetails/Comments/BodyForm/index.jsx	/^        onChange={onChange}$/;"	c
+Change	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            onChange={setBody}$/;"	c
+Change	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            onChange={setBody}$/;"	c
+Change	client/src/Project/IssueDetails/Description/index.jsx	/^        onChange={setValue}$/;"	c
+Change	client/src/Project/IssueDetails/Priority/index.jsx	/^        onChange={priority => updateIssue({ priority })}$/;"	c
+Change	client/src/Project/IssueDetails/Status/index.jsx	/^      onChange={status => updateIssue({ status })}$/;"	c
+Change	client/src/Project/IssueDetails/Tracking/index.jsx	/^      onChange={stringValue => {$/;"	c
+Change	client/src/Project/IssueDetails/Type/index.jsx	/^    onChange={type => updateIssue({ type })}$/;"	c
+Change	client/src/Project/IssueDetails/Users/index.jsx	/^        onChange={userId => updateIssue({ reporterId: userId })}$/;"	c
+Change	client/src/Project/IssueDetails/Users/index.jsx	/^        onChange={userIds => {$/;"	c
 Change	client/src/shared/components/ConfirmModal/index.jsx	/^              <StyledInput onChange={handleConfirmInputChange} \/>$/;"	c
 Change	client/src/shared/components/DatePicker/DateSection.jsx	/^      <YearSelect onChange={event => handleYearChange(event.target.value)}>$/;"	c
 Change	client/src/shared/components/DatePicker/index.jsx	/^              onChange={onChange}$/;"	c
 Change	client/src/shared/components/DatePicker/index.jsx	/^            onChange={onChange}$/;"	c
+Change	client/src/shared/components/Form/index.jsx	/^          onChange={value => setFieldValue(name, value)}$/;"	c
 Change	client/src/shared/components/Input/index.jsx	/^        <input {...inputProps} onChange={handleChange} ref={ref} \/>$/;"	c
 Change	client/src/shared/components/Input/index.jsx	/^  onChange: () => {}$/;"	c
 Change	client/src/shared/components/InputDebounced.jsx	/^      onChange={newValue => {$/;"	c
 Change	client/src/shared/components/InputDebounced.jsx	/^  const handleChange = useCallback($/;"	c
 Change	client/src/shared/components/Select/Dropdown.jsx	/^        onChange={event => setSearchValue(event.target.value)}$/;"	c
 Change	client/src/shared/components/Select/index.jsx	/^          onChange={handleChange}$/;"	c
+Change	client/src/shared/components/TextEditor/index.jsx	/^  onChange: () => {},$/;"	c
 Change	client/src/shared/components/Textarea/index.jsx	/^        onChange={event => onChange(event.target.value, event)}$/;"	c
 Change	client/src/shared/components/Textarea/index.jsx	/^  onChange: () => {}$/;"	c
 ChevronIcon	client/src/shared/components/Select/Styles.js	/^export const ChevronIcon = styled(Icon)`$/;"	c
-CircularStd-Bold	client/src/components/App/assets/fonts/CircularStd-Bold.svg	/^<font id="CircularStd-Bold" horiz-adv-x="578" >$/;"	d
-CircularStd-Bold	client/src/components/App/assets/fonts/CircularStd-Bold.svg	/^<font id="CircularStd-Bold" horiz-adv-x="578" >$/;"	i
+CircularStd-Bold	client/src/App/assets/fonts/CircularStd-Bold.svg	/^<font id="CircularStd-Bold" horiz-adv-x="578" >$/;"	d
+CircularStd-Bold	client/src/App/assets/fonts/CircularStd-Bold.svg	/^<font id="CircularStd-Bold" horiz-adv-x="578" >$/;"	i
 CircularStd-Bold	client/src/shared/assets/fonts/CircularStd-Bold.svg	/^<font id="CircularStd-Bold" horiz-adv-x="578" >$/;"	d
 CircularStd-Bold	client/src/shared/assets/fonts/CircularStd-Bold.svg	/^<font id="CircularStd-Bold" horiz-adv-x="578" >$/;"	i
-CircularStd-Book	client/src/components/App/assets/fonts/CircularStd-Book.svg	/^<font id="CircularStd-Book" horiz-adv-x="560" >$/;"	d
-CircularStd-Book	client/src/components/App/assets/fonts/CircularStd-Book.svg	/^<font id="CircularStd-Book" horiz-adv-x="560" >$/;"	i
+CircularStd-Book	client/src/App/assets/fonts/CircularStd-Book.svg	/^<font id="CircularStd-Book" horiz-adv-x="560" >$/;"	d
+CircularStd-Book	client/src/App/assets/fonts/CircularStd-Book.svg	/^<font id="CircularStd-Book" horiz-adv-x="560" >$/;"	i
 CircularStd-Book	client/src/shared/assets/fonts/CircularStd-Book.svg	/^<font id="CircularStd-Book" horiz-adv-x="560" >$/;"	d
 CircularStd-Book	client/src/shared/assets/fonts/CircularStd-Book.svg	/^<font id="CircularStd-Book" horiz-adv-x="560" >$/;"	i
-CircularStd-Medium	client/src/components/App/assets/fonts/CircularStd-Medium.svg	/^<font id="CircularStd-Medium" horiz-adv-x="570" >$/;"	d
-CircularStd-Medium	client/src/components/App/assets/fonts/CircularStd-Medium.svg	/^<font id="CircularStd-Medium" horiz-adv-x="570" >$/;"	i
+CircularStd-Medium	client/src/App/assets/fonts/CircularStd-Medium.svg	/^<font id="CircularStd-Medium" horiz-adv-x="570" >$/;"	d
+CircularStd-Medium	client/src/App/assets/fonts/CircularStd-Medium.svg	/^<font id="CircularStd-Medium" horiz-adv-x="570" >$/;"	i
 CircularStd-Medium	client/src/shared/assets/fonts/CircularStd-Medium.svg	/^<font id="CircularStd-Medium" horiz-adv-x="570" >$/;"	d
 CircularStd-Medium	client/src/shared/assets/fonts/CircularStd-Medium.svg	/^<font id="CircularStd-Medium" horiz-adv-x="570" >$/;"	i
 ClearIcon	client/src/shared/components/Select/Styles.js	/^export const ClearIcon = styled(Icon)`$/;"	c
-Click	client/src/components/App/Toast/index.jsx	/^              onClick={() => removeToast(toast.id)}$/;"	c
-Click	client/src/components/Project/Board/Filters/index.jsx	/^              onClick={() =>$/;"	c
-Click	client/src/components/Project/Board/Filters/index.jsx	/^        <ClearAll onClick={() => setFilters(defaultFilters)}>$/;"	c
-Click	client/src/components/Project/Board/Filters/index.jsx	/^        onClick={() => setFiltersMerge({ myOnly: !myOnly })}$/;"	c
-Click	client/src/components/Project/Board/Filters/index.jsx	/^        onClick={() => setFiltersMerge({ recent: !recent })}$/;"	c
-Click	client/src/components/Project/Board/Header/index.jsx	/^        <Button icon="link" onClick={handleLinkCopy}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^          onClick={() => {$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^        <FormButton color="empty" onClick={onCancel}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^                <DeleteLink onClick={modal.open}>Delete<\/DeleteLink>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            <EditLink onClick={() => setFormOpen(true)}>Edit<\/EditLink>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            <FakeTextarea onClick={() => setFormOpen(true)}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^          onClick={() => {$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        <Button color="empty" onClick={() => setPresenting(true)}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        onClick={() => setPresenting(false)}$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^      <EmptyLabel onClick={() => setPresenting(false)}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^            <Type key={type} onClick={() => updateIssue({ type })}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^              <Button color="primary" onClick={modal.close}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^    <Tracking onClick={onClick}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      onClick={() => removeOptionValue && removeOptionValue(user.id)}$/;"	c
+Click	client/src/App/Toast/index.jsx	/^              onClick={() => removeToast(toast.id)}$/;"	c
+Click	client/src/Project/Board/Filters/index.jsx	/^              onClick={() =>$/;"	c
+Click	client/src/Project/Board/Filters/index.jsx	/^        <ClearAll onClick={() => setFilters(defaultFilters)}>$/;"	c
+Click	client/src/Project/Board/Filters/index.jsx	/^        onClick={() => setFiltersMerge({ myOnly: !myOnly })}$/;"	c
+Click	client/src/Project/Board/Filters/index.jsx	/^        onClick={() => setFiltersMerge({ recent: !recent })}$/;"	c
+Click	client/src/Project/IssueCreateForm/index.jsx	/^          <ActionButton type="button" variant="empty" onClick={modalClose}>$/;"	c
+Click	client/src/Project/IssueCreateForm/index.jsx	/^        onClick={() => removeOptionValue && removeOptionValue()}$/;"	c
+Click	client/src/Project/IssueDetails/Comments/BodyForm/index.jsx	/^          onClick={() => {$/;"	c
+Click	client/src/Project/IssueDetails/Comments/BodyForm/index.jsx	/^        <FormButton color="empty" onClick={onCancel}>$/;"	c
+Click	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^                <DeleteLink onClick={modal.open}>Delete<\/DeleteLink>$/;"	c
+Click	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            <EditLink onClick={() => setFormOpen(true)}>Edit<\/EditLink>$/;"	c
+Click	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            <FakeTextarea onClick={() => setFormOpen(true)}>$/;"	c
+Click	client/src/Project/IssueDetails/Description/index.jsx	/^          onClick={() => {$/;"	c
+Click	client/src/Project/IssueDetails/Description/index.jsx	/^        <Button color="empty" onClick={() => setEditing(false)}>$/;"	c
+Click	client/src/Project/IssueDetails/Description/index.jsx	/^        onClick={() => setEditing(true)}$/;"	c
+Click	client/src/Project/IssueDetails/Description/index.jsx	/^      <EmptyLabel onClick={() => setEditing(true)}>$/;"	c
+Click	client/src/Project/IssueDetails/Tracking/index.jsx	/^              <Button color="primary" onClick={modal.close}>$/;"	c
+Click	client/src/Project/IssueDetails/Tracking/index.jsx	/^    <Tracking onClick={onClick}>$/;"	c
+Click	client/src/Project/IssueDetails/Type/index.jsx	/^      <Type key={type} onClick={() => updateIssue({ type })}>$/;"	c
+Click	client/src/Project/IssueDetails/Users/index.jsx	/^      onClick={() => removeOptionValue && removeOptionValue()}$/;"	c
+Click	client/src/Project/IssueDetails/index.jsx	/^            onClick={modalClose}$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^        onClick={handleClick}$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^      onClick = () => {},$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^    const handleClick = () => {$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^  onClick: () => {}$/;"	c
 Click	client/src/shared/components/ConfirmModal/index.jsx	/^              onClick={() => handleConfirm(modal)}$/;"	c
 Click	client/src/shared/components/ConfirmModal/index.jsx	/^            <StyledButton hollow onClick={modal.close}>$/;"	c
-Click	client/src/shared/components/CopyLinkButton.jsx	/^    <Button icon="link" onClick={handleLinkCopy} {...otherProps}>$/;"	c
+Click	client/src/shared/components/CopyLinkButton.jsx	/^    <Button icon="link" onClick={handleLinkCopy} {...buttonProps}>$/;"	c
 Click	client/src/shared/components/DatePicker/DateSection.jsx	/^            onClick={() => handleDayChange(date)}$/;"	c
 Click	client/src/shared/components/DatePicker/DateSection.jsx	/^        <Icon type="arrow-left" onClick={() => handleMonthChange("subtract")} \/>$/;"	c
 Click	client/src/shared/components/DatePicker/DateSection.jsx	/^        <Icon type="arrow-right" onClick={() => handleMonthChange("add")} \/>$/;"	c
@@ -155,45 +182,58 @@ Click	client/src/shared/components/Select/Dropdown.jsx	/^      onClick: () => se
 Click	client/src/shared/components/Select/Dropdown.jsx	/^      onClick={() => createOption(searchValue)}$/;"	c
 Click	client/src/shared/components/Select/Dropdown.jsx	/^      {!isValueEmpty && <ClearIcon type="close" onClick={clearOptionValues} \/>}$/;"	c
 Click	client/src/shared/components/Select/index.jsx	/^            onClick={() => removeOptionValue(optionValue)}$/;"	c
-Click	client/src/shared/components/Select/index.jsx	/^      <ValueContainer onClick={activateDropdown}>$/;"	c
-Close	client/src/components/Project/Board/IssueDetails/index.jsx	/^        modalClose={modalClose}$/;"	c
-Close	client/src/components/Project/Board/index.jsx	/^                modalClose={modal.close}$/;"	c
-Close	client/src/components/Project/Board/index.jsx	/^            onClose={() => history.push(match.url)}$/;"	c
+Click	client/src/shared/components/Select/index.jsx	/^      <ValueContainer variant={variant} onClick={activateDropdown}>$/;"	c
+Close	client/src/Project/IssueDetails/index.jsx	/^            modalClose={modalClose}$/;"	c
+Close	client/src/Project/index.jsx	/^          modalClose={modal.close}$/;"	c
+Close	client/src/Project/index.jsx	/^      onClose={() => history.push(match.url)}$/;"	c
 Close	client/src/shared/components/ConfirmModal/index.jsx	/^      afterClose={() => setConfirmEnabled(false)}$/;"	c
 Close	client/src/shared/components/Modal/index.jsx	/^  onClose: () => {},$/;"	c
-CloseIcon	client/src/components/Project/Board/index.jsx	/^            withCloseIcon={false}$/;"	c
+CloseIcon	client/src/Project/index.jsx	/^      withCloseIcon={false}$/;"	c
 CloseIcon	client/src/shared/components/Modal/Styles.js	/^export const CloseIcon = styled(Icon)`$/;"	c
+Color	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	c
 Colors	client/src/shared/components/Button/Styles.js	/^const buttonColors = {$/;"	c
+Comment	api/build/database/seeds/development/comment.js	/^const generateComment = (data = {}) => (Object.assign({ body: faker_1.faker.lorem.paragraph() },/;"	c
+Comment	api/build/entities/Comment.js	/^Comment = __decorate([$/;"	c
+Comment	api/build/entities/Comment.js	/^let Comment = class Comment extends typeorm_1.BaseEntity {$/;"	c
 Comment	api/build/src/database/seeds/development/comment.js	/^const generateComment = (data = {}) => ({$/;"	c
 Comment	api/build/src/entities/Comment.d.ts	/^declare class Comment extends BaseEntity {$/;"	c
 Comment	api/build/src/entities/Comment.js	/^Comment = __decorate([$/;"	c
 Comment	api/build/src/entities/Comment.js	/^let Comment = class Comment extends typeorm_1.BaseEntity {$/;"	c
 Comment	api/src/entities/Comment.ts	/^class Comment extends BaseEntity {$/;"	c
 Comment	api/src/utils/typeorm.ts	/^  Comment,$/;"	C
-CommentCreate	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^  const handleCommentCreate = async () => {$/;"	c
-CommentDelete	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^  const handleCommentDelete = async () => {$/;"	c
-CommentUpdate	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^  const handleCommentUpdate = async () => {$/;"	c
+CommentCreate	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^  const handleCommentCreate = async () => {$/;"	c
+CommentDelete	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^  const handleCommentDelete = async () => {$/;"	c
+CommentUpdate	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^  const handleCommentUpdate = async () => {$/;"	c
+Comment_1	api/build/entities/index.js	/^var Comment_1 = require(".\/Comment");$/;"	c
 Comment_1	api/build/src/entities/index.js	/^var Comment_1 = require(".\/Comment");$/;"	c
+Comments	api/build/database/seeds/development/index.js	/^const seedComments = (issues) => {$/;"	c
+Comments	api/build/database/seeds/guestUser.js	/^const seedComments = (issue, user) => (0, typeorm_1.createEntity)(entities_1.Comment, {$/;"	c
 Comments	api/build/src/database/seeds/development/index.js	/^const seedComments = (issues) => {$/;"	c
 Comments	api/build/src/database/seeds/guestUser.js	/^const seedComments = (issue, user) => (0, typeorm_1.createEntity)(entities_1.Comment, {$/;"	c
-Config	client/src/shared/components/TextEditor/index.jsx	/^const editorConfig = {$/;"	c
-Confirm	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^              onConfirm={handleCommentDelete}$/;"	c
-Confirm	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      onConfirm={handleIssueDelete}$/;"	c
+Config	api/tsconfig-paths.js	/^const tsConfig = require('.\/tsconfig.json');$/;"	c
+Config	client/src/shared/components/TextEditor/index.jsx	/^const quillConfig = {$/;"	c
+ConfigPaths	api/tsconfig-paths.js	/^const tsConfigPaths = require('tsconfig-paths');$/;"	c
+Confirm	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^              onConfirm={handleCommentDelete}$/;"	c
+Confirm	client/src/Project/IssueDetails/Delete.jsx	/^      onConfirm={handleIssueDelete}$/;"	c
 ConfirmModal	client/src/shared/components/ConfirmModal/index.jsx	/^const ConfirmModal = ({$/;"	c
+Connection	api/build/database/seeds/development/index.js	/^        const Connection = yield (0, connection_1.default)();$/;"	c
 Connection	api/build/src/database/seeds/development/index.js	/^        const Connection = await (0, connection_1.default)();$/;"	c
 Connection	api/src/database/seeds/development/index.ts	/^    const Connection = await createDatabaseConnection();$/;"	C
 Constructor	api/src/utils/typeorm.ts	/^  const Constructor = entities[instance.constructor.name];$/;"	C
 ContRef	client/src/shared/components/TextEditor/index.jsx	/^  const $editorContRef = useRef();$/;"	c
-Content	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      renderContent={() => ($/;"	c
-Content	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^        renderContent={modal => ($/;"	c
-Content	client/src/components/Project/Board/index.jsx	/^            renderContent={modal => ($/;"	c
+Content	client/src/Project/IssueDetails/Feedback/index.jsx	/^    renderContent={() => ($/;"	c
+Content	client/src/Project/IssueDetails/Tracking/index.jsx	/^        renderContent={modal => ($/;"	c
+Content	client/src/Project/index.jsx	/^      renderContent={modal => ($/;"	c
 Content	client/src/shared/components/ConfirmModal/index.jsx	/^      renderContent={modal => ($/;"	c
-CopyLinkButton	client/src/shared/components/CopyLinkButton.jsx	/^const CopyLinkButton = ({ ...otherProps }) => {$/;"	c
+ContentsChange	client/src/shared/components/TextEditor/index.jsx	/^    const handleContentsChange = () => {$/;"	c
+CopyLinkButton	client/src/shared/components/CopyLinkButton.jsx	/^const CopyLinkButton = ({ ...buttonProps }) => {$/;"	c
 CreatableOption	client/src/shared/components/Select/Dropdown.jsx	/^  const renderCreatableOption = () => ($/;"	c
 Create	client/src/shared/components/Select/index.jsx	/^          onCreate={onCreate}$/;"	c
+CustomError	api/build/errors/customErrors.js	/^class CustomError extends Error {$/;"	c
 CustomError	api/build/src/errors/customErrors.d.ts	/^export declare class CustomError extends Error {$/;"	c
 CustomError	api/build/src/errors/customErrors.js	/^class CustomError extends Error {$/;"	c
 CustomError	api/src/errors/customErrors.ts	/^export class CustomError extends Error {$/;"	c
+DATA_KEY	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	n
 DB_DATABASE	api/src/types/env.d.ts	/^    DB_DATABASE: string;$/;"	p	interface:NodeJS.ProcessEnv
 DB_HOST	api/src/types/env.d.ts	/^    DB_HOST: string;$/;"	p	interface:NodeJS.ProcessEnv
 DB_PASSWORD	api/src/types/env.d.ts	/^    DB_PASSWORD: string;$/;"	p	interface:NodeJS.ProcessEnv
@@ -202,14 +242,29 @@ DB_USERNAME	api/src/types/env.d.ts	/^    DB_USERNAME: string;$/;"	p	interface:No
 DONE	api/build/src/constants/issues.d.ts	/^    DONE = "done"$/;"	e	enum:IssueStatus
 DONE	api/src/constants/issues.ts	/^  DONE = 'done',$/;"	e	enum:IssueStatus
 DONE	client/src/shared/constants/issues.js	/^  DONE: "done"$/;"	n
+DatabaseConnection	api/build/database/connection.js	/^const createDatabaseConnection = () => new typeorm_1.DataSource({$/;"	c
+DatabaseConnection	api/build/index.js	/^const establishDatabaseConnection = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
 DatabaseConnection	api/build/src/database/connection.js	/^const createDatabaseConnection = () => (0, typeorm_1.createConnection)({$/;"	c
 DatabaseConnection	api/build/src/index.js	/^const establishDatabaseConnection = async () => {$/;"	c
 Date	client/src/shared/components/DatePicker/TimeSection.jsx	/^    const existingDate = moment(value || undefined);$/;"	c
 Date	client/src/shared/utils/dateTime.js	/^export const formatDate = (date, format = "MMMM D, YYYY") =>$/;"	c
 DatePicker	client/src/shared/components/DatePicker/index.jsx	/^const DatePicker = ({$/;"	c
+DatePicker	client/src/shared/components/Form/Field.jsx	/^  DatePicker: generateField(DatePicker)$/;"	c
 DatePickerDateSection	client/src/shared/components/DatePicker/DateSection.jsx	/^const DatePickerDateSection = ({$/;"	c
 DatePickerTimeSection	client/src/shared/components/DatePicker/TimeSection.jsx	/^const DatePickerTimeSection = ({ value, onChange, setDropdownOpen }) => {$/;"	c
 DateTime	client/src/shared/utils/dateTime.js	/^export const formatDateTime = (date, format = "MMMM D, YYYY, h:mm A") =>$/;"	c
+Default	api/build/controllers/authentication.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/controllers/comments.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/controllers/issues.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/controllers/projects.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/controllers/users.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/database/seeds/development/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/entities/Comment.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/entities/Issue.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/entities/Project.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/entities/User.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/entities/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
+Default	api/build/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/controllers/authentication.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/controllers/issues.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/controllers/projects.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
@@ -225,9 +280,9 @@ Default	api/build/src/entities/User.js	/^var __importDefault = (this && this.__i
 Default	api/build/src/entities/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/utils/authToken.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
-DeleteIcon	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const renderDeleteIcon = () => ($/;"	c
+Default	api/build/utils/authToken.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 DownTargetRef	client/src/shared/hooks/onOutsideClick.js	/^  const $mouseDownTargetRef = useRef();$/;"	c
-DragEnd	client/src/components/Project/Board/Lists/index.jsx	/^      <DragDropContext onDragEnd={handleIssueDrop}>$/;"	c
+DragEnd	client/src/Project/Board/Lists/index.jsx	/^      <DragDropContext onDragEnd={handleIssueDrop}>$/;"	c
 Dropdown	client/src/shared/components/Select/index.jsx	/^          deactivateDropdown={deactivateDropdown}$/;"	c
 Dropdown	client/src/shared/components/Select/index.jsx	/^  const activateDropdown = () => {$/;"	c
 Dropdown	client/src/shared/components/Select/index.jsx	/^  const deactivateDropdown = () => {$/;"	c
@@ -235,35 +290,48 @@ DropdownOpen	client/src/shared/components/DatePicker/index.jsx	/^              s
 DropdownOpen	client/src/shared/components/DatePicker/index.jsx	/^            setDropdownOpen={setDropdownOpen}$/;"	c
 ENTER	client/src/shared/constants/keyCodes.js	/^  ENTER: 13,$/;"	n
 ESCAPE	client/src/shared/constants/keyCodes.js	/^  ESCAPE: 27,$/;"	n
-EditingMode	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^  const renderEditingMode = () => ($/;"	c
-Editor	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        getEditor={editor => ($editorRef.current = editor)}$/;"	c
+EditingMode	client/src/Project/IssueDetails/Description/index.jsx	/^  const renderEditingMode = () => ($/;"	c
+Editor	client/src/shared/components/TextEditor/index.jsx	/^  getEditor: () => {}$/;"	c
 ElementRef	client/src/shared/hooks/onOutsideClick.js	/^  $listeningElementRef = {}$/;"	c
 ElementRefsMemoized	client/src/shared/hooks/onOutsideClick.js	/^  const $ignoredElementRefsMemoized = useDeepCompareMemoize($/;"	c
 EmptyArray	api/build/src/utils/validation.js	/^    notEmptyArray: () => (value) => Array.isArray(value) &&$/;"	c
+EmptyArray	api/build/utils/validation.js	/^    notEmptyArray: () => (value) => Array.isArray(value) &&$/;"	c
 EmptyArray	client/src/shared/utils/validation.js	/^  notEmptyArray: () => value =>$/;"	c
 End	client/src/shared/components/DatePicker/DateSection.jsx	/^    const weekEnd = moment(selectedMonthEnd).endOf("week");$/;"	c
+Entities	api/build/database/seeds/development/index.js	/^const seedEntities = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
 Entities	api/build/src/database/seeds/development/index.js	/^const seedEntities = async () => {$/;"	c
 Entity	api/build/src/utils/typeorm.js	/^const createEntity = async (Constructor, input) => {$/;"	c
 Entity	api/build/src/utils/typeorm.js	/^const deleteEntity = async (Constructor, id) => {$/;"	c
 Entity	api/build/src/utils/typeorm.js	/^const updateEntity = async (Constructor, id, input) => {$/;"	c
+Entity	api/build/utils/typeorm.js	/^const createEntity = (Constructor, input) => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
+Entity	api/build/utils/typeorm.js	/^const deleteEntity = (Constructor, id) => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
+Entity	api/build/utils/typeorm.js	/^const updateEntity = (Constructor, id, input) => __awaiter(void 0, void 0, void 0, function* () /;"	c
 EntityConstructor	api/build/src/utils/typeorm.d.ts	/^declare type EntityConstructor = typeof Project | typeof User | typeof Issue | typeof Comment;$/;"	a
 EntityConstructor	api/src/utils/typeorm.ts	/^type EntityConstructor =$/;"	a
 EntityInstance	api/src/utils/typeorm.ts	/^type EntityInstance = Project | User | Issue | Comment;$/;"	a
+EntityNotFoundError	api/build/errors/customErrors.js	/^class EntityNotFoundError extends CustomError {$/;"	c
 EntityNotFoundError	api/build/src/errors/customErrors.js	/^class EntityNotFoundError extends CustomError {$/;"	c
 EntityNotFoundError	api/src/errors/customErrors.ts	/^export class EntityNotFoundError extends CustomError {$/;"	c
 EntityOrThrow	api/build/src/utils/typeorm.js	/^const findEntityOrThrow = async (Constructor, options) => {$/;"	c
+EntityOrThrow	api/build/utils/typeorm.js	/^const findEntityOrThrow = (Constructor, options) => __awaiter(void 0, void 0, void 0, function* /;"	c
+Error	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	c
 ErrorData	api/build/src/errors/customErrors.d.ts	/^declare type ErrorData = {$/;"	a
 ErrorData	api/src/errors/customErrors.ts	/^type ErrorData = {[key: string]: any};$/;"	a
 ErrorMessage	api/build/src/utils/validation.d.ts	/^declare type ErrorMessage = false | string;$/;"	a
 ErrorMessage	api/src/utils/validation.ts	/^type ErrorMessage = false | string;$/;"	a
+Errors	api/build/errors/asyncCatch.js	/^const catchErrors = (requestHandler) => {$/;"	c
 Errors	api/build/src/errors/asyncCatch.js	/^const catchErrors = (requestHandler) => {$/;"	c
 Errors	api/build/src/utils/validation.js	/^    const fieldErrors = {};$/;"	c
 Errors	api/build/src/utils/validation.js	/^const generateErrors = (fieldValues, fieldValidators) => {$/;"	c
+Errors	api/build/utils/validation.js	/^    const fieldErrors = {};$/;"	c
+Errors	api/build/utils/validation.js	/^const generateErrors = (fieldValues, fieldValidators) => {$/;"	c
 Errors	client/src/shared/utils/validation.js	/^export const generateErrors = (fieldValues, fieldValidators) => {$/;"	c
-Estimate	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderEstimate = () => ($/;"	c
+Estimate	client/src/Project/IssueDetails/Tracking/index.jsx	/^  const renderEstimate = () => ($/;"	c
+Express	api/build/index.js	/^const initializeExpress = () => {$/;"	c
 Express	api/build/src/index.js	/^const initializeExpress = () => {$/;"	c
 Express	api/src/types/express.d.ts	/^declare namespace Express {$/;"	n
-Feedback	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const renderFeedback = () => ($/;"	c
+Field	client/src/shared/components/Form/index.jsx	/^Form.Field = mapValues($/;"	c
+FieldComponent	client/src/shared/components/Form/Field.jsx	/^  const FieldComponent = ({ className, label, tip, error, ...props }) => {$/;"	c
 FieldErrors	api/build/src/utils/validation.d.ts	/^declare type FieldErrors = {$/;"	a
 FieldErrors	api/src/utils/validation.ts	/^type FieldErrors = {[key: string]: string};$/;"	a
 FieldValidators	api/build/src/utils/validation.d.ts	/^declare type FieldValidators = {$/;"	a
@@ -271,14 +339,23 @@ FieldValidators	api/src/utils/validation.ts	/^type FieldValidators = {[key: stri
 FieldValues	api/build/src/utils/validation.d.ts	/^declare type FieldValues = {$/;"	a
 FieldValues	api/src/utils/validation.ts	/^type FieldValues = {[key: string]: Value};$/;"	a
 Fields	api/build/src/utils/typeorm.js	/^        const errorFields = (0, validation_1.generateErrors)(instance, Constructor.validations);$/;"	c
-Fields	client/src/components/Project/Board/Lists/index.jsx	/^      updatedFields: {$/;"	c
+Fields	api/build/utils/typeorm.js	/^        const errorFields = (0, validation_1.generateErrors)(instance, Constructor.validations);$/;"	c
+Fields	client/src/Project/Board/Lists/index.jsx	/^      updatedFields: {$/;"	c
 FillerDaysAfterMonthEnd	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateFillerDaysAfterMonthEnd = () => {$/;"	c
 FillerDaysBeforeMonthStart	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateFillerDaysBeforeMonthStart = () => {$/;"	c
-Filters	client/src/components/Project/Board/index.jsx	/^        defaultFilters={defaultFilters}$/;"	c
-Filters	client/src/components/Project/Board/index.jsx	/^        setFilters={setFilters}$/;"	c
-Filters	client/src/components/Project/Board/index.jsx	/^const defaultFilters = {$/;"	c
-FormButton	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/Styles.js	/^export const FormButton = styled(Button)`$/;"	c
-GuestAccount	client/src/components/App/Authenticate.jsx	/^    const createGuestAccount = async () => {$/;"	c
+Filters	client/src/Project/Board/index.jsx	/^        defaultFilters={defaultFilters}$/;"	c
+Filters	client/src/Project/Board/index.jsx	/^        setFilters={setFilters}$/;"	c
+Filters	client/src/Project/Board/index.jsx	/^const defaultFilters = {$/;"	c
+FocusedElementEditable	client/src/shared/utils/dom.js	/^export const isFocusedElementEditable = () =>$/;"	c
+For	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	c
+For	client/src/shared/components/Form/Field.jsx	/^        {label && <FieldLabel htmlFor={fieldId}>{label}<\/FieldLabel>}$/;"	c
+Form	client/src/shared/components/Form/index.jsx	/^const Form = ({ validate, validations, ...otherProps }) => ($/;"	c
+FormButton	client/src/Project/IssueDetails/Comments/BodyForm/Styles.js	/^export const FormButton = styled(Button)`$/;"	c
+FormElement	client/src/Project/IssueCreateForm/Styles.js	/^export const FormElement = styled(Form.Element)`$/;"	c
+FormOpen	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            <ProTip setFormOpen={setFormOpen} \/>$/;"	c
+FrameRate	client/build/main-121742718436dde3a71a.js	/^ *\/var r,o,i,a,u;if("undefined"==typeof window||"function"!=typeof MessageChannel){var l=null,c/;"	c
+GuestAccount	client/src/App/Authenticate.jsx	/^    const createGuestAccount = async () => {$/;"	c
+GuestUserEntities	api/build/database/seeds/guestUser.js	/^const seedGuestUserEntities = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
 GuestUserEntities	api/build/src/database/seeds/guestUser.js	/^const seedGuestUserEntities = async (user) => {$/;"	c
 HIGH	api/build/src/constants/issues.d.ts	/^    HIGH = "4",$/;"	e	enum:IssuePriority
 HIGH	api/src/constants/issues.ts	/^  HIGH = '4',$/;"	e	enum:IssuePriority
@@ -286,81 +363,115 @@ HIGH	client/src/shared/constants/issues.js	/^  HIGH: "4",$/;"	n
 HIGHEST	api/build/src/constants/issues.d.ts	/^    HIGHEST = "5",$/;"	e	enum:IssuePriority
 HIGHEST	api/src/constants/issues.ts	/^  HIGHEST = '5',$/;"	e	enum:IssuePriority
 HIGHEST	client/src/shared/constants/issues.js	/^  HIGHEST: "5",$/;"	n
-HTML	client/src/shared/components/TextEditor/index.jsx	/^        getHTML: () =>$/;"	c
+HTML5_FMT	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	n
+HTML5_FMT	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	o
+HTMLValue	client/src/shared/components/TextEditor/index.jsx	/^    const getHTMLValue = () =>$/;"	c
+Handler	api/build/errors/errorHandler.js	/^const errorHandler = (error, _req, res, _next) => {$/;"	c
 Handler	api/build/src/errors/errorHandler.js	/^const errorHandler = (error, _req, res, _next) => {$/;"	c
+Handler_1	api/build/index.js	/^const errorHandler_1 = require("errors\/errorHandler");$/;"	c
 Handler_1	api/build/src/index.js	/^const errorHandler_1 = require("errors\/errorHandler");$/;"	c
 HtmlWebpackPlugin	client/webpack.config.js	/^const HtmlWebpackPlugin = require("html-webpack-plugin");$/;"	c
-HtmlWebpackPlugin	client/webpack.config.production.js	/^const HtmlWebpackPlugin = require("html-webpack-plugin");$/;"	c
+HtmlWebpackPlugin	client/webpack.config.production.js	/^const HtmlWebpackPlugin = require('html-webpack-plugin');$/;"	c
+IE	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	n
 INPROGRESS	api/build/src/constants/issues.d.ts	/^    INPROGRESS = "inprogress",$/;"	e	enum:IssueStatus
 INPROGRESS	api/src/constants/issues.ts	/^  INPROGRESS = 'inprogress',$/;"	e	enum:IssueStatus
 INPROGRESS	client/src/shared/constants/issues.js	/^  INPROGRESS: "inprogress",$/;"	n
+INSPECT_MAX_BYTES	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	n
 Icon	client/src/shared/components/Button/index.jsx	/^    const renderIcon = () => ($/;"	c
 Icon	client/src/shared/components/Icon/index.jsx	/^const Icon = ({ type, ...iconProps }) => ($/;"	c
 IconStyles	client/src/shared/components/Modal/Styles.js	/^const closeIconStyles = {$/;"	c
+Id	api/build/database/seeds/development/index.js	/^        reporterId: (0, lodash_1.sample)(project.users).id,$/;"	c
+Id	api/build/database/seeds/guestUser.js	/^            reporterId: getRandomUser().id,$/;"	c
+Id	api/build/middleware/authentication.js	/^    const userId = (0, authToken_1.verifyToken)(token).sub;$/;"	c
 Id	api/build/src/database/seeds/development/index.js	/^        reporterId: (0, lodash_1.sample)(project.users).id,$/;"	c
 Id	api/build/src/middleware/authentication.js	/^    const userId = (0, authToken_1.verifyToken)(token).sub;$/;"	c
-Id	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^    <Create issueId={issue.id} fetchIssue={fetchIssue} \/>$/;"	c
-Id	client/src/components/Project/Board/Lists/Issue/index.jsx	/^    <Draggable draggableId={issue.id.toString()} index={index}>$/;"	c
-Id	client/src/components/Project/Board/Lists/index.jsx	/^      <Droppable key={status} droppableId={status}>$/;"	c
-Id	client/src/components/Project/Board/Lists/index.jsx	/^    const issueId = parseInt(draggableId);$/;"	c
-Id	client/src/components/Project/Board/index.jsx	/^                issueId={params.issueId}$/;"	c
-Ids	client/src/components/Project/Board/Filters/index.jsx	/^                setFiltersMerge({ userIds: xor(userIds, [user.id]) })$/;"	c
+Id	client/src/Project/Board/Lists/Issue/index.jsx	/^    <Draggable draggableId={issue.id.toString()} index={index}>$/;"	c
+Id	client/src/Project/Board/Lists/index.jsx	/^      <Droppable key={status} droppableId={status}>$/;"	c
+Id	client/src/Project/Board/Lists/index.jsx	/^    const issueId = Number(draggableId);$/;"	c
+Id	client/src/Project/IssueDetails/Comments/index.jsx	/^    <Create issueId={issue.id} fetchIssue={fetchIssue} \/>$/;"	c
+Id	client/src/Project/index.jsx	/^          issueId={routeProps.match.params.issueId}$/;"	c
+Id	client/src/shared/components/Form/Field.jsx	/^    const fieldId = uniqueId("form-field-");$/;"	c
+Ids	client/src/Project/Board/Filters/index.jsx	/^                setFiltersMerge({ userIds: xor(userIds, [user.id]) })$/;"	c
+ImportRuleTag	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	c
+Index	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	c
 IndexValues	client/src/shared/utils/styles.js	/^export const zIndexValues = {$/;"	c
+InitialValue	client/src/shared/components/TextEditor/index.jsx	/^    const insertInitialValue = () => {$/;"	c
+Input	client/src/shared/components/Form/Field.jsx	/^  Input: generateField(Input),$/;"	c
 Input	client/src/shared/components/Input/index.jsx	/^const Input = forwardRef($/;"	c
-InputDebounced	client/src/shared/components/InputDebounced.jsx	/^const InputDebounced = ({ onChange, value: propsValue, ...props }) => {$/;"	c
-InputRef	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^  const $titleInputRef = useRef();$/;"	c
+InputDebounced	client/src/shared/components/InputDebounced.jsx	/^const InputDebounced = ({ onChange, value: propsValue, ...inputProps }) => {$/;"	c
+InputRef	client/src/Project/IssueDetails/Title/index.jsx	/^  const $titleInputRef = useRef();$/;"	c
+InvalidTokenError	api/build/errors/customErrors.js	/^class InvalidTokenError extends CustomError {$/;"	c
 InvalidTokenError	api/build/src/errors/customErrors.js	/^class InvalidTokenError extends CustomError {$/;"	c
 InvalidTokenError	api/src/errors/customErrors.ts	/^export class InvalidTokenError extends CustomError {$/;"	c
+Issue	api/build/database/seeds/development/issue.js	/^const generateIssue = (data = {}) => (Object.assign({ title: faker_1.faker.company.catchPhrase()/;"	c
+Issue	api/build/entities/Issue.js	/^Issue = __decorate([$/;"	c
+Issue	api/build/entities/Issue.js	/^let Issue = class Issue extends typeorm_1.BaseEntity {$/;"	c
 Issue	api/build/src/database/seeds/development/issue.js	/^const generateIssue = (data = {}) => ({$/;"	c
 Issue	api/build/src/entities/Issue.d.ts	/^declare class Issue extends BaseEntity {$/;"	c
 Issue	api/build/src/entities/Issue.js	/^Issue = __decorate([$/;"	c
 Issue	api/build/src/entities/Issue.js	/^let Issue = class Issue extends typeorm_1.BaseEntity {$/;"	c
 Issue	api/src/entities/Issue.ts	/^class Issue extends BaseEntity {$/;"	c
 Issue	api/src/utils/typeorm.ts	/^  Issue,$/;"	C
-Issue	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^      <Comment key={comment.id} comment={comment} fetchIssue={fetchIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^            updateIssue={updateIssue}$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Comments issue={issue} fetchIssue={fetchIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Description issue={issue} updateIssue={updateIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Priority issue={issue} updateIssue={updateIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Status issue={issue} updateIssue={updateIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Title issue={issue} updateIssue={updateIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Tracking issue={issue} updateIssue={updateIssue} \/>$/;"	c
-Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^        updateIssue={updateIssue}$/;"	c
-IssueDelete	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const handleIssueDelete = async () => {$/;"	c
-IssueDetailsLoader	client/src/components/Project/Board/IssueDetails/Loader.jsx	/^const IssueDetailsLoader = () => ($/;"	c
-IssueDrop	client/src/components/Project/Board/Lists/index.jsx	/^  const handleIssueDrop = async ({ draggableId, destination, source }) => {$/;"	c
+Issue	client/src/Project/IssueDetails/Comments/index.jsx	/^      <Comment key={comment.id} comment={comment} fetchIssue={fetchIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^            updateIssue={updateIssue}$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^          <Comments issue={issue} fetchIssue={fetchIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^          <Description issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^          <Priority issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^          <Status issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^          <Title issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^          <Tracking issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/Project/IssueDetails/index.jsx	/^        <Type issue={issue} updateIssue={updateIssue} \/>$/;"	c
+IssueCreateModal	client/src/Project/index.jsx	/^  const renderIssueCreateModal = () => ($/;"	c
+IssueDelete	client/src/Project/IssueDetails/Delete.jsx	/^  const handleIssueDelete = async () => {$/;"	c
+IssueDetailsLoader	client/src/Project/IssueDetails/Loader.jsx	/^const IssueDetailsLoader = () => ($/;"	c
+IssueDrop	client/src/Project/Board/Lists/index.jsx	/^  const handleIssueDrop = async ({ draggableId, destination, source }) => {$/;"	c
+IssueLink	client/src/Project/Board/Lists/Issue/Styles.js	/^export const IssueLink = styled(Link)`$/;"	c
+IssuePriority	api/build/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	c
+IssuePriority	api/build/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	o
 IssuePriority	api/build/src/constants/issues.d.ts	/^export declare enum IssuePriority {$/;"	g
 IssuePriority	api/build/src/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	c
 IssuePriority	api/build/src/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	o
 IssuePriority	api/src/constants/issues.ts	/^export enum IssuePriority {$/;"	g
 IssuePriority	client/src/shared/constants/issues.js	/^export const IssuePriority = {$/;"	c
-IssuePriorityCopy	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^const IssuePriorityCopy = invert(IssuePriority);$/;"	c
+IssuePriorityCopy	api/build/constants/issues.js	/^exports.IssuePriorityCopy = {$/;"	c
+IssuePriorityCopy	api/build/constants/issues.js	/^exports.IssuePriorityCopy = {$/;"	o
+IssuePriorityCopy	api/src/constants/issues.ts	/^export const IssuePriorityCopy = {$/;"	C
+IssuePriorityCopy	client/src/shared/constants/issues.js	/^export const IssuePriorityCopy = {$/;"	c
 IssuePriorityIcon	client/src/shared/components/IssuePriorityIcon/index.jsx	/^const IssuePriorityIcon = ({ priority, ...otherProps }) => {$/;"	c
+IssueStatus	api/build/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	c
+IssueStatus	api/build/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	o
 IssueStatus	api/build/src/constants/issues.d.ts	/^export declare enum IssueStatus {$/;"	g
 IssueStatus	api/build/src/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	c
 IssueStatus	api/build/src/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	o
 IssueStatus	api/src/constants/issues.ts	/^export enum IssueStatus {$/;"	g
 IssueStatus	client/src/shared/constants/issues.js	/^export const IssueStatus = {$/;"	c
 IssueStatusCopy	client/src/shared/constants/issues.js	/^export const IssueStatusCopy = {$/;"	c
+IssueType	api/build/constants/issues.js	/^})(IssueType = exports.IssueType || (exports.IssueType = {}));$/;"	c
+IssueType	api/build/constants/issues.js	/^})(IssueType = exports.IssueType || (exports.IssueType = {}));$/;"	o
 IssueType	api/build/src/constants/issues.d.ts	/^export declare enum IssueType {$/;"	g
 IssueType	api/build/src/constants/issues.js	/^})(IssueType = exports.IssueType || (exports.IssueType = {}));$/;"	c
 IssueType	api/build/src/constants/issues.js	/^})(IssueType = exports.IssueType || (exports.IssueType = {}));$/;"	o
 IssueType	api/src/constants/issues.ts	/^export enum IssueType {$/;"	g
 IssueType	client/src/shared/constants/issues.js	/^export const IssueType = {$/;"	c
+IssueTypeCopy	api/build/constants/issues.js	/^exports.IssueTypeCopy = {$/;"	c
+IssueTypeCopy	api/build/constants/issues.js	/^exports.IssueTypeCopy = {$/;"	o
+IssueTypeCopy	api/src/constants/issues.ts	/^export const IssueTypeCopy = {$/;"	C
+IssueTypeCopy	client/src/shared/constants/issues.js	/^export const IssueTypeCopy = {$/;"	c
 IssueTypeIcon	client/src/shared/components/IssueTypeIcon/index.jsx	/^const IssueTypeIcon = ({ type, ...otherProps }) => ($/;"	c
-IssueWrapper	client/src/components/Project/Board/Lists/Issue/Styles.js	/^export const IssueWrapper = styled(Link)`$/;"	c
+Issue_1	api/build/entities/index.js	/^var Issue_1 = require(".\/Issue");$/;"	c
 Issue_1	api/build/src/entities/index.js	/^var Issue_1 = require(".\/Issue");$/;"	c
+Issues	api/build/database/seeds/development/index.js	/^const seedIssues = (projects) => {$/;"	c
+Issues	api/build/database/seeds/guestUser.js	/^const seedIssues = (project) => {$/;"	c
 Issues	api/build/src/database/seeds/development/index.js	/^const seedIssues = (projects) => {$/;"	c
 Issues	api/build/src/database/seeds/guestUser.js	/^const seedIssues = (project) => {$/;"	c
-Issues	client/src/components/Project/Board/Lists/index.jsx	/^  const destinationIssues = getSortedListIssues($/;"	c
-Issues	client/src/components/Project/Board/Lists/index.jsx	/^  const filteredIssues = filterIssues(project.issues, filters, currentUserId);$/;"	c
-Issues	client/src/components/Project/Board/Lists/index.jsx	/^const filterIssues = (projectIssues, filters, currentUserId) => {$/;"	c
-Issues	client/src/components/Project/index.jsx	/^  const renderIssues = () => <h1>ISSUES<\/h1>;$/;"	c
+Issues	client/src/Project/Board/Lists/index.jsx	/^  const destinationIssues = getSortedListIssues($/;"	c
+Issues	client/src/Project/Board/Lists/index.jsx	/^  const filteredIssues = filterIssues(project.issues, filters, currentUserId);$/;"	c
+Issues	client/src/Project/Board/Lists/index.jsx	/^const filterIssues = (projectIssues, filters, currentUserId) => {$/;"	c
 ItemIntoArray	client/src/shared/utils/javascript.js	/^export const insertItemIntoArray = (arr, item, index) => {$/;"	c
 ItemWithinArray	client/src/shared/utils/javascript.js	/^export const moveItemWithinArray = (arr, item, newIndex) => {$/;"	c
 JWT_SECRET	api/src/types/env.d.ts	/^    JWT_SECRET: string;$/;"	p	interface:NodeJS.ProcessEnv
 KeyCodes	client/src/shared/constants/keyCodes.js	/^export const KeyCodes = {$/;"	c
-KeyDown	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^        onKeyDown={event => {$/;"	c
+KeyDown	client/src/Project/IssueDetails/Title/index.jsx	/^        onKeyDown={event => {$/;"	c
 KeyDown	client/src/shared/components/Select/Dropdown.jsx	/^        onKeyDown={handleInputKeyDown}$/;"	c
 KeyDown	client/src/shared/components/Select/index.jsx	/^      onKeyDown={handleFocusedSelectKeydown}$/;"	c
 LOW	api/build/src/constants/issues.d.ts	/^    LOW = "2",$/;"	e	enum:IssuePriority
@@ -371,26 +482,29 @@ LOWEST	api/src/constants/issues.ts	/^  LOWEST = '1',$/;"	e	enum:IssuePriority
 LOWEST	client/src/shared/constants/issues.js	/^  LOWEST: "1"$/;"	n
 Length	api/build/src/utils/validation.js	/^    maxLength: (max) => (value) => !!value && value.length > max && `Must be at most ${max} char/;"	c
 Length	api/build/src/utils/validation.js	/^    minLength: (min) => (value) => !!value && value.length < min && `Must be at least ${min} cha/;"	c
-Link	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^              renderLink={modal => ($/;"	c
-Link	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      renderLink={linkProps => ($/;"	c
-Link	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      renderLink={modal => ($/;"	c
-Link	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^        renderLink={modal => renderTrackingPreview(modal.open)}$/;"	c
+Length	api/build/utils/validation.js	/^    maxLength: (max) => (value) => !!value && value.length > max && `Must be at most ${max} char/;"	c
+Length	api/build/utils/validation.js	/^    minLength: (min) => (value) => !!value && value.length < min && `Must be at least ${min} cha/;"	c
+Link	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^              renderLink={modal => ($/;"	c
+Link	client/src/Project/IssueDetails/Delete.jsx	/^      renderLink={modal => ($/;"	c
+Link	client/src/Project/IssueDetails/Feedback/index.jsx	/^    renderLink={linkProps => ($/;"	c
+Link	client/src/Project/IssueDetails/Tracking/index.jsx	/^        renderLink={modal => ($/;"	c
 Link	client/src/shared/components/ConfirmModal/index.jsx	/^      renderLink={renderLink}$/;"	c
 Link	client/src/shared/components/Modal/index.jsx	/^  renderLink: () => {}$/;"	c
-LinkCopy	client/src/components/Project/Board/Header/index.jsx	/^  const handleLinkCopy = () => {$/;"	c
 LinkCopy	client/src/shared/components/CopyLinkButton.jsx	/^  const handleLinkCopy = () => {$/;"	c
-LinkItem	client/src/components/Project/Sidebar/Styles.js	/^export const LinkItem = styled(Link)`$/;"	c
-ListIssues	client/src/components/Project/Board/Lists/index.jsx	/^    const allListIssues = getSortedListIssues(project.issues, status);$/;"	c
-ListIssues	client/src/components/Project/Board/Lists/index.jsx	/^    const filteredListIssues = getSortedListIssues(filteredIssues, status);$/;"	c
-ListPosition	client/src/components/Project/Board/Lists/index.jsx	/^const calculateListPosition = (...args) => {$/;"	c
+LinkItem	client/src/Project/Sidebar/Styles.js	/^export const LinkItem = styled(NavLink)`$/;"	c
+LinkItem	client/src/Project/Sidebar/index.jsx	/^  const renderLinkItem = (text, iconType, path = "") => ($/;"	c
+ListIssues	client/src/Project/Board/Lists/index.jsx	/^    const allListIssues = getSortedListIssues(project.issues, status);$/;"	c
+ListIssues	client/src/Project/Board/Lists/index.jsx	/^    const filteredListIssues = getSortedListIssues(filteredIssues, status);$/;"	c
+ListPosition	api/build/controllers/issues.js	/^const calculateListPosition = (newIssue) => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
+ListPosition	client/src/Project/Board/Lists/index.jsx	/^const calculateListPosition = (...args) => {$/;"	c
 LocalData	client/src/shared/hooks/api.js	/^  const setLocalData = useCallback($/;"	c
-LocalIssuesArray	client/src/components/Project/Board/index.jsx	/^                updateLocalIssuesArray={updateLocalIssuesArray}$/;"	c
-LocalIssuesArray	client/src/components/Project/Board/index.jsx	/^        updateLocalIssuesArray={updateLocalIssuesArray}$/;"	c
-LocalIssuesArray	client/src/components/Project/index.jsx	/^      updateLocalIssuesArray={updateLocalIssuesArray}$/;"	c
-LocalIssuesArray	client/src/components/Project/index.jsx	/^  const updateLocalIssuesArray = (issueId, updatedFields) => {$/;"	c
+LocalIssuesArray	client/src/Project/Board/index.jsx	/^        updateLocalIssuesArray={updateLocalIssuesArray}$/;"	c
+LocalIssuesArray	client/src/Project/index.jsx	/^          updateLocalIssuesArray={updateLocalIssuesArray}$/;"	c
+LocalIssuesArray	client/src/Project/index.jsx	/^      updateLocalIssuesArray={updateLocalIssuesArray}$/;"	c
+LocalIssuesArray	client/src/Project/index.jsx	/^  const updateLocalIssuesArray = (issueId, updatedFields) => {$/;"	c
 Logo	client/src/shared/components/Logo.jsx	/^const Logo = ({ className, size }) => ($/;"	c
 Logo	client/src/shared/components/ProjectAvatar.jsx	/^const Logo = ({ className, size }) => ($/;"	c
-LogoLink	client/src/components/App/NavbarLeft/Styles.js	/^export const LogoLink = styled(NavLink)`$/;"	c
+LogoLink	client/src/Project/NavbarLeft/Styles.js	/^export const LogoLink = styled(NavLink)`$/;"	c
 MARKETING	api/build/src/constants/projects.d.ts	/^    MARKETING = "marketing",$/;"	e	enum:ProjectCategory
 MARKETING	api/src/constants/projects.ts	/^  MARKETING = 'marketing',$/;"	e	enum:ProjectCategory
 MEDIUM	api/build/src/constants/issues.d.ts	/^    MEDIUM = "3",$/;"	e	enum:IssuePriority
@@ -398,23 +512,26 @@ MEDIUM	api/src/constants/issues.ts	/^  MEDIUM = '3',$/;"	e	enum:IssuePriority
 MEDIUM	client/src/shared/constants/issues.js	/^  MEDIUM: "3",$/;"	n
 Memoized	client/src/shared/hooks/api.js	/^  const variablesMemoized = useDeepCompareMemoize(variables);$/;"	c
 Message	api/build/src/utils/validation.js	/^            const errorMessage = validator(fieldValues[fieldName], fieldValues);$/;"	c
+Message	api/build/utils/validation.js	/^            const errorMessage = validator(fieldValues[fieldName], fieldValues);$/;"	c
 Message	client/src/shared/utils/validation.js	/^      const errorMessage = validator(fieldValues[fieldName], fieldValues);$/;"	c
 Modal	client/src/shared/components/Modal/index.jsx	/^  const closeModal = useCallback(() => {$/;"	c
 Modal	client/src/shared/components/Modal/index.jsx	/^  const renderModal = () => ($/;"	c
 Modal	client/src/shared/components/Modal/index.jsx	/^const Modal = ({$/;"	c
-Modal	client/src/shared/components/Tooltip/index.jsx	/^const Modal = ({$/;"	c
+ModuleDefault	api/build/database/connection.js	/^var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {$/;"	c
 ModuleDefault	api/build/src/database/connection.js	/^var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {$/;"	c
 MonthDays	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateMonthDays = () =>$/;"	c
 MonthEnd	client/src/shared/components/DatePicker/DateSection.jsx	/^    const selectedMonthEnd = moment(selectedMonth).endOf("month");$/;"	c
+Mounted	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	c
 MouseEnter	client/src/shared/components/Select/Dropdown.jsx	/^      onMouseEnter={handleOptionMouseEnter}$/;"	c
 Multi	client/src/shared/components/Select/index.jsx	/^          isMulti={isMulti}$/;"	c
 MultiValue	client/src/shared/components/Select/index.jsx	/^  const renderMultiValue = () => ($/;"	c
-Name	client/src/components/Project/Board/index.jsx	/^      <Header projectName={project.name} \/>$/;"	c
-Name	client/src/components/Project/index.jsx	/^      <Sidebar projectName={project.name} matchPath={match.path} \/>$/;"	c
+Name	client/src/Project/Board/index.jsx	/^      <Header projectName={project.name} \/>$/;"	c
+Name	client/src/Project/index.jsx	/^      <Sidebar projectName={project.name} matchPath={match.path} \/>$/;"	c
 Name	client/src/shared/components/Avatar/index.jsx	/^        className={className}$/;"	c
 Name	client/src/shared/components/Avatar/index.jsx	/^      className={className}$/;"	c
 Name	client/src/shared/components/ConfirmModal/index.jsx	/^      className={className}$/;"	c
 Name	client/src/shared/components/DatePicker/index.jsx	/^        className={className}$/;"	c
+Name	client/src/shared/components/Form/Field.jsx	/^      <StyledField className={className} hasLabel={!!label}>$/;"	c
 Name	client/src/shared/components/Input/index.jsx	/^      <StyledInput className={className} icon={icon} invalid={invalid}>$/;"	c
 Name	client/src/shared/components/Logo.jsx	/^  <span className={className}>$/;"	c
 Name	client/src/shared/components/Modal/index.jsx	/^          className={className}$/;"	c
@@ -424,63 +541,87 @@ Name	client/src/shared/components/Select/index.jsx	/^      className={className}
 Name	client/src/shared/components/Spinner.jsx	/^  <span className={className}>$/;"	c
 Name	client/src/shared/components/TextEditor/index.jsx	/^    <EditorCont className={className} ref={$editorContRef}>$/;"	c
 Name	client/src/shared/components/Textarea/index.jsx	/^    <StyledTextarea className={className} invalid={invalid}>$/;"	c
-Name	client/src/shared/components/Tooltip/index.jsx	/^    <Tooltip className={className} ref={$tooltipRef} width={width}>$/;"	c
-NavbarLeft	client/src/components/App/NavbarLeft/index.jsx	/^const NavbarLeft = () => ($/;"	c
+Name	client/src/shared/components/Tooltip/index.jsx	/^    <StyledTooltip className={className} ref={$tooltipRef} width={width}>$/;"	c
+Ne	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	c
 NilOrEmptyString	api/build/src/utils/validation.js	/^const isNilOrEmptyString = (value) => value === undefined || value === null || value === '';$/;"	c
+NilOrEmptyString	api/build/utils/validation.js	/^const isNilOrEmptyString = (value) => value === undefined || value === null || value === '';$/;"	c
 NodeJS	api/src/types/env.d.ts	/^declare namespace NodeJS {$/;"	n
 Of	api/build/src/utils/validation.js	/^    oneOf: (arr) => (value) => !!value && !arr.includes(value) && `Must be one of: ${arr.join(',/;"	c
+Of	api/build/utils/validation.js	/^    oneOf: (arr) => (value) => !!value && !arr.includes(value) && `Must be one of: ${arr.join(',/;"	c
 Offset	client/src/shared/components/Tooltip/index.jsx	/^  const finalOffset = { ...defaultProps.offset, ...offset };$/;"	c
 OnEscapeKeyDown	client/src/shared/hooks/onEscapeKeyDown.js	/^const useOnEscapeKeyDown = (isListening, onEscapeKeyDown) => {$/;"	c
 OnOutsideClick	client/src/shared/hooks/onOutsideClick.js	/^const useOnOutsideClick = ($/;"	c
 Only	client/src/shared/components/Button/index.jsx	/^        iconOnly={!children}$/;"	c
-Option	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^        renderOption={({ value, ...optionProps }) => ($/;"	c
-Option	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^      renderOption={({ value: status, ...optionProps }) => ($/;"	c
-Option	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        renderOption={({ value, ...optionProps }) => ($/;"	c
+Option	client/src/Project/IssueCreateForm/index.jsx	/^          renderOption={renderPriority}$/;"	c
+Option	client/src/Project/IssueCreateForm/index.jsx	/^          renderOption={renderType}$/;"	c
+Option	client/src/Project/IssueCreateForm/index.jsx	/^          renderOption={renderUser}$/;"	c
+Option	client/src/Project/IssueDetails/Priority/index.jsx	/^        renderOption={({ value }) => renderPriorityItem(value)}$/;"	c
+Option	client/src/Project/IssueDetails/Status/index.jsx	/^      renderOption={({ value: status }) => ($/;"	c
+Option	client/src/Project/IssueDetails/Type/index.jsx	/^    renderOption={({ value: type }) => ($/;"	c
+Option	client/src/Project/IssueDetails/Users/index.jsx	/^        renderOption={({ value }) => renderUser(getUserById(value))}$/;"	c
+OptionValue	client/src/shared/components/Select/index.jsx	/^            removeOptionValue: () => removeOptionValue(optionValue)$/;"	c
 OptionValues	client/src/shared/components/Select/Dropdown.jsx	/^  const clearOptionValues = () => {$/;"	c
 OverlayRef	client/src/shared/components/Modal/index.jsx	/^  const $clickableOverlayRef = useRef();$/;"	c
 OverlayStyles	client/src/shared/components/Modal/Styles.js	/^const clickOverlayStyles = {$/;"	c
 PORT	api/build/src/index.js	/^    const PORT = 3000;$/;"	n
 PageError	client/src/shared/components/PageError/index.jsx	/^const PageError = () => ($/;"	c
 PageLoader	client/src/shared/components/PageLoader/index.jsx	/^const PageLoader = () => ($/;"	c
-Position	client/src/components/Project/Board/Lists/index.jsx	/^        listPosition: calculateListPosition($/;"	c
+Partial	api/build/serializers/issues.js	/^const issuePartial = (issue) => (0, lodash_1.pick)(issue, [$/;"	c
+Position	client/src/Project/Board/Lists/index.jsx	/^        listPosition: calculateListPosition($/;"	c
 Position	client/src/shared/components/Tooltip/index.jsx	/^const calcPosition = (offset, placement, $tooltipRef, $linkRef) => {$/;"	c
-PresentingMode	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^  const renderPresentingMode = () =>$/;"	c
+PresentingMode	client/src/Project/IssueDetails/Description/index.jsx	/^  const renderPresentingMode = () =>$/;"	c
+Priority	client/src/Project/IssueCreateForm/index.jsx	/^  const renderPriority = ({ value: priority }) => ($/;"	c
 PriorityColors	client/src/shared/utils/styles.js	/^export const issuePriorityColors = {$/;"	c
 PriorityIcon	client/src/shared/components/IssuePriorityIcon/Styles.js	/^export const PriorityIcon = styled(Icon)`$/;"	c
+PriorityItem	client/src/Project/IssueDetails/Priority/index.jsx	/^  const renderPriorityItem = (priority, isValue) => ($/;"	c
 ProcessEnv	api/src/types/env.d.ts	/^  export interface ProcessEnv {$/;"	i	namespace:NodeJS
+Project	api/build/database/seeds/development/project.js	/^const generateProject = (data = {}) => (Object.assign({ name: faker_1.faker.company.name(), url:/;"	c
+Project	api/build/database/seeds/guestUser.js	/^const seedProject = (users) => (0, typeorm_1.createEntity)(entities_1.Project, {$/;"	c
+Project	api/build/entities/Project.js	/^Project = __decorate([$/;"	c
+Project	api/build/entities/Project.js	/^let Project = class Project extends typeorm_1.BaseEntity {$/;"	c
 Project	api/build/src/database/seeds/development/project.js	/^const generateProject = (data = {}) => ({$/;"	c
 Project	api/build/src/database/seeds/guestUser.js	/^const seedProject = (user) => (0, typeorm_1.createEntity)(entities_1.Project, {$/;"	c
 Project	api/build/src/entities/Project.d.ts	/^declare class Project extends BaseEntity {$/;"	c
 Project	api/build/src/entities/Project.js	/^Project = __decorate([$/;"	c
 Project	api/build/src/entities/Project.js	/^let Project = class Project extends typeorm_1.BaseEntity {$/;"	c
 Project	api/src/entities/Project.ts	/^class Project extends BaseEntity {$/;"	c
-Project	client/src/components/Project/Board/IssueDetails/index.jsx	/^        fetchProject={fetchProject}$/;"	c
-Project	client/src/components/Project/Board/index.jsx	/^                fetchProject={fetchProject}$/;"	c
-Project	client/src/components/Project/index.jsx	/^      fetchProject={fetchProject}$/;"	c
-Project	client/src/components/Project/index.jsx	/^const Project = () => {$/;"	c
-ProjectBoard	client/src/components/Project/Board/index.jsx	/^const ProjectBoard = ({ project, fetchProject, updateLocalIssuesArray }) => {$/;"	c
-ProjectBoardFilters	client/src/components/Project/Board/Filters/index.jsx	/^const ProjectBoardFilters = ({$/;"	c
-ProjectBoardHeader	client/src/components/Project/Board/Header/index.jsx	/^const ProjectBoardHeader = ({ projectName }) => {$/;"	c
-ProjectBoardIssueDetails	client/src/components/Project/Board/IssueDetails/index.jsx	/^const ProjectBoardIssueDetails = ({$/;"	c
-ProjectBoardIssueDetailsComment	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^const ProjectBoardIssueDetailsComment = ({ comment, fetchIssue }) => {$/;"	c
-ProjectBoardIssueDetailsComments	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^const ProjectBoardIssueDetailsComments = ({ issue, fetchIssue }) => ($/;"	c
-ProjectBoardIssueDetailsCommentsBodyForm	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^const ProjectBoardIssueDetailsCommentsBodyForm = ({$/;"	c
-ProjectBoardIssueDetailsCommentsCreate	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^const ProjectBoardIssueDetailsCommentsCreate = ({ issueId, fetchIssue }) => {$/;"	c
-ProjectBoardIssueDetailsDescription	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^const ProjectBoardIssueDetailsDescription = ({ issue, updateIssue }) => {$/;"	c
-ProjectBoardIssueDetailsPriority	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^const ProjectBoardIssueDetailsPriority = ({ issue, updateIssue }) => {$/;"	c
-ProjectBoardIssueDetailsStatus	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^const ProjectBoardIssueDetailsStatus = ({ issue, updateIssue }) => ($/;"	c
-ProjectBoardIssueDetailsTitle	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^const ProjectBoardIssueDetailsTitle = ({ issue, updateIssue }) => {$/;"	c
-ProjectBoardIssueDetailsTopActions	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^const ProjectBoardIssueDetailsTopActions = ({$/;"	c
-ProjectBoardIssueDetailsTracking	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^const ProjectBoardIssueDetailsTracking = ({ issue, updateIssue }) => {$/;"	c
-ProjectBoardIssueDetailsUsers	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^const ProjectBoardIssueDetailsUsers = ({$/;"	c
-ProjectBoardLists	client/src/components/Project/Board/Lists/index.jsx	/^const ProjectBoardLists = ({ project, filters, updateLocalIssuesArray }) => {$/;"	c
-ProjectBoardListsIssue	client/src/components/Project/Board/Lists/Issue/index.jsx	/^const ProjectBoardListsIssue = ({ projectUsers, issue, index }) => {$/;"	c
+Project	client/src/Project/IssueDetails/index.jsx	/^            fetchProject={fetchProject}$/;"	c
+Project	client/src/Project/index.jsx	/^          fetchProject={fetchProject}$/;"	c
+Project	client/src/Project/index.jsx	/^      fetchProject={fetchProject}$/;"	c
+Project	client/src/Project/index.jsx	/^const Project = () => {$/;"	c
+ProjectBoard	client/src/Project/Board/index.jsx	/^const ProjectBoard = ({ project, updateLocalIssuesArray }) => {$/;"	c
+ProjectBoardFilters	client/src/Project/Board/Filters/index.jsx	/^const ProjectBoardFilters = ({$/;"	c
+ProjectBoardHeader	client/src/Project/Board/Header/index.jsx	/^const ProjectBoardHeader = ({ projectName }) => {$/;"	c
+ProjectBoardIssueDetails	client/src/Project/IssueDetails/index.jsx	/^const ProjectBoardIssueDetails = ({$/;"	c
+ProjectBoardIssueDetailsComment	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^const ProjectBoardIssueDetailsComment = ({ comment, fetchIssue }) => {$/;"	c
+ProjectBoardIssueDetailsComments	client/src/Project/IssueDetails/Comments/index.jsx	/^const ProjectBoardIssueDetailsComments = ({ issue, fetchIssue }) => ($/;"	c
+ProjectBoardIssueDetailsCommentsBodyForm	client/src/Project/IssueDetails/Comments/BodyForm/index.jsx	/^const ProjectBoardIssueDetailsCommentsBodyForm = ({$/;"	c
+ProjectBoardIssueDetailsCommentsCreate	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^const ProjectBoardIssueDetailsCommentsCreate = ({ issueId, fetchIssue }) => {$/;"	c
+ProjectBoardIssueDetailsCommentsCreateProTip	client/src/Project/IssueDetails/Comments/Create/ProTip/index.jsx	/^const ProjectBoardIssueDetailsCommentsCreateProTip = ({ setFormOpen }) => {$/;"	c
+ProjectBoardIssueDetailsDates	client/src/Project/IssueDetails/Dates/index.jsx	/^const ProjectBoardIssueDetailsDates = ({ issue }) => ($/;"	c
+ProjectBoardIssueDetailsDelete	client/src/Project/IssueDetails/Delete.jsx	/^const ProjectBoardIssueDetailsDelete = ({$/;"	c
+ProjectBoardIssueDetailsDescription	client/src/Project/IssueDetails/Description/index.jsx	/^const ProjectBoardIssueDetailsDescription = ({ issue, updateIssue }) => {$/;"	c
+ProjectBoardIssueDetailsFeedback	client/src/Project/IssueDetails/Feedback/index.jsx	/^const ProjectBoardIssueDetailsFeedback = () => ($/;"	c
+ProjectBoardIssueDetailsPriority	client/src/Project/IssueDetails/Priority/index.jsx	/^const ProjectBoardIssueDetailsPriority = ({ issue, updateIssue }) => {$/;"	c
+ProjectBoardIssueDetailsStatus	client/src/Project/IssueDetails/Status/index.jsx	/^const ProjectBoardIssueDetailsStatus = ({ issue, updateIssue }) => ($/;"	c
+ProjectBoardIssueDetailsTitle	client/src/Project/IssueDetails/Title/index.jsx	/^const ProjectBoardIssueDetailsTitle = ({ issue, updateIssue }) => {$/;"	c
+ProjectBoardIssueDetailsTracking	client/src/Project/IssueDetails/Tracking/index.jsx	/^const ProjectBoardIssueDetailsTracking = ({ issue, updateIssue }) => {$/;"	c
+ProjectBoardIssueDetailsType	client/src/Project/IssueDetails/Type/index.jsx	/^const ProjectBoardIssueDetailsType = ({ issue, updateIssue }) => ($/;"	c
+ProjectBoardIssueDetailsUsers	client/src/Project/IssueDetails/Users/index.jsx	/^const ProjectBoardIssueDetailsUsers = ({$/;"	c
+ProjectBoardLists	client/src/Project/Board/Lists/index.jsx	/^const ProjectBoardLists = ({ project, filters, updateLocalIssuesArray }) => {$/;"	c
+ProjectBoardListsIssue	client/src/Project/Board/Lists/Issue/index.jsx	/^const ProjectBoardListsIssue = ({ projectUsers, issue, index }) => {$/;"	c
+ProjectCategory	api/build/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	c
+ProjectCategory	api/build/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	o
 ProjectCategory	api/build/src/constants/projects.d.ts	/^export declare enum ProjectCategory {$/;"	g
 ProjectCategory	api/build/src/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	c
 ProjectCategory	api/build/src/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	o
 ProjectCategory	api/src/constants/projects.ts	/^export enum ProjectCategory {$/;"	g
-ProjectSidebar	client/src/components/Project/Sidebar/index.jsx	/^const ProjectSidebar = ({ projectName, matchPath }) => ($/;"	c
+ProjectIssueCreateForm	client/src/Project/IssueCreateForm/index.jsx	/^const ProjectIssueCreateForm = ({ project, fetchProject, modalClose }) => {$/;"	c
+ProjectNavbarLeft	client/src/Project/NavbarLeft/index.jsx	/^const ProjectNavbarLeft = () => {$/;"	c
+ProjectSidebar	client/src/Project/Sidebar/index.jsx	/^const ProjectSidebar = ({ projectName, matchPath }) => {$/;"	c
+Project_1	api/build/entities/index.js	/^var Project_1 = require(".\/Project");$/;"	c
 Project_1	api/build/src/entities/index.js	/^var Project_1 = require(".\/Project");$/;"	c
+Projects	api/build/database/seeds/development/index.js	/^const seedProjects = (users) => {$/;"	c
 Projects	api/build/src/database/seeds/development/index.js	/^const seedProjects = (users) => {$/;"	c
 Props	client/src/shared/components/Avatar/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Button/index.jsx	/^const defaultProps = {$/;"	c
@@ -488,6 +629,8 @@ Props	client/src/shared/components/ConfirmModal/index.jsx	/^const defaultProps =
 Props	client/src/shared/components/DatePicker/DateSection.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/DatePicker/TimeSection.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/DatePicker/index.jsx	/^const defaultProps = {$/;"	c
+Props	client/src/shared/components/Form/Field.jsx	/^const defaultProps = {$/;"	c
+Props	client/src/shared/components/Form/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Icon/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Input/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Logo.jsx	/^const defaultProps = {$/;"	c
@@ -500,9 +643,14 @@ Props	client/src/shared/components/Spinner.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/TextEditor/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Textarea/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Tooltip/index.jsx	/^const defaultProps = {$/;"	c
+Quill	client/src/shared/components/TextEditor/index.jsx	/^    const setupQuill = () => {$/;"	c
+RandomUser	api/build/database/seeds/guestUser.js	/^    const getRandomUser = () => (0, lodash_1.sample)(project.users);$/;"	c
+React Bug Tracker	client/build/index.html	/^    <title>React Bug Tracker<\/title>$/;"	j
 React Bug Tracker	client/src/index.html	/^    <title>React Bug Tracker<\/title>$/;"	j
-Ref	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^  const $textareaRef = useRef();$/;"	c
-Ref	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^  const $editorRef = useRef();$/;"	c
+ReactComponent	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	c
+ReactCurrentBatchConfig	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	o
+ReactCurrentDispatcher	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	o
+Ref	client/src/Project/IssueDetails/Comments/BodyForm/index.jsx	/^  const $textareaRef = useRef();$/;"	c
 Ref	client/src/shared/components/DatePicker/TimeSection.jsx	/^  const $sectionRef = useRef();$/;"	c
 Ref	client/src/shared/components/DatePicker/index.jsx	/^  const $containerRef = useRef();$/;"	c
 Ref	client/src/shared/components/InputDebounced.jsx	/^  const valueRef = useRef(value);$/;"	c
@@ -513,21 +661,24 @@ Ref	client/src/shared/components/Select/index.jsx	/^          $selectRef={$selec
 Ref	client/src/shared/components/Select/index.jsx	/^  const $inputRef = useRef();$/;"	c
 Ref	client/src/shared/components/Select/index.jsx	/^  const $selectRef = useRef();$/;"	c
 Ref	client/src/shared/components/TextEditor/index.jsx	/^  const $editorRef = useRef();$/;"	c
+Ref	client/src/shared/components/TextEditor/index.jsx	/^  const quillRef = useRef();$/;"	c
 Ref	client/src/shared/components/Textarea/index.jsx	/^        inputRef={ref || undefined}$/;"	c
 Ref	client/src/shared/components/Tooltip/index.jsx	/^  const $linkRef = useRef();$/;"	c
 Ref	client/src/shared/components/Tooltip/index.jsx	/^  const $tooltipRef = useRef();$/;"	c
 Ref	client/src/shared/hooks/api.js	/^  const stateRef = useRef();$/;"	c
 Ref	client/src/shared/hooks/deepCompareMemoize.js	/^  const valueRef = useRef();$/;"	c
-RemainingOrEstimate	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderRemainingOrEstimate = () => {$/;"	c
+Reflect	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	o
+RemainingOrEstimate	client/src/Project/IssueDetails/Tracking/index.jsx	/^  const renderRemainingOrEstimate = () => {$/;"	c
 RenderOption	client/src/shared/components/Select/index.jsx	/^          propsRenderOption={propsRenderOption}$/;"	c
-Reporter	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^  const renderReporter = () => ($/;"	c
+Reporter	client/src/Project/IssueDetails/Users/index.jsx	/^  const renderReporter = () => ($/;"	c
 Request	api/src/types/express.d.ts	/^  export interface Request {$/;"	i	namespace:Express
 Request	client/src/shared/hooks/api.js	/^  const makeRequest = useCallback($/;"	c
 Response	api/src/types/express.d.ts	/^  export interface Response {$/;"	i	namespace:Express
+RouteNotFoundError	api/build/errors/customErrors.js	/^class RouteNotFoundError extends CustomError {$/;"	c
 RouteNotFoundError	api/build/src/errors/customErrors.js	/^class RouteNotFoundError extends CustomError {$/;"	c
 RouteNotFoundError	api/src/errors/customErrors.ts	/^export class RouteNotFoundError extends CustomError {$/;"	c
-Routes	client/src/components/App/Routes.jsx	/^const Routes = () => ($/;"	c
-Rows	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^        minRows={1}$/;"	c
+Routes	client/src/App/Routes.jsx	/^const Routes = () => ($/;"	c
+Rows	client/src/Project/IssueDetails/Title/index.jsx	/^        minRows={1}$/;"	c
 SELECTED	api/build/src/constants/issues.d.ts	/^    SELECTED = "selected",$/;"	e	enum:IssueStatus
 SELECTED	api/src/constants/issues.ts	/^  SELECTED = 'selected',$/;"	e	enum:IssueStatus
 SELECTED	client/src/shared/constants/issues.js	/^  SELECTED: "selected",$/;"	n
@@ -536,100 +687,133 @@ SOFTWARE	api/src/constants/projects.ts	/^  SOFTWARE = 'software',$/;"	e	enum:Pro
 STORY	api/build/src/constants/issues.d.ts	/^    STORY = "story"$/;"	e	enum:IssueType
 STORY	api/src/constants/issues.ts	/^  STORY = 'story',$/;"	e	enum:IssueType
 STORY	client/src/shared/constants/issues.js	/^  STORY: "story"$/;"	n
+Scope	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	c
+Scope	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	o
 Scrollbar	client/src/shared/utils/styles.js	/^  customScrollbar: ({$/;"	c
-SearchInput	client/src/components/Project/Board/Filters/Styles.js	/^export const SearchInput = styled(InputDebounced)`$/;"	c
+SearchInput	client/src/Project/Board/Filters/Styles.js	/^export const SearchInput = styled(InputDebounced)`$/;"	c
 SearchValue	client/src/shared/components/Select/index.jsx	/^          setSearchValue={setSearchValue}$/;"	c
+Seed	api/build/database/seeds/development/index.js	/^const initializeSeed = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
 Seed	api/build/src/database/seeds/development/index.js	/^const initializeSeed = async () => {$/;"	c
+Select	client/src/shared/components/Form/Field.jsx	/^  Select: generateField(Select),$/;"	c
 Select	client/src/shared/components/Select/index.jsx	/^const Select = ({$/;"	c
 SelectDropdown	client/src/shared/components/Select/Dropdown.jsx	/^const SelectDropdown = ({$/;"	c
+SelectValue	client/src/Project/IssueDetails/Users/index.jsx	/^      isSelectValue={isSelectValue}$/;"	c
 SelectableOption	client/src/shared/components/Select/Dropdown.jsx	/^  const renderSelectableOption = (option, i) => {$/;"	c
 Selected	client/src/shared/components/DatePicker/DateSection.jsx	/^            isSelected={moment(value).isSame(date, "day")}$/;"	c
 Selected	client/src/shared/components/DatePicker/TimeSection.jsx	/^          isSelected={time === formattedTimeValue}$/;"	c
 Server	client/webpack.config.js	/^  devServer: {$/;"	c
+SetInnerHTML	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	c
 SetInnerHTML	client/src/shared/components/TextEditedContent/index.jsx	/^      dangerouslySetInnerHTML={{ __html: content }}$/;"	c
-Settings	client/src/components/Project/index.jsx	/^  const renderSettings = () => <h1>SETTINGS<\/h1>;$/;"	c
+Setter	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	c
 SingleValue	client/src/shared/components/Select/index.jsx	/^  const renderSingleValue = () =>$/;"	c
-Size	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^        <Button icon="close" iconSize={24} color="empty" onClick={modalClose} \/>$/;"	c
-Size	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^        <Button icon="trash" iconSize={19} color="empty" onClick={modal.open} \/>$/;"	c
-SortedListIssues	client/src/components/Project/Board/Lists/index.jsx	/^const getSortedListIssues = (issues, status) =>$/;"	c
+Size	client/src/Project/IssueDetails/Delete.jsx	/^        <Button icon="trash" iconSize={19} color="empty" onClick={modal.open} \/>$/;"	c
+Size	client/src/Project/IssueDetails/index.jsx	/^            iconSize={24}$/;"	c
+SlowBuffer	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	c
+SlowBuffer	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	f
+SortedListIssues	client/src/Project/Board/Lists/index.jsx	/^const getSortedListIssues = (issues, status) =>$/;"	c
 Spinner	client/src/shared/components/Button/index.jsx	/^    const renderSpinner = () => ($/;"	c
 Spinner	client/src/shared/components/Spinner.jsx	/^const Spinner = ({ className, size, color }) => ($/;"	c
+Star	api/build/database/connection.js	/^var __importStar = (this && this.__importStar) || function (mod) {$/;"	c
+Star	api/build/errors/index.js	/^var __exportStar = (this && this.__exportStar) || function(m, exports) {$/;"	c
 Star	api/build/src/database/connection.js	/^var __importStar = (this && this.__importStar) || function (mod) {$/;"	c
 Star	api/build/src/errors/index.js	/^var __exportStar = (this && this.__exportStar) || function(m, exports) {$/;"	c
+Status	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	c
 StatusBackgroundColors	client/src/shared/utils/styles.js	/^export const issueStatusBackgroundColors = {$/;"	c
 StatusColors	client/src/shared/utils/styles.js	/^export const issueStatusColors = {$/;"	c
 StoredAuthToken	client/src/shared/utils/authToken.js	/^export const getStoredAuthToken = () => localStorage.getItem("authToken");$/;"	c
 StoredAuthToken	client/src/shared/utils/authToken.js	/^export const removeStoredAuthToken = () => localStorage.removeItem("authToken");$/;"	c
 StringToObject	client/src/shared/utils/url.js	/^export const queryStringToObject = (str, options = {}) =>$/;"	c
-StyledAvatar	client/src/components/Project/Board/Filters/Styles.js	/^export const StyledAvatar = styled(Avatar)`$/;"	c
-StyledButton	client/src/components/Project/Board/Filters/Styles.js	/^export const StyledButton = styled(Button)`$/;"	c
+StyledAvatar	client/src/Project/Board/Filters/Styles.js	/^export const StyledAvatar = styled(Avatar)`$/;"	c
+StyledButton	client/src/Project/Board/Filters/Styles.js	/^export const StyledButton = styled(Button)`$/;"	c
 StyledButton	client/src/shared/components/ConfirmModal/Styles.js	/^export const StyledButton = styled(Button)`$/;"	c
 StyledConfirmModal	client/src/shared/components/ConfirmModal/Styles.js	/^export const StyledConfirmModal = styled(Modal)`$/;"	c
 StyledIcon	client/src/shared/components/PageError/Styles.js	/^export const StyledIcon = styled(Icon)`$/;"	c
 StyledInput	client/src/shared/components/ConfirmModal/Styles.js	/^export const StyledInput = styled(Input)`$/;"	c
-StyledLogo	client/src/components/App/NavbarLeft/Styles.js	/^export const StyledLogo = styled(Logo)`$/;"	c
+StyledLogo	client/src/Project/NavbarLeft/Styles.js	/^export const StyledLogo = styled(Logo)`$/;"	c
 StyledSpinner	client/src/shared/components/Button/Styles.js	/^export const StyledSpinner = styled(Spinner)`$/;"	c
 Styles	client/src/shared/components/Modal/Styles.js	/^const modalStyles = {$/;"	c
-Submit	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            onSubmit={handleCommentUpdate}$/;"	c
-Submit	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            onSubmit={handleCommentCreate}$/;"	c
+Submit	client/src/Project/IssueCreateForm/index.jsx	/^      onSubmit={async (values, form) => {$/;"	c
+Submit	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            onSubmit={handleCommentUpdate}$/;"	c
+Submit	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            onSubmit={handleCommentCreate}$/;"	c
 TAB	client/src/shared/constants/keyCodes.js	/^  TAB: 9,$/;"	n
 TASK	api/build/src/constants/issues.d.ts	/^    TASK = "task",$/;"	e	enum:IssueType
 TASK	api/src/constants/issues.ts	/^  TASK = 'task',$/;"	e	enum:IssueType
 TASK	client/src/shared/constants/issues.js	/^  TASK: "task",$/;"	n
+TYPED_ARRAY_SUPPORT	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	c
+TYPED_ARRAY_SUPPORT	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	m
+Target	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	c
 TextEditedContent	client/src/shared/components/TextEditedContent/index.jsx	/^const TextEditedContent = ({ content, ...otherProps }) => ($/;"	c
+TextEditor	client/src/shared/components/Form/Field.jsx	/^  TextEditor: generateField(TextEditor),$/;"	c
 TextEditor	client/src/shared/components/TextEditor/index.jsx	/^const TextEditor = ({$/;"	c
+Textarea	client/src/shared/components/Form/Field.jsx	/^  Textarea: generateField(Textarea),$/;"	c
 Textarea	client/src/shared/components/Textarea/index.jsx	/^const Textarea = forwardRef($/;"	c
+Tick	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	c
 Time	client/src/shared/components/DatePicker/index.jsx	/^            withTime={withTime}$/;"	c
 Time	client/src/shared/components/DatePicker/index.jsx	/^        <Dropdown withTime={withTime}>$/;"	c
 TimeValue	client/src/shared/components/DatePicker/TimeSection.jsx	/^  const formattedTimeValue = formatDate(value, "HH:mm");$/;"	c
 Times	client/src/shared/components/DatePicker/TimeSection.jsx	/^  const generateTimes = () =>$/;"	c
-TitleChange	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^  const handleTitleChange = () => {$/;"	c
-TitleTextarea	client/src/components/Project/Board/IssueDetails/Title/Styles.js	/^export const TitleTextarea = styled(Textarea)`$/;"	c
+TitleChange	client/src/Project/IssueDetails/Title/index.jsx	/^  const handleTitleChange = () => {$/;"	c
+TitleTextarea	client/src/Project/IssueDetails/Title/Styles.js	/^export const TitleTextarea = styled(Textarea)`$/;"	c
 ToQueryString	client/src/shared/utils/url.js	/^export const objectToQueryString = (obj, options = {}) =>$/;"	c
 ToSelectedTime	client/src/shared/components/DatePicker/TimeSection.jsx	/^    const scrollToSelectedTime = () => {$/;"	c
-Toast	client/src/components/App/Toast/index.jsx	/^    const addToast = ({ type = "success", title, message, duration = 5 }) => {$/;"	c
-Toast	client/src/components/App/Toast/index.jsx	/^const Toast = () => {$/;"	c
+Toast	client/src/App/Toast/index.jsx	/^    const addToast = ({ type = "success", title, message, duration = 5 }) => {$/;"	c
+Toast	client/src/App/Toast/index.jsx	/^const Toast = () => {$/;"	c
 Today	client/src/shared/components/DatePicker/DateSection.jsx	/^            isToday={moment().isSame(date, "day")}$/;"	c
+Token	api/build/controllers/authentication.js	/^        authToken: (0, authToken_1.signToken)({ sub: user.id }),$/;"	c
 Token	api/build/src/controllers/authentication.js	/^        authToken: (0, authToken_1.signToken)({ sub: user.id }),$/;"	c
 Token	api/build/src/utils/authToken.js	/^const signToken = (payload, options) => jsonwebtoken_1.default.sign(payload, process.env.JWT_SEC/;"	c
 Token	api/build/src/utils/authToken.js	/^const verifyToken = (token) => {$/;"	c
+Token	api/build/utils/authToken.js	/^const signToken = (payload, options) => jsonwebtoken_1.default.sign(payload, process.env.JWT_SEC/;"	c
+Token	api/build/utils/authToken.js	/^const verifyToken = (token) => {$/;"	c
+Token_1	api/build/controllers/authentication.js	/^const authToken_1 = require("utils\/authToken");$/;"	c
+Token_1	api/build/middleware/authentication.js	/^const authToken_1 = require("utils\/authToken");$/;"	c
 Token_1	api/build/src/controllers/authentication.js	/^const authToken_1 = require("utils\/authToken");$/;"	c
 Token_1	api/build/src/middleware/authentication.js	/^const authToken_1 = require("utils\/authToken");$/;"	c
 Tooltip	client/src/shared/components/Tooltip/index.jsx	/^  const closeTooltip = () => setIsOpen(false);$/;"	c
 Tooltip	client/src/shared/components/Tooltip/index.jsx	/^  const openTooltip = () => setIsOpen(true);$/;"	c
 Tooltip	client/src/shared/components/Tooltip/index.jsx	/^  const renderTooltip = () => ($/;"	c
+Tooltip	client/src/shared/components/Tooltip/index.jsx	/^const Tooltip = ({$/;"	c
 TooltipPosition	client/src/shared/components/Tooltip/index.jsx	/^    const setTooltipPosition = () => {$/;"	c
-Tracking	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderTracking = () => ($/;"	c
-TrackingBarWidth	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const calculateTrackingBarWidth = () => {$/;"	c
-TrackingPreview	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderTrackingPreview = (onClick = () => {}) => ($/;"	c
-Type	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const renderType = () => ($/;"	c
-TypeButton	client/src/components/Project/Board/IssueDetails/TopActions/Styles.js	/^export const TypeButton = styled(Button)`$/;"	c
+Tracking	client/src/Project/IssueDetails/Tracking/index.jsx	/^  const renderTracking = () => ($/;"	c
+TrackingBarWidth	client/src/Project/IssueDetails/Tracking/index.jsx	/^  const calculateTrackingBarWidth = () => {$/;"	c
+TrackingPreview	client/src/Project/IssueDetails/Tracking/index.jsx	/^  const renderTrackingPreview = (onClick = () => {}) => ($/;"	c
+Tx	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	c
+Tx	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	f
+Type	client/src/Project/IssueCreateForm/index.jsx	/^  const renderType = ({ value: type }) => ($/;"	c
+TypeButton	client/src/Project/IssueDetails/Type/Styles.js	/^export const TypeButton = styled(Button)`$/;"	c
 TypeColors	client/src/shared/utils/styles.js	/^export const issueTypeColors = {$/;"	c
 TypeIcon	client/src/shared/components/IssueTypeIcon/Styles.js	/^export const TypeIcon = styled(Icon)`$/;"	c
-Types	client/src/components/Project/Board/Filters/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/Header/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/Lists/Issue/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/Lists/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Sidebar/index.jsx	/^const propTypes = {$/;"	c
+TypedArrayConstructor	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	c
+Types	client/src/Project/Board/Filters/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/Board/Header/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/Board/Lists/Issue/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/Board/Lists/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/Board/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueCreateForm/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Comments/BodyForm/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Comments/Create/ProTip/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Comments/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Dates/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Delete.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Description/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Priority/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Status/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Title/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Tracking/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Type/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/Users/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/IssueDetails/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/Sidebar/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Avatar/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Button/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/ConfirmModal/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/DatePicker/DateSection.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/DatePicker/TimeSection.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/DatePicker/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/shared/components/Form/Field.jsx	/^const propTypes = {$/;"	c
+Types	client/src/shared/components/Form/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Icon/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Input/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/InputDebounced.jsx	/^const propTypes = {$/;"	c
@@ -645,14 +829,20 @@ Types	client/src/shared/components/TextEditedContent/index.jsx	/^const propTypes
 Types	client/src/shared/components/TextEditor/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Textarea/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Tooltip/index.jsx	/^const propTypes = {$/;"	c
+UNMOUNTED	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	n
+URL	client/build/0-121742718436dde3a71a.js	/^(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{608:function(l,n,e){"use strict";var o=/;"	n
 Update	client/src/shared/utils/api.js	/^const optimisticUpdate = async ({$/;"	c
-Url	client/src/components/Project/Board/Filters/index.jsx	/^              avatarUrl={user.avatarUrl}$/;"	c
-Url	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^      <UserAvatar name={comment.user.name} avatarUrl={comment.user.avatarUrl} \/>$/;"	c
-Url	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^        <UserAvatar name={currentUser.name} avatarUrl={currentUser.avatarUrl} \/>$/;"	c
-Url	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={24} \/>$/;"	c
-Url	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={32} \/>$/;"	c
-Url	client/src/components/Project/Board/Lists/Issue/index.jsx	/^                    avatarUrl={user.avatarUrl}$/;"	c
+Url	client/src/Project/Board/Filters/index.jsx	/^              avatarUrl={user.avatarUrl}$/;"	c
+Url	client/src/Project/Board/Lists/Issue/index.jsx	/^                    avatarUrl={user.avatarUrl}$/;"	c
+Url	client/src/Project/IssueCreateForm/index.jsx	/^        <Avatar size={20} avatarUrl={user.avatarUrl} name={user.name} \/>$/;"	c
+Url	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^      <UserAvatar name={comment.user.name} avatarUrl={comment.user.avatarUrl} \/>$/;"	c
+Url	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^        <UserAvatar name={currentUser.name} avatarUrl={currentUser.avatarUrl} \/>$/;"	c
+Url	client/src/Project/IssueDetails/Users/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={24} \/>$/;"	c
 Url	client/src/shared/components/Avatar/index.jsx	/^        avatarUrl={avatarUrl}$/;"	c
+User	api/build/database/seeds/development/user.js	/^const generateUser = (data = {}) => (Object.assign({ name: faker_1.faker.company.name(), avatarU/;"	c
+User	api/build/entities/User.js	/^User = __decorate([$/;"	c
+User	api/build/entities/User.js	/^let User = class User extends typeorm_1.BaseEntity {$/;"	c
+User	api/build/middleware/authentication.js	/^exports.authenticateUser = (0, errors_1.catchErrors)((req, _res, next) => __awaiter(void 0, void/;"	c
 User	api/build/src/database/seeds/development/user.js	/^const generateUser = (data = {}) => ({$/;"	c
 User	api/build/src/entities/User.d.ts	/^declare class User extends BaseEntity {$/;"	c
 User	api/build/src/entities/User.js	/^User = __decorate([$/;"	c
@@ -661,42 +851,101 @@ User	api/build/src/middleware/authentication.js	/^    req.currentUser = await (0
 User	api/build/src/middleware/authentication.js	/^exports.authenticateUser = (0, errors_1.catchErrors)(async (req, _res, next) => {$/;"	c
 User	api/src/entities/User.ts	/^class User extends BaseEntity {$/;"	c
 User	api/src/utils/typeorm.ts	/^  User,$/;"	C
-UserAvatar	client/src/components/Project/Board/IssueDetails/Comments/Comment/Styles.js	/^export const UserAvatar = styled(Avatar)`$/;"	c
-UserAvatar	client/src/components/Project/Board/IssueDetails/Comments/Create/Styles.js	/^export const UserAvatar = styled(Avatar)`$/;"	c
-UserId	client/src/components/Project/Board/Lists/index.jsx	/^  const currentUserId = get(currentUserData, "currentUser.id");$/;"	c
-UserValue	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^  const renderUserValue = (user, withBottomMargin, removeOptionValue) => ($/;"	c
+User	client/src/Project/IssueCreateForm/index.jsx	/^  const renderUser = ({ value: userId, removeOptionValue }) => {$/;"	c
+User	client/src/Project/IssueDetails/Users/index.jsx	/^  const renderUser = (user, isSelectValue, removeOptionValue) => ($/;"	c
+UserAvatar	client/src/Project/IssueDetails/Comments/Comment/Styles.js	/^export const UserAvatar = styled(Avatar)`$/;"	c
+UserAvatar	client/src/Project/IssueDetails/Comments/Create/Styles.js	/^export const UserAvatar = styled(Avatar)`$/;"	c
+UserId	client/src/Project/Board/Lists/index.jsx	/^  const currentUserId = get(currentUserData, "currentUser.id");$/;"	c
+User_1	api/build/controllers/authentication.js	/^const guestUser_1 = __importDefault(require("database\/seeds\/guestUser"));$/;"	c
+User_1	api/build/entities/index.js	/^var User_1 = require(".\/User");$/;"	c
 User_1	api/build/src/controllers/authentication.js	/^const guestUser_1 = __importDefault(require("database\/seeds\/guestUser"));$/;"	c
 User_1	api/build/src/entities/index.js	/^var User_1 = require(".\/User");$/;"	c
+Users	api/build/database/seeds/development/index.js	/^const seedUsers = () => {$/;"	c
+Users	api/build/database/seeds/guestUser.js	/^const seedUsers = () => {$/;"	c
 Users	api/build/src/database/seeds/development/index.js	/^const seedUsers = () => {$/;"	c
-Users	client/src/components/Project/Board/IssueDetails/index.jsx	/^            projectUsers={projectUsers}$/;"	c
-Users	client/src/components/Project/Board/Lists/index.jsx	/^                  projectUsers={project.users}$/;"	c
-Users	client/src/components/Project/Board/index.jsx	/^                projectUsers={project.users}$/;"	c
-Users	client/src/components/Project/Board/index.jsx	/^        projectUsers={project.users}$/;"	c
+Users	client/src/Project/Board/Lists/index.jsx	/^                  projectUsers={project.users}$/;"	c
+Users	client/src/Project/Board/index.jsx	/^        projectUsers={project.users}$/;"	c
+Users	client/src/Project/IssueDetails/index.jsx	/^            projectUsers={projectUsers}$/;"	c
+Users	client/src/Project/index.jsx	/^          projectUsers={project.users}$/;"	c
+VERSION	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	n
 Validator	api/build/src/utils/validation.d.ts	/^declare type Validator = (value: Value, fieldValues?: FieldValues) => ErrorMessage;$/;"	a
 Validator	api/src/utils/validation.ts	/^type Validator = (value: Value, fieldValues?: FieldValues) => ErrorMessage;$/;"	a
 Value	api/build/src/utils/validation.d.ts	/^declare type Value = any;$/;"	a
 Value	api/src/utils/validation.ts	/^type Value = any;$/;"	a
-Value	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        defaultValue={issue.description}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^        renderValue={({ value }) => renderPriorityItem(value)}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^      renderValue={({ value: status }) => ($/;"	c
-Value	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^        defaultValue={issue.title}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        renderValue={({ value }) => renderUserValue(getUserById(value), false)}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        renderValue={({ value, removeOptionValue }) =>$/;"	c
+Value	client/src/Project/IssueCreateForm/index.jsx	/^          renderValue={renderPriority}$/;"	c
+Value	client/src/Project/IssueCreateForm/index.jsx	/^          renderValue={renderType}$/;"	c
+Value	client/src/Project/IssueCreateForm/index.jsx	/^          renderValue={renderUser}$/;"	c
+Value	client/src/Project/IssueDetails/Description/index.jsx	/^        defaultValue={value}$/;"	c
+Value	client/src/Project/IssueDetails/Priority/index.jsx	/^        renderValue={({ value }) => renderPriorityItem(value, true)}$/;"	c
+Value	client/src/Project/IssueDetails/Priority/index.jsx	/^    <Priority isValue={isValue}>$/;"	c
+Value	client/src/Project/IssueDetails/Status/index.jsx	/^      renderValue={({ value: status }) => ($/;"	c
+Value	client/src/Project/IssueDetails/Title/index.jsx	/^        defaultValue={issue.title}$/;"	c
+Value	client/src/Project/IssueDetails/Type/index.jsx	/^    renderValue={({ value: type }) => ($/;"	c
+Value	client/src/Project/IssueDetails/Users/index.jsx	/^        renderValue={({ value }) => renderUser(getUserById(value), true)}$/;"	c
+Value	client/src/Project/IssueDetails/Users/index.jsx	/^        renderValue={({ value, removeOptionValue }) =>$/;"	c
 Value	client/src/shared/components/Select/index.jsx	/^          searchValue={searchValue}$/;"	c
 ValueEmpty	client/src/shared/components/Select/index.jsx	/^          isValueEmpty={isValueEmpty}$/;"	c
 ValueForInput	client/src/shared/components/DatePicker/index.jsx	/^  const formatValueForInput = () => {$/;"	c
+ValueRef	client/src/shared/components/TextEditor/index.jsx	/^  const initialValueRef = useRef(defaultValue || alsoDefaultValue || "");$/;"	c
+Values	client/src/Project/IssueCreateForm/index.jsx	/^      initialValues={{$/;"	c
 Variables	client/src/shared/hooks/api.js	/^        const additionalVariables = {$/;"	c
 Variables	client/src/shared/hooks/api.js	/^    (newVariables = {}) =>$/;"	c
 Variables	client/src/shared/hooks/api.js	/^    additionalVariables: {}$/;"	c
-WatchIcon	client/src/components/Project/Board/IssueDetails/Tracking/Styles.js	/^export const WatchIcon = styled(Icon)`$/;"	c
+WatchIcon	client/src/Project/IssueDetails/Tracking/Styles.js	/^export const WatchIcon = styled(Icon)`$/;"	c
 WeekDayNames	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateWeekDayNames = () => moment.weekdaysMin(true);$/;"	c
-Working	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            isWorking={isUpdating}$/;"	c
-Working	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            isWorking={isCreating}$/;"	c
+Width	client/src/Project/IssueDetails/Priority/index.jsx	/^        dropdownWidth={343}$/;"	c
+Width	client/src/Project/IssueDetails/Status/index.jsx	/^      dropdownWidth={343}$/;"	c
+Width	client/src/Project/IssueDetails/Type/index.jsx	/^    dropdownWidth={150}$/;"	c
+Width	client/src/Project/IssueDetails/Users/index.jsx	/^        dropdownWidth={343}$/;"	c
+Width	client/src/shared/components/Select/index.jsx	/^          dropdownWidth={dropdownWidth}$/;"	c
+Working	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            isWorking={isUpdating}$/;"	c
+Working	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            isWorking={isCreating}$/;"	c
+WorkingAlias	client/src/shared/hooks/api.js	/^const isWorkingAlias = {$/;"	c
+Xe	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	f
 Years	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateYears = () =>$/;"	c
+Zone	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	c
+__awaiter	api/build/controllers/authentication.js	/^router.post('\/authentication\/guest', (0, errors_1.catchErrors)((_req, res) => __awaiter(void 0/;"	f
+__awaiter	api/build/controllers/comments.js	/^router.delete('\/comments\/:commentId', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0/;"	f
+__awaiter	api/build/controllers/comments.js	/^router.post('\/comments', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, void 0, void/;"	f
+__awaiter	api/build/controllers/comments.js	/^router.put('\/comments\/:commentId', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, v/;"	f
+__awaiter	api/build/controllers/issues.js	/^const calculateListPosition = (newIssue) => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/controllers/issues.js	/^router.delete('\/issues\/:issueId', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, vo/;"	f
+__awaiter	api/build/controllers/issues.js	/^router.get('\/issues', (0, errors_1.catchErrors)((_req, res) => __awaiter(void 0, void 0, void 0/;"	f
+__awaiter	api/build/controllers/issues.js	/^router.get('\/issues\/:issueId', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, void /;"	f
+__awaiter	api/build/controllers/issues.js	/^router.post('\/issues', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, void 0, void 0/;"	f
+__awaiter	api/build/controllers/issues.js	/^router.put('\/issues\/:issueId', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, void /;"	f
+__awaiter	api/build/controllers/projects.js	/^router.get('\/project', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, void 0, void 0/;"	f
+__awaiter	api/build/controllers/projects.js	/^router.put('\/projects\/:projectId', (0, errors_1.catchErrors)((req, res) => __awaiter(void 0, v/;"	f
+__awaiter	api/build/database/seeds/development/index.js	/^const initializeSeed = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/database/seeds/development/index.js	/^const seedEntities = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/database/seeds/guestUser.js	/^const seedGuestUserEntities = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/errors/asyncCatch.js	/^    return (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/index.js	/^const establishDatabaseConnection = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/index.js	/^const initializeApp = () => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/middleware/authentication.js	/^exports.authenticateUser = (0, errors_1.catchErrors)((req, _res, next) => __awaiter(void 0, void/;"	f
+__awaiter	api/build/utils/typeorm.js	/^const createEntity = (Constructor, input) => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/utils/typeorm.js	/^const deleteEntity = (Constructor, id) => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__awaiter	api/build/utils/typeorm.js	/^const findEntityOrThrow = (Constructor, options) => __awaiter(void 0, void 0, void 0, function* /;"	f
+__awaiter	api/build/utils/typeorm.js	/^const updateEntity = (Constructor, id, input) => __awaiter(void 0, void 0, void 0, function* () /;"	f
+__awaiter	api/build/utils/typeorm.js	/^const validateAndSaveEntity = (instance) => __awaiter(void 0, void 0, void 0, function* () {$/;"	f
+__proto__	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	o
 _moduleDirectories	api/package.json	/^  "_moduleDirectories": [$/;"	a
 additionalVariables	client/src/shared/hooks/api.js	/^    additionalVariables: {}$/;"	o
+adopt	api/build/controllers/authentication.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/controllers/comments.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/controllers/issues.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/controllers/projects.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/database/seeds/development/index.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/database/seeds/guestUser.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/errors/asyncCatch.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/index.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/middleware/authentication.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
+adopt	api/build/utils/typeorm.js	/^    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resol/;"	f
 allowSyntheticDefaultImports	api/tsconfig.json	/^    "allowSyntheticDefaultImports": true,$/;"	b	object:compilerOptions
 alwaysStrict	api/tsconfig.json	/^    "alwaysStrict": true,$/;"	b	object:compilerOptions
+as	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	c
+as	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	c
+assign	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	m
 authenticateUser	api/build/src/middleware/authentication.d.ts	/^export declare const authenticateUser: import("express").RequestHandler<import("express-serve-st/;"	C
 authenticateUser	api/src/middleware/authentication.ts	/^export const authenticateUser = catchErrors(async (req, _res, next) => {$/;"	C
 author	api/package.json	/^  "author": "Shihab Dider <shihabdider@gmail.com>",$/;"	s
@@ -706,26 +955,34 @@ avatarUrl	api/src/entities/User.ts	/^  avatarUrl: string;$/;"	p	class:User
 axios	client/package.json	/^    "axios": "^0.19.0",$/;"	s	object:dependencies
 babel-eslint	client/package.json	/^    "babel-eslint": "^10.0.3",$/;"	s	object:devDependencies
 babel-loader	client/package.json	/^    "babel-loader": "^8.0.6",$/;"	s	object:devDependencies
-baseUrl	api/tsconfig.json	/^    "baseUrl": ".\/src",$/;"	s	object:compilerOptions
+baseUrl	api/tsconfig.json	/^    "baseUrl": "src",$/;"	s	object:compilerOptions
 body	api/build/src/entities/Comment.d.ts	/^    body: string;$/;"	p	class:Comment
 body	api/src/entities/Comment.ts	/^  body: string;$/;"	p	class:Comment
 bottom	client/src/shared/components/Tooltip/index.jsx	/^    bottom: {$/;"	o
 browser	client/.eslintrc.json	/^    "browser": true,$/;"	b	object:env
-build	client/package.json	/^    "build": "rm -rf dist && webpack --config webpack.config.production.js --progress",$/;"	s	object:scripts
+build	api/package.json	/^    "build": "tsc",$/;"	s	object:scripts
+build	client/package.json	/^    "build": "rm -rf build && webpack --config webpack.config.production.js --progress",$/;"	s	object:scripts
+calculateListPosition	api/src/controllers/issues.ts	/^const calculateListPosition = async (newIssue: Issue) => {$/;"	C
+catch	api/build/database/seeds/development/index.js	/^    catch (error) {$/;"	f
+catch	api/build/errors/asyncCatch.js	/^        catch (error) {$/;"	f
+catch	api/build/index.js	/^    catch (error) {$/;"	f
 catch	api/build/src/database/seeds/development/index.js	/^    catch (error) {$/;"	f
 catch	api/build/src/errors/asyncCatch.js	/^        catch (error) {$/;"	f
 catch	api/build/src/index.js	/^    catch (error) {$/;"	f
 catch	api/build/src/utils/authToken.js	/^    catch (error) {$/;"	f
-catch	client/src/components/App/Authenticate.jsx	/^        } catch (error) {$/;"	f
-catch	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^    } catch (error) {$/;"	f
-catch	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^    } catch (error) {$/;"	f
-catch	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^    } catch (error) {$/;"	f
+catch	api/build/utils/authToken.js	/^    catch (error) {$/;"	f
+catch	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	f
+catch	client/src/App/Authenticate.jsx	/^        } catch (error) {$/;"	f
+catch	client/src/Project/IssueCreateForm/index.jsx	/^        } catch (error) {$/;"	f
+catch	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^    } catch (error) {$/;"	f
+catch	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^    } catch (error) {$/;"	f
+catch	client/src/Project/IssueDetails/Delete.jsx	/^    } catch (error) {$/;"	f
 catch	client/src/shared/utils/api.js	/^  } catch (error) {$/;"	f
 catchErrors	api/build/src/errors/asyncCatch.d.ts	/^export declare const catchErrors: (requestHandler: RequestHandler) => RequestHandler;$/;"	C
 catchErrors	api/src/errors/asyncCatch.ts	/^export const catchErrors = (requestHandler: RequestHandler): RequestHandler => {$/;"	C
 category	api/build/src/entities/Project.d.ts	/^    category: ProjectCategory;$/;"	p	class:Project
 category	api/src/entities/Project.ts	/^  category: ProjectCategory;$/;"	p	class:Project
-clean	api/package.json	/^    "clean": "gts clean",$/;"	s	object:scripts
+clone	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	m
 code	api/build/src/errors/customErrors.d.ts	/^    code: string | number;$/;"	p	class:CustomError
 code	api/src/errors/customErrors.ts	/^    public code: string | number = 'INTERNAL_ERROR',$/;"	p	class:CustomError
 color	client/package.json	/^    "color": "^3.1.2",$/;"	s	object:dependencies
@@ -736,9 +993,14 @@ comments	api/build/src/entities/Issue.d.ts	/^    comments: Comment[];$/;"	p	clas
 comments	api/build/src/entities/User.d.ts	/^    comments: Comment[];$/;"	p	class:User
 comments	api/src/entities/Issue.ts	/^  comments: Comment[];$/;"	p	class:Issue
 comments	api/src/entities/User.ts	/^  comments: Comment[];$/;"	p	class:User
-compile	api/package.json	/^    "compile": "tsc",$/;"	s	object:scripts
 compilerOptions	api/tsconfig.json	/^  "compilerOptions": {$/;"	o
+compression	client/package.json	/^    "compression": "^1.7.4",$/;"	s	object:dependencies
 consistent-return	client/.eslintrc.json	/^    "consistent-return": 0,$/;"	n	object:rules
+constructor	api/build/errors/customErrors.js	/^    constructor(entityName) {$/;"	f
+constructor	api/build/errors/customErrors.js	/^    constructor(errorData) {$/;"	f
+constructor	api/build/errors/customErrors.js	/^    constructor(message = 'Authentication token is invalid.') {$/;"	f
+constructor	api/build/errors/customErrors.js	/^    constructor(message, code = 'INTERNAL_ERROR', status = 500, data = {}) {$/;"	f
+constructor	api/build/errors/customErrors.js	/^    constructor(originalUrl) {$/;"	f
 constructor	api/build/src/errors/customErrors.d.ts	/^    constructor(message: string, code?: string | number, status?: number, data?: ErrorData);$/;"	m	class:CustomError
 constructor	api/build/src/errors/customErrors.js	/^    constructor(entityName) {$/;"	f
 constructor	api/build/src/errors/customErrors.js	/^    constructor(errorData) {$/;"	f
@@ -752,6 +1014,7 @@ constructor	api/src/errors/customErrors.ts	/^  constructor(message = 'Authentica
 constructor	api/src/errors/customErrors.ts	/^  constructor(originalUrl: string) {$/;"	m	class:RouteNotFoundError
 core-js	client/package.json	/^    "core-js": "^3.26.1",$/;"	s	object:dependencies
 cors	api/package.json	/^    "cors": "^2.8.5",$/;"	s	object:dependencies
+create	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	f
 createDatabaseConnection	api/build/src/database/connection.d.ts	/^declare const createDatabaseConnection: () => Promise<Connection>;$/;"	C
 createDatabaseConnection	api/src/database/connection.ts	/^const createDatabaseConnection = (): Promise<DataSource> =>$/;"	C
 createEntity	api/build/src/utils/typeorm.d.ts	/^export declare const createEntity: <T extends EntityConstructor>(Constructor: T, input: Partial</;"	C
@@ -766,8 +1029,16 @@ createdAt	api/src/entities/Project.ts	/^  createdAt: Date;$/;"	p	class:Project
 createdAt	api/src/entities/User.ts	/^  createdAt: Date;$/;"	p	class:User
 css-loader	client/package.json	/^    "css-loader": "5.2.6",$/;"	s	object:devDependencies
 currentUser	api/src/types/express.d.ts	/^    currentUser: import('entities').User;$/;"	p	interface:Express.Request
+darken	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	m
 data	api/build/src/errors/customErrors.d.ts	/^    data: ErrorData;$/;"	p	class:CustomError
-db-seed	api/package.json	/^    "db-seed": "nodemon --exec ts-node --files src\/database\/seeds\/development\/index.ts",$/;"	s	object:scripts
+data	client/src/shared/utils/api.js	/^    data: {}$/;"	o
+db-seed	api/package.json	/^    "db-seed": "nodemon --exec ts-node --files src\/database\/seeds\/development\/index.ts"$/;"	s	object:scripts
+defaultProps	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	o
+defineProperty	api/build/entities/index.js	/^Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return __import/;"	f
+defineProperty	api/build/entities/index.js	/^Object.defineProperty(exports, "Issue", { enumerable: true, get: function () { return __importDe/;"	f
+defineProperty	api/build/entities/index.js	/^Object.defineProperty(exports, "Project", { enumerable: true, get: function () { return __import/;"	f
+defineProperty	api/build/entities/index.js	/^Object.defineProperty(exports, "User", { enumerable: true, get: function () { return __importDef/;"	f
+defineProperty	api/build/errors/index.js	/^Object.defineProperty(exports, "catchErrors", { enumerable: true, get: function () { return asyn/;"	f
 defineProperty	api/build/src/entities/index.js	/^Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return __import/;"	f
 defineProperty	api/build/src/entities/index.js	/^Object.defineProperty(exports, "Issue", { enumerable: true, get: function () { return __importDe/;"	f
 defineProperty	api/build/src/entities/index.js	/^Object.defineProperty(exports, "Project", { enumerable: true, get: function () { return __import/;"	f
@@ -787,14 +1058,17 @@ devDependencies	client/package.json	/^  "devDependencies": {$/;"	o
 devDependencies	package.json	/^  "devDependencies": {$/;"	o
 devServer	client/webpack.config.js	/^  devServer: {$/;"	o
 dotenv	api/package.json	/^    "dotenv": "^16.0.3",$/;"	s	object:dependencies
+e	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	o
 ecmaFeatures	client/.eslintrc.json	/^    "ecmaFeatures": {$/;"	o	object:parserOptions
 ecmaVersion	client/.eslintrc.json	/^    "ecmaVersion": 8,$/;"	n	object:parserOptions
 email	api/build/src/entities/User.d.ts	/^    email: string;$/;"	p	class:User
 email	api/src/entities/User.ts	/^  email: string;$/;"	p	class:User
 emitDecoratorMetadata	api/tsconfig.json	/^    "emitDecoratorMetadata": true,$/;"	b	object:compilerOptions
+enforce	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	m
 entities	api/src/utils/typeorm.ts	/^const entities: {[key: string]: EntityConstructor} = {$/;"	C
 entry	client/webpack.config.production.js	/^  entry: {$/;"	o
 env	client/.eslintrc.json	/^  "env": {$/;"	o
+env	client/webpack.config.production.js	/^      'process.env': {$/;"	o
 error	client/src/shared/utils/api.js	/^  error: {$/;"	o
 errorFields	api/src/utils/typeorm.ts	/^    const errorFields = generateErrors(instance, Constructor.validations);$/;"	C
 errorHandler	api/build/src/errors/errorHandler.d.ts	/^export declare const errorHandler: ErrorRequestHandler;$/;"	C
@@ -819,18 +1093,89 @@ exclude	api/tsconfig.json	/^  "exclude": ["node_modules"],$/;"	a
 experimentalDecorators	api/tsconfig.json	/^    "experimentalDecorators": true,$/;"	b	object:compilerOptions
 export	api/build/src/errors/customErrors.d.ts	/^export {};$/;"	p	class:CustomError
 exports	api/.prettierrc.js	/^module.exports = {$/;"	o
+exports	client/build/main-121742718436dde3a71a.js	/^ *\/var r="function"==typeof Symbol&&Symbol.for,o=r?Symbol.for("react.element"):60103,i=r?Symbol/;"	o
+exports	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	o
+exports	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	f
+exports	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	o
+exports	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	o
+exports	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	o
 exports	client/webpack.config.js	/^module.exports = {$/;"	o
 exports	client/webpack.config.production.js	/^module.exports = {$/;"	o
 express	api/package.json	/^    "express": "^4.18.2",$/;"	s	object:dependencies
+express	client/package.json	/^    "express": "^4.18.2",$/;"	s	object:dependencies
 express-async-handler	api/package.json	/^    "express-async-handler": "^1.2.0",$/;"	s	object:dependencies
+express-history-api-fallback	client/package.json	/^    "express-history-api-fallback": "^2.2.1",$/;"	s	object:dependencies
 extends	api/.eslintrc.json	/^  "extends": ".\/node_modules\/gts\/"$/;"	s
-extends	api/tsconfig.json	/^  "extends": ".\/node_modules\/gts\/tsconfig-google.json",$/;"	s
 extends	client/.eslintrc.json	/^  "extends": ["airbnb", "prettier", "prettier\/react"],$/;"	a
 file-loader	client/package.json	/^    "file-loader": "^5.0.2",$/;"	s	object:devDependencies
 findEntityOrThrow	api/build/src/utils/typeorm.d.ts	/^export declare const findEntityOrThrow: <T extends EntityConstructor>(Constructor: T, options: F/;"	C
 findEntityOrThrow	api/src/utils/typeorm.ts	/^export const findEntityOrThrow = async <T extends EntityConstructor>($/;"	C
-fix	api/package.json	/^    "fix": "gts fix",$/;"	s	object:scripts
+forEach	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	f
 forceConsistentCasingInFileNames	api/tsconfig.json	/^    "forceConsistentCasingInFileNames": true$/;"	b	object:compilerOptions
+form	client/src/shared/components/Form/index.jsx	/^      {({ field, form: { touched, errors, setFieldValue } }) => ($/;"	o
+formik	client/package.json	/^    "formik": "^2.2.9",$/;"	s	object:dependencies
+fulfilled	api/build/controllers/authentication.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/controllers/comments.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/controllers/issues.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/controllers/projects.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/database/seeds/development/index.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/database/seeds/guestUser.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/errors/asyncCatch.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/index.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/middleware/authentication.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+fulfilled	api/build/utils/typeorm.js	/^        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); /;"	f
+function	api/build/constants/issues.js	/^(function (IssuePriority) {$/;"	f
+function	api/build/constants/issues.js	/^(function (IssueStatus) {$/;"	f
+function	api/build/constants/issues.js	/^(function (IssueType) {$/;"	f
+function	api/build/constants/projects.js	/^(function (ProjectCategory) {$/;"	f
+function	api/build/controllers/authentication.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/controllers/authentication.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/controllers/authentication.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/controllers/comments.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/controllers/comments.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/controllers/comments.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/controllers/issues.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/controllers/issues.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/controllers/issues.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/controllers/projects.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/controllers/projects.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/controllers/projects.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/controllers/users.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/database/connection.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	f
+function	api/build/database/connection.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	f
+function	api/build/database/connection.js	/^var __importStar = (this && this.__importStar) || function (mod) {$/;"	f
+function	api/build/database/connection.js	/^var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {$/;"	f
+function	api/build/database/connection.js	/^}) : (function(o, m, k, k2) {$/;"	f
+function	api/build/database/connection.js	/^}) : function(o, v) {$/;"	f
+function	api/build/database/seeds/development/index.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/database/seeds/development/index.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/database/seeds/development/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/database/seeds/guestUser.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/database/seeds/guestUser.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/entities/Comment.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	api/build/entities/Comment.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/entities/Comment.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	api/build/entities/Issue.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	api/build/entities/Issue.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/entities/Issue.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	api/build/entities/Project.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	api/build/entities/Project.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/entities/Project.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	api/build/entities/User.js	/^var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {$/;"	f
+function	api/build/entities/User.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/entities/User.js	/^var __metadata = (this && this.__metadata) || function (k, v) {$/;"	f
+function	api/build/entities/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/errors/asyncCatch.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/errors/asyncCatch.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/errors/index.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	f
+function	api/build/errors/index.js	/^var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) /;"	f
+function	api/build/errors/index.js	/^var __exportStar = (this && this.__exportStar) || function(m, exports) {$/;"	f
+function	api/build/errors/index.js	/^}) : (function(o, m, k, k2) {$/;"	f
+function	api/build/index.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/index.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	api/build/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/middleware/authentication.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/middleware/authentication.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
 function	api/build/src/constants/issues.js	/^(function (IssuePriority) {$/;"	f
 function	api/build/src/constants/issues.js	/^(function (IssueStatus) {$/;"	f
 function	api/build/src/constants/issues.js	/^(function (IssueType) {$/;"	f
@@ -868,6 +1213,17 @@ function	api/build/src/errors/index.js	/^var __exportStar = (this && this.__expo
 function	api/build/src/errors/index.js	/^}) : (function(o, m, k, k2) {$/;"	f
 function	api/build/src/index.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
 function	api/build/src/utils/authToken.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/utils/authToken.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	f
+function	api/build/utils/typeorm.js	/^    return new (P || (P = Promise))(function (resolve, reject) {$/;"	f
+function	api/build/utils/typeorm.js	/^var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {$/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^t.read=function(e,t,n,r,o){var i,a,u=8*o-r-1,l=(1<<u)-1,c=l>>1,s=-7,f=n?o-1:0,d=n?-1:1,p=e[t+f];/;"	f
+function	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	f
 generateComment	api/build/src/database/seeds/development/comment.d.ts	/^declare const generateComment: (data?: Partial<Comment>) => Partial<Comment>;$/;"	C
 generateComment	api/src/database/seeds/development/comment.ts	/^const generateComment = (data: Partial<Comment> = {}): Partial<Comment> => ({$/;"	C
 generateErrors	api/build/src/utils/validation.d.ts	/^export declare const generateErrors: (fieldValues: FieldValues, fieldValidators: FieldValidators/;"	C
@@ -878,6 +1234,13 @@ generateProject	api/build/src/database/seeds/development/project.d.ts	/^declare 
 generateProject	api/src/database/seeds/development/project.ts	/^const generateProject = (data: Partial<Project> = {}): Partial<Project> => ({$/;"	C
 generateUser	api/build/src/database/seeds/development/user.d.ts	/^declare const generateUser: (data?: Partial<User>) => Partial<User>;$/;"	C
 generateUser	api/src/database/seeds/development/user.ts	/^const generateUser = (data: Partial<User> = {}): Partial<User> => ({$/;"	C
+get	api/build/database/connection.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	m
+get	api/build/entities/index.js	/^Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return __import/;"	m
+get	api/build/entities/index.js	/^Object.defineProperty(exports, "Issue", { enumerable: true, get: function () { return __importDe/;"	m
+get	api/build/entities/index.js	/^Object.defineProperty(exports, "Project", { enumerable: true, get: function () { return __import/;"	m
+get	api/build/entities/index.js	/^Object.defineProperty(exports, "User", { enumerable: true, get: function () { return __importDef/;"	m
+get	api/build/errors/index.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	m
+get	api/build/errors/index.js	/^Object.defineProperty(exports, "catchErrors", { enumerable: true, get: function () { return asyn/;"	m
 get	api/build/src/database/connection.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	m
 get	api/build/src/entities/index.js	/^Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return __import/;"	m
 get	api/build/src/entities/index.js	/^Object.defineProperty(exports, "Issue", { enumerable: true, get: function () { return __importDe/;"	m
@@ -885,7 +1248,7 @@ get	api/build/src/entities/index.js	/^Object.defineProperty(exports, "Project", 
 get	api/build/src/entities/index.js	/^Object.defineProperty(exports, "User", { enumerable: true, get: function () { return __importDef/;"	m
 get	api/build/src/errors/index.js	/^      desc = { enumerable: true, get: function() { return m[k]; } };$/;"	m
 get	api/build/src/errors/index.js	/^Object.defineProperty(exports, "catchErrors", { enumerable: true, get: function () { return asyn/;"	m
-getAuthTokenFromRequest	api/src/middleware/authentication.ts	/^const getAuthTokenFromRequest = (req: Request): string | null => {$/;"	C
+get	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	m
 gts	api/package.json	/^    "gts": "^3.1.1",$/;"	s	object:devDependencies
 history	client/package.json	/^    "history": "^4.10.1",$/;"	s	object:dependencies
 hooks	package.json	/^    "hooks": {$/;"	o	object:husky
@@ -900,25 +1263,39 @@ id	api/src/entities/Comment.ts	/^  id: number;$/;"	p	class:Comment
 id	api/src/entities/Issue.ts	/^  id: number;$/;"	p	class:Issue
 id	api/src/entities/Project.ts	/^  id: number;$/;"	p	class:Project
 id	api/src/entities/User.ts	/^  id: number;$/;"	p	class:User
+if	api/build/controllers/issues.js	/^    if (listPositions.length > 0) {$/;"	f
+if	api/build/middleware/authentication.js	/^    if (!token) {$/;"	f
+if	api/build/middleware/authentication.js	/^    if (!user) {$/;"	f
+if	api/build/middleware/authentication.js	/^    if (!userId) {$/;"	f
 if	api/build/src/middleware/authentication.js	/^    if (!token) {$/;"	f
 if	api/build/src/middleware/authentication.js	/^    if (!userId) {$/;"	f
 if	api/build/src/utils/typeorm.js	/^    if (!instance) {$/;"	f
 if	api/build/src/utils/typeorm.js	/^    if ('validations' in Constructor) {$/;"	f
 if	api/build/src/utils/validation.js	/^            if (errorMessage !== false && !fieldValues[fieldName]) {$/;"	f
-if	client/src/components/App/Toast/index.jsx	/^      if (duration) {$/;"	f
-if	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^          if (event.keyCode === KeyCodes.ENTER) {$/;"	f
-if	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^    if (errors.title) {$/;"	f
-if	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^    if (!timeSpent) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  if (!prevIssue && !nextIssue) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  if (myOnly && currentUserId) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  if (recent) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  if (searchQuery) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  if (userIds.length > 0) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  } else if (!nextIssue) {$/;"	f
-if	client/src/components/Project/Board/Lists/index.jsx	/^  } else if (!prevIssue) {$/;"	f
+if	api/build/utils/typeorm.js	/^    if (!instance) {$/;"	f
+if	api/build/utils/typeorm.js	/^    if ('validations' in Constructor) {$/;"	f
+if	api/build/utils/validation.js	/^            if (errorMessage !== false && !fieldValues[fieldName]) {$/;"	f
+if	client/build/main-121742718436dde3a71a.js	/^ *\/var r,o,i,a,u;if("undefined"==typeof window||"function"!=typeof MessageChannel){var l=null,c/;"	f
+if	client/build/main-121742718436dde3a71a.js	/^ *\/var r="function"==typeof Symbol&&Symbol.for,o=r?Symbol.for("react.element"):60103,i=r?Symbol/;"	f
+if	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	f
+if	client/build/main-121742718436dde3a71a.js	/^var r=n(581),o=n(582),i=n(583);function a(){return l.TYPED_ARRAY_SUPPORT?2147483647:1073741823}f/;"	f
+if	client/src/App/Toast/index.jsx	/^      if (duration) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  if (!prevIssue && !nextIssue) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  if (myOnly && currentUserId) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  if (recent) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  if (searchQuery) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  if (userIds.length > 0) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  } else if (!nextIssue) {$/;"	f
+if	client/src/Project/Board/Lists/index.jsx	/^  } else if (!prevIssue) {$/;"	f
+if	client/src/Project/IssueCreateForm/index.jsx	/^          if (error.data.fields) {$/;"	f
+if	client/src/Project/IssueDetails/Title/index.jsx	/^          if (event.keyCode === KeyCodes.ENTER) {$/;"	f
+if	client/src/Project/IssueDetails/Title/index.jsx	/^    if (errors.title) {$/;"	f
+if	client/src/Project/IssueDetails/Tracking/index.jsx	/^    if (!timeSpent) {$/;"	f
 if	client/src/shared/components/Avatar/index.jsx	/^  if (avatarUrl) {$/;"	f
 if	client/src/shared/components/Button/index.jsx	/^      if (!disabled && !working) {$/;"	f
 if	client/src/shared/components/DatePicker/DateSection.jsx	/^    if (!withTime) {$/;"	f
+if	client/src/shared/components/Form/index.jsx	/^      if (validate) {$/;"	f
+if	client/src/shared/components/Form/index.jsx	/^      if (validations) {$/;"	f
 if	client/src/shared/components/InputDebounced.jsx	/^    if (propsValue !== valueRef.current) {$/;"	f
 if	client/src/shared/components/Modal/index.jsx	/^    if (!isControlled) {$/;"	f
 if	client/src/shared/components/Select/Dropdown.jsx	/^        if ($active.offsetTop < $options.scrollTop + $optionsHeight \/ 2.4) {$/;"	f
@@ -932,24 +1309,26 @@ if	client/src/shared/components/Select/Dropdown.jsx	/^    if (optionValueToSelec
 if	client/src/shared/components/Select/Dropdown.jsx	/^    } else if (event.keyCode === KeyCodes.ARROW_UP) {$/;"	f
 if	client/src/shared/components/Select/Dropdown.jsx	/^    } else if (event.keyCode === KeyCodes.ENTER) {$/;"	f
 if	client/src/shared/components/Select/Dropdown.jsx	/^    } else if (optionLabelToCreate) {$/;"	f
+if	client/src/shared/components/Select/index.jsx	/^      if (isMulti) {$/;"	f
+if	client/src/shared/components/Select/index.jsx	/^      if (newValue) {$/;"	f
 if	client/src/shared/components/Select/index.jsx	/^    if (!isControlled) {$/;"	f
+if	client/src/shared/components/Select/index.jsx	/^    if (areOptionValuesNumbers) {$/;"	f
 if	client/src/shared/components/Select/index.jsx	/^    if (event.keyCode === KeyCodes.ENTER) {$/;"	f
 if	client/src/shared/components/Select/index.jsx	/^    if (isDropdownOpen) {$/;"	f
-if	client/src/shared/components/Select/index.jsx	/^    if (typeof value === "number") {$/;"	f
 if	client/src/shared/components/Tooltip/index.jsx	/^    if (isOpen) {$/;"	f
 if	client/src/shared/hooks/api.js	/^        if (!isCalledAutomatically || wasCalledRef.current) {$/;"	f
 if	client/src/shared/hooks/api.js	/^    if (isCalledAutomatically) {$/;"	f
 if	client/src/shared/hooks/onEscapeKeyDown.js	/^      if (event.keyCode === KeyCodes.ESCAPE) {$/;"	f
 if	client/src/shared/hooks/onEscapeKeyDown.js	/^    if (isListening) {$/;"	f
-if	client/src/shared/hooks/onOutsideClick.js	/^      if (event.button === 0 && noElementsContainTarget) {$/;"	f
-if	client/src/shared/hooks/onOutsideClick.js	/^    if (isListening) {$/;"	f
+if	client/src/shared/hooks/onOutsideClick.js	/^      if (event.button === 0 && noIgnoredElementsContainTarget) {$/;"	f
+if	client/src/shared/hooks/onOutsideClick.js	/^    if (shouldListen) {$/;"	f
 if	client/src/shared/utils/api.js	/^          if (error.response.data.error.code === "INVALID_TOKEN") {$/;"	f
 if	client/src/shared/utils/api.js	/^        if (error.response) {$/;"	f
 if	client/src/shared/utils/javascript.js	/^  if (item) {$/;"	f
 if	client/src/shared/utils/validation.js	/^      if (errorMessage && !errors[fieldName]) {$/;"	f
 import/no-cycle	client/.eslintrc.json	/^    "import\/no-cycle": 0,$/;"	n	object:rules
 import/prefer-default-export	client/.eslintrc.json	/^    "import\/prefer-default-export": 0,$/;"	n	object:rules
-include	api/tsconfig.json	/^  "include": [$/;"	a
+include	api/tsconfig.json	/^  "include": [".\/src\/**\/*.ts"]$/;"	a
 initializeApp	api/src/index.ts	/^const initializeApp = async (): Promise<void> => {$/;"	C
 initializeExpress	api/src/index.ts	/^const initializeExpress = (): void => {$/;"	C
 initializeSeed	api/src/database/seeds/development/index.ts	/^const initializeSeed = async (): Promise<void> => {$/;"	C
@@ -958,27 +1337,34 @@ instance	api/src/utils/typeorm.ts	/^  const Constructor = entities[instance.cons
 instance	api/src/utils/typeorm.ts	/^  const instance = Constructor.create(input);$/;"	C
 instance	api/src/utils/typeorm.ts	/^  const instance = await Constructor.findOne(options);$/;"	C
 instance	api/src/utils/typeorm.ts	/^  const instance = await findEntityOrThrow(Constructor, {where: {id}});$/;"	C
+interceptors	client/build/main-121742718436dde3a71a.js	/^t.read=function(e,t,n,r,o){var i,a,u=8*o-r-1,l=(1<<u)-1,c=l>>1,s=-7,f=n?o-1:0,d=n?-1:1,p=e[t+f];/;"	o
 is	api/build/src/utils/validation.d.ts	/^declare const is: {$/;"	C
 is	api/src/utils/validation.ts	/^const is = {$/;"	C
+isAsyncMode	client/build/main-121742718436dde3a71a.js	/^ *\/var r="function"==typeof Symbol&&Symbol.for,o=r?Symbol.for("react.element"):60103,i=r?Symbol/;"	f
+isAsyncMode	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	f
+isMounted	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	m
 issue	api/build/src/entities/Comment.d.ts	/^    issue: Issue;$/;"	p	class:Comment
-issue	api/src/controllers/issues.ts	/^    const issue = await createEntity(Issue, req.body);$/;"	C
+issue	api/src/controllers/issues.ts	/^    const issue = await createEntity(Issue, {...req.body, listPosition});$/;"	C
 issue	api/src/controllers/issues.ts	/^    const issue = await findEntityOrThrow(Issue, {$/;"	C
 issue	api/src/controllers/issues.ts	/^    const issue = deleteEntity(Issue, req.params.issueId);$/;"	C
 issue	api/src/controllers/issues.ts	/^    const issue = updateEntity(Issue, req.params.issueId, req.body);$/;"	C
 issue	api/src/entities/Comment.ts	/^  issue: Issue;$/;"	p	class:Comment
-issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^      issue: { ...currentData.issue, ...fields }$/;"	o
+issue	client/src/Project/IssueDetails/index.jsx	/^      issue: { ...currentData.issue, ...fields }$/;"	o
 issueId	api/src/entities/Comment.ts	/^  issueId: number;$/;"	p	class:Comment
 issuePartial	api/src/serializers/issues.ts	/^export const issuePartial = (issue: Issue): Partial<Issue> =>$/;"	C
 issues	api/build/src/entities/Project.d.ts	/^    issues: Issue[];$/;"	p	class:Project
 issues	api/build/src/entities/User.d.ts	/^    issues: Issue[];$/;"	p	class:User
 issues	api/src/controllers/issues.ts	/^    const issues = await Issue.find();$/;"	C
+issues	api/src/controllers/issues.ts	/^  const issues = await Issue.find({$/;"	C
 issues	api/src/database/seeds/development/index.ts	/^  const issues = await seedIssues(projects);$/;"	C
 issues	api/src/database/seeds/guestUser.ts	/^  const issues = await seedIssues(project);$/;"	C
 issues	api/src/entities/Project.ts	/^  issues: Issue[];$/;"	p	class:Project
 issues	api/src/entities/User.ts	/^  issues: Issue[];$/;"	p	class:User
 jest	client/.eslintrc.json	/^    "jest": true$/;"	b	object:env
-jira	client/src/components/App/assets/fonts/jira.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	d
-jira	client/src/components/App/assets/fonts/jira.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	i
+jira	client/build/jira-6a5874e103f26f89ffb84e4de7dae5bf.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	d
+jira	client/build/jira-6a5874e103f26f89ffb84e4de7dae5bf.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	i
+jira	client/src/App/assets/fonts/jira.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	d
+jira	client/src/App/assets/fonts/jira.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	i
 jira	client/src/shared/assets/icons/jira.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	d
 jira	client/src/shared/assets/icons/jira.svg	/^<font id="jira" horiz-adv-x="1024">$/;"	i
 jsonwebtoken	api/package.json	/^    "jsonwebtoken": "^8.5.1",$/;"	s	object:dependencies
@@ -986,23 +1372,35 @@ jsx	client/.eslintrc.json	/^      "jsx": true$/;"	b	object:parserOptions.ecmaFea
 jsx-a11y/click-events-have-key-events	client/.eslintrc.json	/^    "jsx-a11y\/click-events-have-key-events": 0,$/;"	n	object:rules
 jwt-decode	client/package.json	/^    "jwt-decode": "^2.2.0",$/;"	s	object:dependencies
 left	client/src/shared/components/Tooltip/index.jsx	/^    left: {$/;"	o
-lib	api/tsconfig.json	/^      "lib": ["es2019", "es2015"],$/;"	a	object:compilerOptions
+lib	api/tsconfig.json	/^    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],$/;"	a	object:compilerOptions
 license	api/package.json	/^  "license": "MIT",$/;"	s
 license	client/package.json	/^  "license": "MIT",$/;"	s
 license	package.json	/^  "license": "MIT",$/;"	s
-lint	api/package.json	/^    "lint": "gts lint",$/;"	s	object:scripts
 lint-staged	api/package.json	/^    "lint-staged": "^13.0.3",$/;"	s	object:devDependencies
 lint-staged	api/package.json	/^  "lint-staged": {$/;"	o
 lint-staged	client/package.json	/^    "lint-staged": "^9.5.0",$/;"	s	object:devDependencies
 lint-staged	client/package.json	/^  "lint-staged": {$/;"	o
+listPosition	api/src/controllers/issues.ts	/^    const listPosition = await calculateListPosition(req.body);$/;"	C
 listPosition	api/src/entities/Issue.ts	/^  listPosition: number;$/;"	p	class:Issue
+listPositions	api/src/controllers/issues.ts	/^  const listPositions = issues.map(({listPosition}) => listPosition);$/;"	C
 lodash	api/package.json	/^    "lodash": "^4.17.21",$/;"	s	object:dependencies
 lodash	client/package.json	/^    "lodash": "^4.17.15",$/;"	s	object:dependencies
-main	api/package.json	/^  "main": "src\/index.ts",$/;"	s
-match	client/src/components/Project/Board/index.jsx	/^        render={({ match: { params } }) => ($/;"	o
 media	client/src/shared/components/PageError/Styles.js	/^  @media (max-height: 680px) {$/;"	f
 message	api/build/src/errors/customErrors.d.ts	/^    message: string;$/;"	p	class:CustomError
 message	api/src/errors/customErrors.ts	/^    public message: string,$/;"	p	class:CustomError
+min	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	f
+mod	api/build/controllers/authentication.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/controllers/comments.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/controllers/issues.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/controllers/projects.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/controllers/users.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/database/seeds/development/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/entities/Comment.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/entities/Issue.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/entities/Project.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/entities/User.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/entities/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
 mod	api/build/src/controllers/authentication.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
 mod	api/build/src/controllers/issues.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
 mod	api/build/src/controllers/projects.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
@@ -1018,6 +1416,8 @@ mod	api/build/src/entities/User.js	/^    return (mod && mod.__esModule) ? mod : 
 mod	api/build/src/entities/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
 mod	api/build/src/index.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
 mod	api/build/src/utils/authToken.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+mod	api/build/utils/authToken.js	/^    return (mod && mod.__esModule) ? mod : { "default": mod };$/;"	o
+module	api/tsconfig.json	/^    "module": "commonjs",$/;"	s	object:compilerOptions
 module	client/webpack.config.js	/^  module: {$/;"	o
 module	client/webpack.config.production.js	/^  module: {$/;"	o
 module-alias	api/package.json	/^    "module-alias": "^2.2.2",$/;"	s	object:dependencies
@@ -1037,42 +1437,47 @@ no-param-reassign	client/.eslintrc.json	/^    "no-param-reassign": [2, { "props"
 no-restricted-syntax	client/.eslintrc.json	/^    "no-restricted-syntax": 0,$/;"	n	object:rules
 no-return-assign	client/.eslintrc.json	/^    "no-return-assign": [2, "except-parens"],$/;"	a	object:rules
 no-use-before-define	client/.eslintrc.json	/^    "no-use-before-define": 0,$/;"	n	object:rules
+noFallthroughCasesInSwitch	api/tsconfig.json	/^    "noFallthroughCasesInSwitch": true,$/;"	b	object:compilerOptions
 noImplicitAny	api/tsconfig.json	/^    "noImplicitAny": true,$/;"	b	object:compilerOptions
+noImplicitReturns	api/tsconfig.json	/^    "noImplicitReturns": false,$/;"	b	object:compilerOptions
 noImplicitThis	api/tsconfig.json	/^    "noImplicitThis": true,$/;"	b	object:compilerOptions
 noUnusedLocals	api/tsconfig.json	/^    "noUnusedLocals": true,$/;"	b	object:compilerOptions
 noUnusedParameters	api/tsconfig.json	/^    "noUnusedParameters": true,$/;"	b	object:compilerOptions
 nodemon	api/package.json	/^    "nodemon": "^2.0.20",$/;"	s	object:devDependencies
-not	client/src/components/Project/Board/IssueDetails/Title/Styles.js	/^    &:hover:not(:focus) {$/;"	f
+not	client/src/Project/IssueDetails/Title/Styles.js	/^    &:hover:not(:focus) {$/;"	f
 not	client/src/shared/components/Button/Styles.js	/^  &:not(:disabled) {$/;"	f
-ns033484ae0101	client/src/components/App/assets/fonts/jira.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
 ns097933810101	client/src/shared/assets/icons/jira.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
-ns2d4c46360101	client/src/components/App/assets/fonts/CircularStd-Medium.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
 ns365142170101	client/src/shared/assets/fonts/CircularStd-Medium.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
 ns4a07bdb30101	client/src/shared/assets/fonts/CircularStd-Black.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg"><defs><font horiz-adv-x="587"><font-face ascent="809/;"	n	uri:http://www.w3.org/2000/svg
+ns7320453d0101	client/src/App/assets/fonts/CircularStd-Black.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg"><defs><font horiz-adv-x="587"><font-face ascent="809/;"	n	uri:http://www.w3.org/2000/svg
+ns827abae10101	client/src/App/assets/fonts/CircularStd-Medium.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
 ns86a884370101	client/src/shared/assets/fonts/CircularStd-Bold.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
 ns8e26a9a10101	client/src/shared/assets/fonts/CircularStd-Book.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
-ns8f9339f20101	client/src/components/App/assets/fonts/CircularStd-Black.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg"><defs><font horiz-adv-x="587"><font-face ascent="809/;"	n	uri:http://www.w3.org/2000/svg
-ns9085f4960101	client/src/components/App/assets/fonts/CircularStd-Bold.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
-ns98041a000101	client/src/components/App/assets/fonts/CircularStd-Book.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
+ns8fa942810101	client/src/App/assets/fonts/CircularStd-Bold.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
+ns972767eb0101	client/src/App/assets/fonts/CircularStd-Book.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/2000/svg
+nsae535e6a0101	client/build/jira-6a5874e103f26f89ffb84e4de7dae5bf.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
+nsefb75a190101	client/src/App/assets/fonts/jira.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg">$/;"	n	uri:http://www.w3.org/2000/svg
 offset	client/src/shared/components/Tooltip/index.jsx	/^  offset: {$/;"	o
+onBlur	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	m
+onError	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	m
 options	client/webpack.config.js	/^            options: { limit: 15000 }$/;"	o
-options	client/webpack.config.production.js	/^            options: { name: "[name]-[hash].[ext]" }$/;"	o
-options	client/webpack.config.production.js	/^            options: { name: "[name]-[hash].[ext]", limit: 15000 }$/;"	o
+options	client/webpack.config.production.js	/^            options: { name: '[name]-[hash].[ext]' },$/;"	o
+options	client/webpack.config.production.js	/^            options: { name: '[name]-[hash].[ext]', limit: 10000 },$/;"	o
+options	client/webpack.config.production.js	/^            options: { sourceMap: true },$/;"	o
 outDir	api/tsconfig.json	/^    "outDir": "build",$/;"	s	object:compilerOptions
 output	client/webpack.config.js	/^  output: {$/;"	o
 output	client/webpack.config.production.js	/^  output: {$/;"	o
 parser	client/.eslintrc.json	/^  "parser": "babel-eslint",$/;"	s
 parserOptions	client/.eslintrc.json	/^  "parserOptions": {$/;"	o
+paths	api/tsconfig.json	/^    "paths": {$/;"	o	object:compilerOptions
 pg	api/package.json	/^    "pg": "^8.8.0",$/;"	s	object:dependencies
-posttest	api/package.json	/^    "posttest": "yarn run lint"$/;"	s	object:scripts
+phasedRegistrationNames	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	o
 pre-commit	api/package.json	/^    "pre-commit": "lint-staged",$/;"	s	object:scripts
 pre-commit	client/package.json	/^    "pre-commit": "lint-staged"$/;"	s	object:scripts
 pre-commit	package.json	/^      "pre-commit": "npm run pre-commit"$/;"	s	object:husky.hooks
 pre-commit	package.json	/^    "pre-commit": "npm run pre-commit:api && npm run pre-commit:client",$/;"	s	object:scripts
 pre-commit:api	package.json	/^    "pre-commit:api": "cd api && npm run pre-commit",$/;"	s	object:scripts
 pre-commit:client	package.json	/^    "pre-commit:client": "cd client && npm run pre-commit",$/;"	s	object:scripts
-prepare	api/package.json	/^    "prepare": "yarn run compile",$/;"	s	object:scripts
-pretest	api/package.json	/^    "pretest": "yarn run compile",$/;"	s	object:scripts
 prettier	api/package.json	/^    "prettier": "^2.7.1",$/;"	s	object:devDependencies
 prettier	client/package.json	/^    "prettier": "^1.19.1",$/;"	s	object:devDependencies
 priority	api/build/src/entities/Issue.d.ts	/^    priority: IssuePriority;$/;"	p	class:Issue
@@ -1084,15 +1489,20 @@ project	api/src/controllers/projects.ts	/^    const project = updateEntity(Proje
 project	api/src/database/seeds/guestUser.ts	/^  const project = await seedProject(users);$/;"	C
 project	api/src/entities/Issue.ts	/^  project: Project;$/;"	p	class:Issue
 project	api/src/entities/User.ts	/^  project: Project;$/;"	p	class:User
-project	client/src/components/Project/index.jsx	/^      project: {$/;"	o
+project	client/src/Project/index.jsx	/^      project: {$/;"	o
+projectId	api/src/entities/Issue.ts	/^  projectId: number;$/;"	p	class:Issue
 projectId	api/src/entities/User.ts	/^  projectId: number;$/;"	p	class:User
 projects	api/build/src/entities/User.d.ts	/^    projects: Project[];$/;"	p	class:User
 projects	api/src/database/seeds/development/index.ts	/^  const projects = await seedProjects(users);$/;"	C
 prop-types	client/package.json	/^    "prop-types": "^15.7.2",$/;"	s	object:dependencies
 props	client/.eslintrc.json	/^    "no-param-reassign": [2, { "props": false }],$/;"	b	object:rules.no-param-reassign.1
+prototype.isReactComponent	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	o
+push	client/build/0-121742718436dde3a71a.js	/^(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{608:function(l,n,e){"use strict";var o=/;"	f
 query-string	client/package.json	/^    "query-string": "^6.9.0",$/;"	s	object:dependencies
 quill	client/package.json	/^    "quill": "^1.3.7",$/;"	s	object:dependencies
 radix	client/.eslintrc.json	/^    "radix": 0,$/;"	n	object:rules
+raw	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	o
+re	client/build/main-121742718436dde3a71a.js	/^function h(){for(var e=0,t=0,n=arguments.length;t<n;t++)e+=arguments[t].length;var r=Array(e),o=/;"	f
 react	client/package.json	/^    "react": "^16.12.0",$/;"	s	object:dependencies
 react-beautiful-dnd	client/package.json	/^    "react-beautiful-dnd": "^13.1.1",$/;"	s	object:dependencies
 react-content-loader	client/package.json	/^    "react-content-loader": "^6.2.0",$/;"	s	object:dependencies
@@ -1104,7 +1514,19 @@ react-transition-group	client/package.json	/^    "react-transition-group": "^4.4
 react/forbid-prop-types	client/.eslintrc.json	/^    "react\/forbid-prop-types": 0,$/;"	n	object:rules
 react/jsx-props-no-spreading	client/.eslintrc.json	/^    "react\/jsx-props-no-spreading": 0$/;"	n	object:rules
 react/no-array-index-key	client/.eslintrc.json	/^    "react\/no-array-index-key": 0,$/;"	n	object:rules
+react/prop-types	client/.eslintrc.json	/^    "react\/prop-types": [2, { "skipUndeclared": true }],$/;"	a	object:rules
+read	client/build/main-121742718436dde3a71a.js	/^t.read=function(e,t,n,r,o){var i,a,u=8*o-r-1,l=(1<<u)-1,c=l>>1,s=-7,f=n?o-1:0,d=n?-1:1,p=e[t+f];/;"	f
 regenerator-runtime	client/package.json	/^    "regenerator-runtime": "^0.13.11",$/;"	s	object:dependencies
+rejected	api/build/controllers/authentication.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/controllers/comments.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/controllers/issues.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/controllers/projects.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/database/seeds/development/index.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/database/seeds/guestUser.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/errors/asyncCatch.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/index.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/middleware/authentication.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
+rejected	api/build/utils/typeorm.js	/^        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e/;"	f
 removeComments	api/tsconfig.json	/^    "removeComments": true,$/;"	b	object:compilerOptions
 reporterId	api/build/src/entities/Issue.d.ts	/^    reporterId: number;$/;"	p	class:Issue
 reporterId	api/src/entities/Issue.ts	/^  reporterId: number;$/;"	p	class:Issue
@@ -1112,9 +1534,10 @@ repository	api/package.json	/^  "repository": "https:\/\/github.com\/shihabdider
 resolve	client/webpack.config.js	/^  resolve: {$/;"	o
 resolve	client/webpack.config.production.js	/^  resolve: {$/;"	o
 respond	api/src/types/express.d.ts	/^    respond: (data: any) => void;$/;"	p	interface:Express.Response
+rgb	client/build/main-121742718436dde3a71a.js	/^*\/var r=Object.getOwnPropertySymbols,o=Object.prototype.hasOwnProperty,i=Object.prototype.prope/;"	o
 right	client/src/shared/components/Tooltip/index.jsx	/^    right: {$/;"	o
+root	client/build/index.html	/^    <div id="root"><\/div>$/;"	I
 root	client/src/index.html	/^    <div id="root"><\/div>$/;"	I
-rootDir	api/tsconfig.json	/^    "rootDir": ".",$/;"	s	object:compilerOptions
 router	api/build/src/controllers/authentication.d.ts	/^declare const router: import("express-serve-static-core").Router;$/;"	C
 router	api/build/src/controllers/issues.d.ts	/^declare const router: import("express-serve-static-core").Router;$/;"	C
 router	api/build/src/controllers/projects.d.ts	/^declare const router: import("express-serve-static-core").Router;$/;"	C
@@ -1138,34 +1561,62 @@ seedProject	api/src/database/seeds/guestUser.ts	/^const seedProject = (users: Us
 seedProjects	api/src/database/seeds/development/index.ts	/^const seedProjects = (users: User[]): Promise<Project[]> => {$/;"	C
 seedUsers	api/src/database/seeds/development/index.ts	/^const seedUsers = (): Promise<User[]> => {$/;"	C
 seedUsers	api/src/database/seeds/guestUser.ts	/^const seedUsers = (): Promise<User[]> => {$/;"	C
+setState	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(242),o="function"==typeof Symbol&&Symbol.for,i=o?Symbol.for("react.element"):60103,a/;"	f
 settings	client/.eslintrc.json	/^  "settings": {$/;"	o
 signToken	api/build/src/utils/authToken.d.ts	/^export declare const signToken: (payload: object, options?: SignOptions) => string;$/;"	C
 signToken	api/src/utils/authToken.ts	/^export const signToken = (payload: object, options?: SignOptions): string =>$/;"	C
+skipUndeclared	client/.eslintrc.json	/^    "react\/prop-types": [2, { "skipUndeclared": true }],$/;"	b	object:rules.react/prop-types.1
+sourceMap	api/tsconfig.json	/^    "sourceMap": true,$/;"	b	object:compilerOptions
 sourceType	client/.eslintrc.json	/^    "sourceType": "module",$/;"	s	object:parserOptions
-start	api/package.json	/^    "start": "nodemon --exec ts-node --files src\/index.ts",$/;"	s	object:scripts
-start	client/package.json	/^    "start": "webpack-dev-server",$/;"	s	object:scripts
+src	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	f
+start	api/package.json	/^    "start": "node -r .\/tsconfig-paths.js .\/build\/index.js",$/;"	s	object:scripts
+start	client/package.json	/^    "start": "node server.js",$/;"	s	object:scripts
+start:dev	client/package.json	/^    "start:dev": "webpack-dev-server",$/;"	s	object:scripts
+start:old	api/package.json	/^    "start:old": "nodemon --exec ts-node --files src\/index.ts",$/;"	s	object:scripts
+start:production	api/package.json	/^    "start:production": "pm2 start --name 'jira_api' node -- -r .\/tsconfig-paths.js build\/inde/;"	s	object:scripts
+start:test	api/package.json	/^    "start:test": "cross-env NODE_ENV='test' DB_DATABASE='jira_test' npm start",$/;"	s	object:scripts
+state	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	o
 status	api/build/src/entities/Issue.d.ts	/^    status: IssueStatus;$/;"	p	class:Issue
 status	api/build/src/errors/customErrors.d.ts	/^    status: number;$/;"	p	class:CustomError
 status	api/src/entities/Issue.ts	/^  status: IssueStatus;$/;"	p	class:Issue
+step	api/build/controllers/authentication.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/controllers/comments.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/controllers/issues.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/controllers/projects.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/database/seeds/development/index.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/database/seeds/guestUser.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/errors/asyncCatch.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/index.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/middleware/authentication.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+step	api/build/utils/typeorm.js	/^        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(f/;"	f
+strict	api/tsconfig.json	/^    "strict": true,$/;"	b	object:compilerOptions
 strictBindCallApply	api/tsconfig.json	/^    "strictBindCallApply": true,$/;"	b	object:compilerOptions
 strictFunctionTypes	api/tsconfig.json	/^    "strictFunctionTypes": true,$/;"	b	object:compilerOptions
 strictNullChecks	api/tsconfig.json	/^    "strictNullChecks": true,$/;"	b	object:compilerOptions
 strictPropertyInitialization	api/tsconfig.json	/^    "strictPropertyInitialization": false,$/;"	b	object:compilerOptions
+style	client/build/main-121742718436dde3a71a.js	/^***************************************************************************** *\/var Tx=function/;"	o
 style-loader	client/package.json	/^    "style-loader": "2.0.0",$/;"	s	object:devDependencies
 styled-components	client/package.json	/^    "styled-components": "^4.4.1",$/;"	s	object:dependencies
 sweet-pubsub	client/package.json	/^    "sweet-pubsub": "^1.1.2"$/;"	s	object:dependencies
+tagMap	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	o
+target	api/tsconfig.json	/^    "target": "es6",$/;"	s	object:compilerOptions
+templateSettings	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	o
 timeRemaining	api/build/src/entities/Issue.d.ts	/^    timeRemaining: number | null;$/;"	p	class:Issue
 timeRemaining	api/src/entities/Issue.ts	/^  timeRemaining: number | null;$/;"	p	class:Issue
 timeSpent	api/build/src/entities/Issue.d.ts	/^    timeSpent: number | null;$/;"	p	class:Issue
 timeSpent	api/src/entities/Issue.ts	/^  timeSpent: number | null;$/;"	p	class:Issue
 title	api/build/src/entities/Issue.d.ts	/^    title: string;$/;"	p	class:Issue
 title	api/src/entities/Issue.ts	/^  title: string;$/;"	p	class:Issue
+to	client/build/main-121742718436dde3a71a.js	/^ *\/var r="function"==typeof Symbol&&Symbol.for,o=r?Symbol.for("react.element"):60103,i=r?Symbol/;"	o
 top	client/src/shared/components/Tooltip/index.jsx	/^    top: {$/;"	o
 ts-node	api/package.json	/^    "ts-node": "^10.9.1",$/;"	s	object:devDependencies
+tsconfig-paths	api/package.json	/^    "tsconfig-paths": "^4.1.1",$/;"	s	object:dependencies
 type	api/build/src/entities/Issue.d.ts	/^    type: IssueType;$/;"	p	class:Issue
 type	api/src/entities/Issue.ts	/^  type: IssueType;$/;"	p	class:Issue
 typeorm	api/package.json	/^    "typeorm": "^0.3.10"$/;"	s	object:dependencies
+types	api/tsconfig.json	/^    "types": ["node"],$/;"	a	object:compilerOptions
 typescript	api/package.json	/^    "typescript": "~4.7.0"$/;"	s	object:devDependencies
+unstable_now	client/build/main-121742718436dde3a71a.js	/^ *\/var r,o,i,a,u;if("undefined"==typeof window||"function"!=typeof MessageChannel){var l=null,c/;"	f
 updateEntity	api/build/src/utils/typeorm.d.ts	/^export declare const updateEntity: <T extends EntityConstructor>(Constructor: T, id: number | st/;"	C
 updateEntity	api/src/utils/typeorm.ts	/^export const updateEntity = async <T extends EntityConstructor>($/;"	C
 updatedAt	api/build/src/entities/Comment.d.ts	/^    updatedAt: Date;$/;"	p	class:Comment
@@ -1176,7 +1627,7 @@ updatedAt	api/src/entities/Comment.ts	/^  updatedAt: Date;$/;"	p	class:Comment
 updatedAt	api/src/entities/Issue.ts	/^  updatedAt: Date;$/;"	p	class:Issue
 updatedAt	api/src/entities/Project.ts	/^  updatedAt: Date;$/;"	p	class:Project
 updatedAt	api/src/entities/User.ts	/^  updatedAt: Date;$/;"	p	class:User
-updatedFields	client/src/components/Project/Board/Lists/index.jsx	/^      updatedFields: {$/;"	o
+updatedFields	client/src/Project/Board/Lists/index.jsx	/^      updatedFields: {$/;"	o
 url	api/build/src/entities/Project.d.ts	/^    url: string | null;$/;"	p	class:Project
 url	api/src/entities/Project.ts	/^  url: string | null;$/;"	p	class:Project
 url-loader	client/package.json	/^    "url-loader": "^3.0.0",$/;"	s	object:devDependencies
@@ -1186,7 +1637,6 @@ user	api/src/entities/Comment.ts	/^  user: User;$/;"	p	class:Comment
 user	api/src/middleware/authentication.ts	/^  const user = await User.findOne({where: {id: userId}});$/;"	C
 userId	api/build/src/entities/Comment.d.ts	/^    userId: number;$/;"	p	class:Comment
 userId	api/src/entities/Comment.ts	/^  userId: number;$/;"	p	class:Comment
-userId	api/src/middleware/authentication.ts	/^  const userId = verifyToken(token).sub;$/;"	C
 userIds	api/build/src/entities/Issue.d.ts	/^    userIds: number[];$/;"	p	class:Issue
 userIds	api/src/entities/Issue.ts	/^  userIds: number[];$/;"	p	class:Issue
 users	api/build/src/entities/Issue.d.ts	/^    users: User[];$/;"	p	class:Issue
@@ -1196,6 +1646,10 @@ users	api/src/database/seeds/guestUser.ts	/^  const users = await seedUsers();$/
 users	api/src/entities/Issue.ts	/^  users: User[];$/;"	p	class:Issue
 users	api/src/entities/Project.ts	/^  users: User[];$/;"	p	class:Project
 validateAndSaveEntity	api/src/utils/typeorm.ts	/^const validateAndSaveEntity = async <T extends EntityInstance>($/;"	C
+validations	api/build/entities/Comment.js	/^Comment.validations = {$/;"	o
+validations	api/build/entities/Issue.js	/^Issue.validations = {$/;"	o
+validations	api/build/entities/Project.js	/^Project.validations = {$/;"	o
+validations	api/build/entities/User.js	/^User.validations = {$/;"	o
 validations	api/build/src/entities/Comment.d.ts	/^    static validations: {$/;"	p	class:Comment
 validations	api/build/src/entities/Comment.js	/^Comment.validations = {$/;"	o
 validations	api/build/src/entities/Issue.d.ts	/^    static validations: {$/;"	p	class:Issue
@@ -1208,6 +1662,9 @@ validations	api/src/entities/Comment.ts	/^  static validations = {$/;"	p	class:C
 validations	api/src/entities/Issue.ts	/^  static validations = {$/;"	p	class:Issue
 validations	api/src/entities/Project.ts	/^  static validations = {$/;"	p	class:Project
 validations	api/src/entities/User.ts	/^  static validations = {$/;"	p	class:User
+value	client/build/main-121742718436dde3a71a.js	/^r.version="2.29.4",t=kt,r.fn=yn,r.min=function(){var e=[].slice.call(arguments,0);return At("isB/;"	o
+value	client/build/main-121742718436dde3a71a.js	/^var n;"undefined"!=typeof self&&self,n=function(){return function(e){var t={};function n(r){if(t/;"	m
+valueTracker	client/build/main-121742718436dde3a71a.js	/^ *\/var r=n(0),o=n(242),i=n(568);function a(e){for(var t="https:\/\/reactjs.org\/docs\/error-dec/;"	f
 variables	client/src/shared/hooks/api.js	/^      variables: { ...variablesMemoized, ...state.additionalVariables },$/;"	o
 verifyToken	api/build/src/utils/authToken.d.ts	/^export declare const verifyToken: (token: string) => {$/;"	C
 verifyToken	api/src/utils/authToken.ts	/^export const verifyToken = (token: string): {[key: string]: any} => {$/;"	C
@@ -1217,12 +1674,19 @@ version	package.json	/^  "version": "1.0.0",$/;"	s
 webpack	client/package.json	/^    "webpack": "^4.41.2",$/;"	s	object:devDependencies
 webpack-cli	client/package.json	/^    "webpack-cli": "^3.3.10",$/;"	s	object:devDependencies
 webpack-dev-server	client/package.json	/^    "webpack-dev-server": "^3.9.0"$/;"	s	object:devDependencies
+where	api/build/controllers/issues.js	/^        where: { projectId: newIssue.projectId, status: newIssue.status },$/;"	o
+where	api/build/controllers/issues.js	/^        where: {$/;"	o
+where	api/build/controllers/projects.js	/^        where: {$/;"	o
+where	api/build/middleware/authentication.js	/^    const user = yield entities_1.User.findOne({ where: { id: userId } });$/;"	o
 where	api/build/src/controllers/issues.js	/^        where: {$/;"	o
 where	api/build/src/controllers/projects.js	/^        where: {$/;"	o
 where	api/build/src/utils/typeorm.js	/^    const instance = await (0, exports.findEntityOrThrow)(Constructor, { where: { id: id } });$/;"	o
-xlink	client/src/components/App/assets/fonts/CircularStd-Bold.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
-xlink	client/src/components/App/assets/fonts/CircularStd-Book.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
-xlink	client/src/components/App/assets/fonts/CircularStd-Medium.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
+where	api/build/utils/typeorm.js	/^    const instance = yield (0, exports.findEntityOrThrow)(Constructor, { where: { id } });$/;"	o
+wr	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	m
+write	client/build/main-121742718436dde3a71a.js	/^t.read=function(e,t,n,r,o){var i,a,u=8*o-r-1,l=(1<<u)-1,c=l>>1,s=-7,f=n?o-1:0,d=n?-1:1,p=e[t+f];/;"	m
+xlink	client/src/App/assets/fonts/CircularStd-Bold.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
+xlink	client/src/App/assets/fonts/CircularStd-Book.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
+xlink	client/src/App/assets/fonts/CircularStd-Medium.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	client/src/shared/assets/fonts/CircularStd-Bold.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	client/src/shared/assets/fonts/CircularStd-Book.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink
 xlink	client/src/shared/assets/fonts/CircularStd-Medium.svg	/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" xmlns:xlink="http:\/\/www.w3.org\/1999\/xlink" versi/;"	n	uri:http://www.w3.org/1999/xlink

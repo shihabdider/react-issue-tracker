@@ -15,7 +15,7 @@ export const ScrollOverlay = styled.div`
 
 export const ClickableOverlay = styled.div`
   min-height: 100%;
-  background: ${mixin.rgba(color.textLight, 0.7)};
+  background: rgba(9, 30, 66, 0.54);
   ${props => clickOverlayStyles[props.variant]}
 `;
 
@@ -44,6 +44,7 @@ const modalStyles = {
     max-width: ${props => props.width}px;
     vertical-align: middle;
     text-align: left;
+    border-radius: 3px;
     ${mixin.boxShadowMedium}
   `,
   aside: css`

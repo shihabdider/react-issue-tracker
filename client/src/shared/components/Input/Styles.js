@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { color, font } from "shared/utils/styles";
 
@@ -14,8 +14,12 @@ export default styled.div`
     border-radius: 3px;
     border: 1px solid ${color.borderLightest};
     background: ${color.backgroundLightest};
+    transition: background 0.1s;
     ${font.regular}
     ${font.size(15)}
+    &:hover {
+      background: ${color.backgroundLight};
+    }
     &:focus {
       background: #fff;
       border: 1px solid ${color.borderInputFocus};
@@ -23,7 +27,14 @@ export default styled.div`
     }
     ${props => (props.icon ? "padding-left: 32px;" : "")}
     ${props =>
-      props.invalid ? `&, &:focus { border: 1px solid ${color.danger}; }` : ""}
+      props.invalid &&
+      css`
+        &,
+        &:focus {
+          border: 1px solid ${color.danger};
+          box-shadow: none;
+        }
+      `}
   }
   i {
     position: absolute;

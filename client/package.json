@@ -4,8 +4,9 @@
   "author": "Shihab Dider",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "rm -rf dist && webpack --config webpack.config.production.js --progress",
+    "start": "node server.js",
+    "start:dev": "webpack-dev-server",
+    "build": "rm -rf build && webpack --config webpack.config.production.js --progress",
     "pre-commit": "lint-staged"
   },
   "devDependencies": {
@@ -39,7 +40,11 @@
   "dependencies": {
     "axios": "^0.19.0",
     "color": "^3.1.2",
+    "compression": "^1.7.4",
     "core-js": "^3.26.1",
+    "express": "^4.18.2",
+    "express-history-api-fallback": "^2.2.1",
+    "formik": "^2.2.9",
     "history": "^4.10.1",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.15",

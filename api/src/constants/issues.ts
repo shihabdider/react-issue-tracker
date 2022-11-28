@@ -4,6 +4,12 @@ export enum IssueType {
   STORY = 'story',
 }
 
+export const IssueTypeCopy = {
+  [IssueType.TASK]: 'Task',
+  [IssueType.BUG]: 'Bug',
+  [IssueType.STORY]: 'Story',
+};
+
 export enum IssueStatus {
   BACKLOG = 'backlog',
   SELECTED = 'selected',
@@ -18,3 +24,11 @@ export enum IssuePriority {
   LOW = '2',
   LOWEST = '1',
 }
+
+export const IssuePriorityCopy = {
+  [IssuePriority.HIGHEST]: 'Highest',
+  [IssuePriority.HIGH]: 'High',
+  [IssuePriority.MEDIUM]: 'Medium',
+  [IssuePriority.LOW]: 'Low',
+  [IssuePriority.LOWEST]: 'Lowest',
+};

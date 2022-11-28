@@ -13,6 +13,7 @@ import {
 } from "./Styles";
 
 const propTypes = {
+  dropdownWidth: PropTypes.number,
   value: PropTypes.any,
   isValueEmpty: PropTypes.bool.isRequired,
   searchValue: PropTypes.string.isRequired,
@@ -27,6 +28,7 @@ const propTypes = {
 };
 
 const defaultProps = {
+  dropdownWidth: undefined,
   value: undefined,
   onCreate: undefined,
   isMulti: false,
@@ -34,6 +36,7 @@ const defaultProps = {
 };
 
 const SelectDropdown = ({
+  dropdownWidth,
   value,
   isValueEmpty,
   searchValue,
@@ -181,15 +184,14 @@ const SelectDropdown = ({
       value: option.value,
       label: option.label,
       className: i === 0 ? activeOptionClass : undefined,
-      isSelected: option.value === value,
       "data-select-option-value": option.value,
       onMouseEnter: handleOptionMouseEnter,
       onClick: () => selectOptionValue(option.value)
     };
-    return propsRenderOption ? (
-      propsRenderOption(optionProps)
-    ) : (
-      <Option {...optionProps}>{option.label}</Option>
+    return (
+      <Option {...optionProps}>
+        {propsRenderOption ? propsRenderOption(option) : option.label}
+      </Option>
     );
   };
 
@@ -207,7 +209,7 @@ const SelectDropdown = ({
   );
 
   return (
-    <Dropdown>
+    <Dropdown width={dropdownWidth}>
       <DropdownInput
         type="text"
         placeholder="Search"

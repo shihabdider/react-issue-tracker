@@ -38,7 +38,7 @@ const DatePickerDateSection = ({
   );
 
   const handleYearChange = year => {
-    setSelectedMonth(moment(selectedMonth).set({ year: parseInt(year) }));
+    setSelectedMonth(moment(selectedMonth).set({ year: Number(year) }));
   };
 
   const handleMonthChange = addOrSubtract => {

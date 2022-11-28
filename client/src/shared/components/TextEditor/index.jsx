@@ -10,54 +10,74 @@ const propTypes = {
   className: PropTypes.string,
   placeholder: PropTypes.string,
   defaultValue: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func,
   getEditor: PropTypes.func.isRequired
 };
 
 const defaultProps = {
   className: undefined,
   placeholder: undefined,
-  defaultValue: undefined
+  defaultValue: undefined,
+  value: undefined,
+  onChange: () => {},
+  getEditor: () => {}
 };
 
 const TextEditor = ({
   className,
   placeholder,
   defaultValue,
+  value: alsoDefaultValue,
+  onChange,
   getEditor,
   ...otherProps
 }) => {
   const $editorContRef = useRef();
   const $editorRef = useRef();
+  const quillRef = useRef();
+  const initialValueRef = useRef(defaultValue || alsoDefaultValue || "");
 
   useLayoutEffect(() => {
-    let editor = null;
-
-    const setup = async () => {
-      editor = new Quill($editorRef.current, { placeholder, ...editorConfig });
-
-      editor.clipboard.dangerouslyPasteHTML(0, defaultValue);
-
-      getEditor({
-        getHTML: () =>
-          $editorContRef.current.querySelector(".ql-editor").innerHTML
+    const setupQuill = () => {
+      quillRef.current = new Quill($editorRef.current, {
+        placeholder,
+        ...quillConfig
       });
     };
-    setup();
 
+    const insertInitialValue = () => {
+      quillRef.current.clipboard.dangerouslyPasteHTML(
+        0,
+        initialValueRef.current
+      );
+    };
+    const handleContentsChange = () => {
+      onChange(getHTMLValue());
+    };
+    const getHTMLValue = () =>
+      $editorContRef.current.querySelector(".ql-editor").innerHTML;
+
+    setupQuill();
+    insertInitialValue();
+    getEditor({ getValue: getHTMLValue });
+
+    quillRef.current.on("text-change", handleContentsChange);
     return () => {
-      editor = null;
+      quillRef.current.off("text-change", handleContentsChange);
+      quillRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <EditorCont className={className} ref={$editorContRef}>
-      <div ref={$editorRef} {...otherProps} />
+      <div ref={$editorRef} />
     </EditorCont>
   );
 };
 
-const editorConfig = {
+const quillConfig = {
   theme: "snow",
   modules: {
     toolbar: [

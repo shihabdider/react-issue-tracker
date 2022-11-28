@@ -9,7 +9,7 @@ import {
 } from "shared/utils/authToken";
 
 const defaults = {
-  baseURL: "http://localhost:3000",
+  baseURL: process.env.API_URL || "http://localhost:3000",
   headers: () => ({
     "Content-Type": "application/json",
     Authorization: getStoredAuthToken()
@@ -20,7 +20,8 @@ const defaults = {
     code: "INTERNAL_ERROR",
     message:
       "Something went wrong. Please check your internet connection or contact our support.",
-    status: 503
+    status: 503,
+    data: {}
   }
 };
 

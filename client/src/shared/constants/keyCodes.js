@@ -3,5 +3,6 @@ export const KeyCodes = {
   TAB: 9,
   ENTER: 13,
   ARROW_UP: 38,
-  ARROW_DOWN: 40
+  ARROW_DOWN: 40,
+  M: 77
 };

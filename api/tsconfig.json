@@ -1,12 +1,12 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-      "lib": ["es2019", "es2015"],
-    "rootDir": ".",
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "es6", "es2017", "es2019", "esnext.asynciterable"],
+    "sourceMap": true,
     "outDir": "build",
-    "moduleResolution": "node",
-    "baseUrl": "./src",
     "removeComments": true,
+    "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -16,6 +16,14 @@
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "paths": {
+      "*": ["./*"]
+    },
+    "types": ["node"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -23,8 +31,5 @@
     "forceConsistentCasingInFileNames": true
   },
   "exclude": ["node_modules"],
-  "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
-  ]
+  "include": ["./src/**/*.ts"]
 }

@@ -9,7 +9,7 @@ const useApi = (method, url, variables = {}, { lazy = false } = {}) => {
   const [state, setState] = useState({
     data: null,
     error: null,
-    isLoading: isCalledAutomatically,
+    isWorking: isCalledAutomatically,
     additionalVariables: {}
   });
 
@@ -31,17 +31,17 @@ const useApi = (method, url, variables = {}, { lazy = false } = {}) => {
         };
 
         if (!isCalledAutomatically || wasCalledRef.current) {
-          setStateMerge({ additionalVariables, isLoading: true });
+          setStateMerge({ additionalVariables, isWorking: true });
         }
 
         api[method](url, { ...variablesMemoized, ...additionalVariables }).then(
           data => {
             resolve(data);
-            setStateMerge({ data, error: null, isLoading: false });
+            setStateMerge({ data, error: null, isWorking: false });
           },
           error => {
             reject(error);
-            setStateMerge({ error, data: null, isLoading: false });
+            setStateMerge({ error, data: null, isWorking: false });
           }
         );
 
@@ -68,6 +68,7 @@ const useApi = (method, url, variables = {}, { lazy = false } = {}) => {
   const result = [
     {
       ...state,
+      [isWorkingAlias[method]]: state.isWorking,
       wasCalled: wasCalledRef.current,
       variables: { ...variablesMemoized, ...state.additionalVariables },
       setLocalData
@@ -76,6 +77,14 @@ const useApi = (method, url, variables = {}, { lazy = false } = {}) => {
   ];
 
   return result;
+};
+
+const isWorkingAlias = {
+  get: "isLoading",
+  post: "isCreating",
+  put: "isUpdating",
+  patch: "isUpdating",
+  delete: "isDeleting"
 };
 
 export default {
