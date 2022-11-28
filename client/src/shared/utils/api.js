@@ -39,7 +39,6 @@ const api = (method, url, variables) =>
       },
       error => {
         if (error.response) {
-          console.log(error.response.data);
           if (error.response.data.error.code === "INVALID_TOKEN") {
             removeStoredAuthToken();
             history.push("/authenticate");

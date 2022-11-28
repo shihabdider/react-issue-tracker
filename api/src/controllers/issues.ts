@@ -26,7 +26,7 @@ router.get(
       where: {
         id: req.params.issueId,
       },
-      relations: ['users', 'comments'],
+      relations: ['users', 'comments', 'comments.user'],
     });
     res.respond({issue});
   })

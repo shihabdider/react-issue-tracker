@@ -36,7 +36,6 @@ const useApi = (method, url, variables = {}, { lazy = false } = {}) => {
 
         api[method](url, { ...variablesMemoized, ...additionalVariables }).then(
           data => {
-            console.log(data);
             resolve(data);
             setStateMerge({ data, error: null, isLoading: false });
           },

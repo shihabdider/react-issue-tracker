@@ -57,7 +57,7 @@ App	api/build/src/index.js	/^const initializeApp = async () => {$/;"	c
 App	client/src/components/App/App.jsx	/^const App = () => ($/;"	c
 ArrayItemById	client/src/shared/utils/javascript.js	/^export const updateArrayItemById = (arr, itemId, fields) => {$/;"	c
 AssigneeAvatar	client/src/components/Project/Board/Lists/Issue/Styles.js	/^export const AssigneeAvatar = styled(Avatar)`$/;"	c
-Assignees	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderAssignees = () => ($/;"	c
+Assignees	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^  const renderAssignees = () => ($/;"	c
 AuthTokenFromRequest	api/build/src/middleware/authentication.js	/^const getAuthTokenFromRequest = (req) => {$/;"	c
 Authenticate	client/src/components/App/Authenticate.jsx	/^const Authenticate = () => {$/;"	c
 Authorization	client/src/shared/utils/api.js	/^    Authorization: getStoredAuthToken()$/;"	c
@@ -78,16 +78,21 @@ Binding	api/build/src/errors/index.js	/^var __createBinding = (this && this.__cr
 Blur	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^        onBlur={handleTitleChange}$/;"	c
 Board	client/src/components/Project/index.jsx	/^  const renderBoard = () => ($/;"	c
 BodyScrollLock	client/src/shared/components/Modal/index.jsx	/^const setBodyScrollLock = () => {$/;"	c
-BottomMargin	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^      withBottomMargin={withBottomMargin}$/;"	c
+BottomMargin	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      withBottomMargin={withBottomMargin}$/;"	c
 Button	client/src/shared/components/Button/index.jsx	/^const Button = forwardRef($/;"	c
 CalledRef	client/src/shared/hooks/api.js	/^  const wasCalledRef = useRef(false);$/;"	c
+Cancel	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            onCancel={() => setFormOpen(false)}$/;"	c
+Cancel	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            onCancel={() => setFormOpen(false)}$/;"	c
 Catch_1	api/build/src/errors/index.js	/^var asyncCatch_1 = require(".\/asyncCatch");$/;"	c
 Change	client/src/components/Project/Board/Filters/index.jsx	/^        onChange={value => setFiltersMerge({ searchQuery: value })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        onChange={priority => updateIssue({ priority })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        onChange={status => updateIssue({ status })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        onChange={userId => updateIssue({ reporterId: userId })}$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        onChange={userIds => {$/;"	c
-Change	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^      onChange={stringValue => {$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^        onChange={onChange}$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            onChange={setBody}$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            onChange={setBody}$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^        onChange={priority => updateIssue({ priority })}$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^      onChange={status => updateIssue({ status })}$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^      onChange={stringValue => {$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        onChange={userId => updateIssue({ reporterId: userId })}$/;"	c
+Change	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        onChange={userIds => {$/;"	c
 Change	client/src/shared/components/ConfirmModal/index.jsx	/^              <StyledInput onChange={handleConfirmInputChange} \/>$/;"	c
 Change	client/src/shared/components/DatePicker/DateSection.jsx	/^      <YearSelect onChange={event => handleYearChange(event.target.value)}>$/;"	c
 Change	client/src/shared/components/DatePicker/index.jsx	/^              onChange={onChange}$/;"	c
@@ -120,14 +125,19 @@ Click	client/src/components/Project/Board/Filters/index.jsx	/^        <ClearAll 
 Click	client/src/components/Project/Board/Filters/index.jsx	/^        onClick={() => setFiltersMerge({ myOnly: !myOnly })}$/;"	c
 Click	client/src/components/Project/Board/Filters/index.jsx	/^        onClick={() => setFiltersMerge({ recent: !recent })}$/;"	c
 Click	client/src/components/Project/Board/Header/index.jsx	/^        <Button icon="link" onClick={handleLinkCopy}>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^          onClick={() => {$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^        <FormButton color="empty" onClick={onCancel}>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^                <DeleteLink onClick={modal.open}>Delete<\/DeleteLink>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            <EditLink onClick={() => setFormOpen(true)}>Edit<\/EditLink>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            <FakeTextarea onClick={() => setFormOpen(true)}>$/;"	c
 Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^          onClick={() => {$/;"	c
 Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        <Button color="empty" onClick={() => setPresenting(true)}>$/;"	c
 Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        onClick={() => setPresenting(false)}$/;"	c
 Click	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^      <EmptyLabel onClick={() => setPresenting(false)}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^              <Button color="primary" onClick={modal.close}>$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^      onClick={() => removeOptionValue && removeOptionValue(user.id)}$/;"	c
-Click	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^    <Tracking onClick={onClick}>$/;"	c
 Click	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^            <Type key={type} onClick={() => updateIssue({ type })}>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^              <Button color="primary" onClick={modal.close}>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^    <Tracking onClick={onClick}>$/;"	c
+Click	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      onClick={() => removeOptionValue && removeOptionValue(user.id)}$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^        onClick={handleClick}$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^      onClick = () => {},$/;"	c
 Click	client/src/shared/components/Button/index.jsx	/^    const handleClick = () => {$/;"	c
@@ -160,18 +170,22 @@ Comment	api/build/src/entities/Comment.js	/^Comment = __decorate([$/;"	c
 Comment	api/build/src/entities/Comment.js	/^let Comment = class Comment extends typeorm_1.BaseEntity {$/;"	c
 Comment	api/src/entities/Comment.ts	/^class Comment extends BaseEntity {$/;"	c
 Comment	api/src/utils/typeorm.ts	/^  Comment,$/;"	C
+CommentCreate	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^  const handleCommentCreate = async () => {$/;"	c
+CommentDelete	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^  const handleCommentDelete = async () => {$/;"	c
+CommentUpdate	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^  const handleCommentUpdate = async () => {$/;"	c
 Comment_1	api/build/src/entities/index.js	/^var Comment_1 = require(".\/Comment");$/;"	c
 Comments	api/build/src/database/seeds/development/index.js	/^const seedComments = (issues) => {$/;"	c
 Comments	api/build/src/database/seeds/guestUser.js	/^const seedComments = (issue, user) => (0, typeorm_1.createEntity)(entities_1.Comment, {$/;"	c
 Config	client/src/shared/components/TextEditor/index.jsx	/^const editorConfig = {$/;"	c
+Confirm	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^              onConfirm={handleCommentDelete}$/;"	c
 Confirm	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      onConfirm={handleIssueDelete}$/;"	c
 ConfirmModal	client/src/shared/components/ConfirmModal/index.jsx	/^const ConfirmModal = ({$/;"	c
 Connection	api/build/src/database/seeds/development/index.js	/^        const Connection = await (0, connection_1.default)();$/;"	c
 Connection	api/src/database/seeds/development/index.ts	/^    const Connection = await createDatabaseConnection();$/;"	C
 Constructor	api/src/utils/typeorm.ts	/^  const Constructor = entities[instance.constructor.name];$/;"	C
 ContRef	client/src/shared/components/TextEditor/index.jsx	/^  const $editorContRef = useRef();$/;"	c
-Content	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderContent={modal => ($/;"	c
 Content	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      renderContent={() => ($/;"	c
+Content	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^        renderContent={modal => ($/;"	c
 Content	client/src/components/Project/Board/index.jsx	/^            renderContent={modal => ($/;"	c
 Content	client/src/shared/components/ConfirmModal/index.jsx	/^      renderContent={modal => ($/;"	c
 CopyLinkButton	client/src/shared/components/CopyLinkButton.jsx	/^const CopyLinkButton = ({ ...otherProps }) => {$/;"	c
@@ -191,11 +205,11 @@ DONE	client/src/shared/constants/issues.js	/^  DONE: "done"$/;"	n
 DatabaseConnection	api/build/src/database/connection.js	/^const createDatabaseConnection = () => (0, typeorm_1.createConnection)({$/;"	c
 DatabaseConnection	api/build/src/index.js	/^const establishDatabaseConnection = async () => {$/;"	c
 Date	client/src/shared/components/DatePicker/TimeSection.jsx	/^    const existingDate = moment(value || undefined);$/;"	c
-Date	client/src/shared/utils/dateTime.js	/^export const formatDate = (date, format = "ll") =>$/;"	c
+Date	client/src/shared/utils/dateTime.js	/^export const formatDate = (date, format = "MMMM D, YYYY") =>$/;"	c
 DatePicker	client/src/shared/components/DatePicker/index.jsx	/^const DatePicker = ({$/;"	c
 DatePickerDateSection	client/src/shared/components/DatePicker/DateSection.jsx	/^const DatePickerDateSection = ({$/;"	c
 DatePickerTimeSection	client/src/shared/components/DatePicker/TimeSection.jsx	/^const DatePickerTimeSection = ({ value, onChange, setDropdownOpen }) => {$/;"	c
-DateTime	client/src/shared/utils/dateTime.js	/^export const formatDateTime = (date, format = "lll") =>$/;"	c
+DateTime	client/src/shared/utils/dateTime.js	/^export const formatDateTime = (date, format = "MMMM D, YYYY, h:mm A") =>$/;"	c
 Default	api/build/src/controllers/authentication.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/controllers/issues.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
 Default	api/build/src/controllers/projects.js	/^var __importDefault = (this && this.__importDefault) || function (mod) {$/;"	c
@@ -246,7 +260,7 @@ Errors	api/build/src/errors/asyncCatch.js	/^const catchErrors = (requestHandler)
 Errors	api/build/src/utils/validation.js	/^    const fieldErrors = {};$/;"	c
 Errors	api/build/src/utils/validation.js	/^const generateErrors = (fieldValues, fieldValidators) => {$/;"	c
 Errors	client/src/shared/utils/validation.js	/^export const generateErrors = (fieldValues, fieldValidators) => {$/;"	c
-Estimate	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderEstimate = () => ($/;"	c
+Estimate	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderEstimate = () => ($/;"	c
 Express	api/build/src/index.js	/^const initializeExpress = () => {$/;"	c
 Express	api/src/types/express.d.ts	/^declare namespace Express {$/;"	n
 Feedback	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const renderFeedback = () => ($/;"	c
@@ -263,6 +277,7 @@ FillerDaysBeforeMonthStart	client/src/shared/components/DatePicker/DateSection.j
 Filters	client/src/components/Project/Board/index.jsx	/^        defaultFilters={defaultFilters}$/;"	c
 Filters	client/src/components/Project/Board/index.jsx	/^        setFilters={setFilters}$/;"	c
 Filters	client/src/components/Project/Board/index.jsx	/^const defaultFilters = {$/;"	c
+FormButton	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/Styles.js	/^export const FormButton = styled(Button)`$/;"	c
 GuestAccount	client/src/components/App/Authenticate.jsx	/^    const createGuestAccount = async () => {$/;"	c
 GuestUserEntities	api/build/src/database/seeds/guestUser.js	/^const seedGuestUserEntities = async (user) => {$/;"	c
 HIGH	api/build/src/constants/issues.d.ts	/^    HIGH = "4",$/;"	e	enum:IssuePriority
@@ -284,6 +299,7 @@ Icon	client/src/shared/components/Icon/index.jsx	/^const Icon = ({ type, ...icon
 IconStyles	client/src/shared/components/Modal/Styles.js	/^const closeIconStyles = {$/;"	c
 Id	api/build/src/database/seeds/development/index.js	/^        reporterId: (0, lodash_1.sample)(project.users).id,$/;"	c
 Id	api/build/src/middleware/authentication.js	/^    const userId = (0, authToken_1.verifyToken)(token).sub;$/;"	c
+Id	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^    <Create issueId={issue.id} fetchIssue={fetchIssue} \/>$/;"	c
 Id	client/src/components/Project/Board/Lists/Issue/index.jsx	/^    <Draggable draggableId={issue.id.toString()} index={index}>$/;"	c
 Id	client/src/components/Project/Board/Lists/index.jsx	/^      <Droppable key={status} droppableId={status}>$/;"	c
 Id	client/src/components/Project/Board/Lists/index.jsx	/^    const issueId = parseInt(draggableId);$/;"	c
@@ -301,9 +317,14 @@ Issue	api/build/src/entities/Issue.js	/^Issue = __decorate([$/;"	c
 Issue	api/build/src/entities/Issue.js	/^let Issue = class Issue extends typeorm_1.BaseEntity {$/;"	c
 Issue	api/src/entities/Issue.ts	/^class Issue extends BaseEntity {$/;"	c
 Issue	api/src/utils/typeorm.ts	/^  Issue,$/;"	C
+Issue	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^      <Comment key={comment.id} comment={comment} fetchIssue={fetchIssue} \/>$/;"	c
 Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^            updateIssue={updateIssue}$/;"	c
+Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Comments issue={issue} fetchIssue={fetchIssue} \/>$/;"	c
 Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Description issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Priority issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Status issue={issue} updateIssue={updateIssue} \/>$/;"	c
 Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Title issue={issue} updateIssue={updateIssue} \/>$/;"	c
+Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^          <Tracking issue={issue} updateIssue={updateIssue} \/>$/;"	c
 Issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^        updateIssue={updateIssue}$/;"	c
 IssueDelete	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const handleIssueDelete = async () => {$/;"	c
 IssueDetailsLoader	client/src/components/Project/Board/IssueDetails/Loader.jsx	/^const IssueDetailsLoader = () => ($/;"	c
@@ -313,7 +334,7 @@ IssuePriority	api/build/src/constants/issues.js	/^})(IssuePriority = exports.Iss
 IssuePriority	api/build/src/constants/issues.js	/^})(IssuePriority = exports.IssuePriority || (exports.IssuePriority = {}));$/;"	o
 IssuePriority	api/src/constants/issues.ts	/^export enum IssuePriority {$/;"	g
 IssuePriority	client/src/shared/constants/issues.js	/^export const IssuePriority = {$/;"	c
-IssuePriorityCopy	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^const IssuePriorityCopy = invert(IssuePriority);$/;"	c
+IssuePriorityCopy	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^const IssuePriorityCopy = invert(IssuePriority);$/;"	c
 IssuePriorityIcon	client/src/shared/components/IssuePriorityIcon/index.jsx	/^const IssuePriorityIcon = ({ priority, ...otherProps }) => {$/;"	c
 IssueStatus	api/build/src/constants/issues.d.ts	/^export declare enum IssueStatus {$/;"	g
 IssueStatus	api/build/src/constants/issues.js	/^})(IssueStatus = exports.IssueStatus || (exports.IssueStatus = {}));$/;"	c
@@ -350,9 +371,10 @@ LOWEST	api/src/constants/issues.ts	/^  LOWEST = '1',$/;"	e	enum:IssuePriority
 LOWEST	client/src/shared/constants/issues.js	/^  LOWEST: "1"$/;"	n
 Length	api/build/src/utils/validation.js	/^    maxLength: (max) => (value) => !!value && value.length > max && `Must be at most ${max} char/;"	c
 Length	api/build/src/utils/validation.js	/^    minLength: (min) => (value) => !!value && value.length < min && `Must be at least ${min} cha/;"	c
-Link	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderLink={modal => renderTrackingPreview(modal.open)}$/;"	c
+Link	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^              renderLink={modal => ($/;"	c
 Link	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      renderLink={linkProps => ($/;"	c
 Link	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^      renderLink={modal => ($/;"	c
+Link	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^        renderLink={modal => renderTrackingPreview(modal.open)}$/;"	c
 Link	client/src/shared/components/ConfirmModal/index.jsx	/^      renderLink={renderLink}$/;"	c
 Link	client/src/shared/components/Modal/index.jsx	/^  renderLink: () => {}$/;"	c
 LinkCopy	client/src/components/Project/Board/Header/index.jsx	/^  const handleLinkCopy = () => {$/;"	c
@@ -411,8 +433,9 @@ Offset	client/src/shared/components/Tooltip/index.jsx	/^  const finalOffset = { 
 OnEscapeKeyDown	client/src/shared/hooks/onEscapeKeyDown.js	/^const useOnEscapeKeyDown = (isListening, onEscapeKeyDown) => {$/;"	c
 OnOutsideClick	client/src/shared/hooks/onOutsideClick.js	/^const useOnOutsideClick = ($/;"	c
 Only	client/src/shared/components/Button/index.jsx	/^        iconOnly={!children}$/;"	c
-Option	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderOption={({ value, ...optionProps }) => ($/;"	c
-Option	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderOption={({ value: status, ...optionProps }) => ($/;"	c
+Option	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^        renderOption={({ value, ...optionProps }) => ($/;"	c
+Option	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^      renderOption={({ value: status, ...optionProps }) => ($/;"	c
+Option	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        renderOption={({ value, ...optionProps }) => ($/;"	c
 OptionValues	client/src/shared/components/Select/Dropdown.jsx	/^  const clearOptionValues = () => {$/;"	c
 OverlayRef	client/src/shared/components/Modal/index.jsx	/^  const $clickableOverlayRef = useRef();$/;"	c
 OverlayStyles	client/src/shared/components/Modal/Styles.js	/^const clickOverlayStyles = {$/;"	c
@@ -422,7 +445,6 @@ PageLoader	client/src/shared/components/PageLoader/index.jsx	/^const PageLoader 
 Position	client/src/components/Project/Board/Lists/index.jsx	/^        listPosition: calculateListPosition($/;"	c
 Position	client/src/shared/components/Tooltip/index.jsx	/^const calcPosition = (offset, placement, $tooltipRef, $linkRef) => {$/;"	c
 PresentingMode	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^  const renderPresentingMode = () =>$/;"	c
-Priority	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderPriority = () => ($/;"	c
 PriorityColors	client/src/shared/utils/styles.js	/^export const issuePriorityColors = {$/;"	c
 PriorityIcon	client/src/shared/components/IssuePriorityIcon/Styles.js	/^export const PriorityIcon = styled(Icon)`$/;"	c
 ProcessEnv	api/src/types/env.d.ts	/^  export interface ProcessEnv {$/;"	i	namespace:NodeJS
@@ -440,10 +462,17 @@ ProjectBoard	client/src/components/Project/Board/index.jsx	/^const ProjectBoard 
 ProjectBoardFilters	client/src/components/Project/Board/Filters/index.jsx	/^const ProjectBoardFilters = ({$/;"	c
 ProjectBoardHeader	client/src/components/Project/Board/Header/index.jsx	/^const ProjectBoardHeader = ({ projectName }) => {$/;"	c
 ProjectBoardIssueDetails	client/src/components/Project/Board/IssueDetails/index.jsx	/^const ProjectBoardIssueDetails = ({$/;"	c
+ProjectBoardIssueDetailsComment	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^const ProjectBoardIssueDetailsComment = ({ comment, fetchIssue }) => {$/;"	c
+ProjectBoardIssueDetailsComments	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^const ProjectBoardIssueDetailsComments = ({ issue, fetchIssue }) => ($/;"	c
+ProjectBoardIssueDetailsCommentsBodyForm	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^const ProjectBoardIssueDetailsCommentsBodyForm = ({$/;"	c
+ProjectBoardIssueDetailsCommentsCreate	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^const ProjectBoardIssueDetailsCommentsCreate = ({ issueId, fetchIssue }) => {$/;"	c
 ProjectBoardIssueDetailsDescription	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^const ProjectBoardIssueDetailsDescription = ({ issue, updateIssue }) => {$/;"	c
-ProjectBoardIssueDetailsRightActions	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^const ProjectBoardIssueDetailsRightActions = ({$/;"	c
+ProjectBoardIssueDetailsPriority	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^const ProjectBoardIssueDetailsPriority = ({ issue, updateIssue }) => {$/;"	c
+ProjectBoardIssueDetailsStatus	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^const ProjectBoardIssueDetailsStatus = ({ issue, updateIssue }) => ($/;"	c
 ProjectBoardIssueDetailsTitle	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^const ProjectBoardIssueDetailsTitle = ({ issue, updateIssue }) => {$/;"	c
 ProjectBoardIssueDetailsTopActions	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^const ProjectBoardIssueDetailsTopActions = ({$/;"	c
+ProjectBoardIssueDetailsTracking	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^const ProjectBoardIssueDetailsTracking = ({ issue, updateIssue }) => {$/;"	c
+ProjectBoardIssueDetailsUsers	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^const ProjectBoardIssueDetailsUsers = ({$/;"	c
 ProjectBoardLists	client/src/components/Project/Board/Lists/index.jsx	/^const ProjectBoardLists = ({ project, filters, updateLocalIssuesArray }) => {$/;"	c
 ProjectBoardListsIssue	client/src/components/Project/Board/Lists/Issue/index.jsx	/^const ProjectBoardListsIssue = ({ projectUsers, issue, index }) => {$/;"	c
 ProjectCategory	api/build/src/constants/projects.d.ts	/^export declare enum ProjectCategory {$/;"	g
@@ -472,6 +501,7 @@ Props	client/src/shared/components/TextEditor/index.jsx	/^const defaultProps = {
 Props	client/src/shared/components/Textarea/index.jsx	/^const defaultProps = {$/;"	c
 Props	client/src/shared/components/Tooltip/index.jsx	/^const defaultProps = {$/;"	c
 React Bug Tracker	client/src/index.html	/^    <title>React Bug Tracker<\/title>$/;"	j
+Ref	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^  const $textareaRef = useRef();$/;"	c
 Ref	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^  const $editorRef = useRef();$/;"	c
 Ref	client/src/shared/components/DatePicker/TimeSection.jsx	/^  const $sectionRef = useRef();$/;"	c
 Ref	client/src/shared/components/DatePicker/index.jsx	/^  const $containerRef = useRef();$/;"	c
@@ -483,14 +513,14 @@ Ref	client/src/shared/components/Select/index.jsx	/^          $selectRef={$selec
 Ref	client/src/shared/components/Select/index.jsx	/^  const $inputRef = useRef();$/;"	c
 Ref	client/src/shared/components/Select/index.jsx	/^  const $selectRef = useRef();$/;"	c
 Ref	client/src/shared/components/TextEditor/index.jsx	/^  const $editorRef = useRef();$/;"	c
-Ref	client/src/shared/components/Textarea/index.jsx	/^        inputRef={ref}$/;"	c
+Ref	client/src/shared/components/Textarea/index.jsx	/^        inputRef={ref || undefined}$/;"	c
 Ref	client/src/shared/components/Tooltip/index.jsx	/^  const $linkRef = useRef();$/;"	c
 Ref	client/src/shared/components/Tooltip/index.jsx	/^  const $tooltipRef = useRef();$/;"	c
 Ref	client/src/shared/hooks/api.js	/^  const stateRef = useRef();$/;"	c
 Ref	client/src/shared/hooks/deepCompareMemoize.js	/^  const valueRef = useRef();$/;"	c
-RemainingOrEstimate	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderRemainingOrEstimate = () => {$/;"	c
+RemainingOrEstimate	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderRemainingOrEstimate = () => {$/;"	c
 RenderOption	client/src/shared/components/Select/index.jsx	/^          propsRenderOption={propsRenderOption}$/;"	c
-Reporter	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderReporter = () => ($/;"	c
+Reporter	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^  const renderReporter = () => ($/;"	c
 Request	api/src/types/express.d.ts	/^  export interface Request {$/;"	i	namespace:Express
 Request	client/src/shared/hooks/api.js	/^  const makeRequest = useCallback($/;"	c
 Response	api/src/types/express.d.ts	/^  export interface Response {$/;"	i	namespace:Express
@@ -526,7 +556,6 @@ Spinner	client/src/shared/components/Button/index.jsx	/^    const renderSpinner 
 Spinner	client/src/shared/components/Spinner.jsx	/^const Spinner = ({ className, size, color }) => ($/;"	c
 Star	api/build/src/database/connection.js	/^var __importStar = (this && this.__importStar) || function (mod) {$/;"	c
 Star	api/build/src/errors/index.js	/^var __exportStar = (this && this.__exportStar) || function(m, exports) {$/;"	c
-Status	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderStatus = () => ($/;"	c
 StatusBackgroundColors	client/src/shared/utils/styles.js	/^export const issueStatusBackgroundColors = {$/;"	c
 StatusColors	client/src/shared/utils/styles.js	/^export const issueStatusColors = {$/;"	c
 StoredAuthToken	client/src/shared/utils/authToken.js	/^export const getStoredAuthToken = () => localStorage.getItem("authToken");$/;"	c
@@ -541,6 +570,8 @@ StyledInput	client/src/shared/components/ConfirmModal/Styles.js	/^export const S
 StyledLogo	client/src/components/App/NavbarLeft/Styles.js	/^export const StyledLogo = styled(Logo)`$/;"	c
 StyledSpinner	client/src/shared/components/Button/Styles.js	/^export const StyledSpinner = styled(Spinner)`$/;"	c
 Styles	client/src/shared/components/Modal/Styles.js	/^const modalStyles = {$/;"	c
+Submit	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            onSubmit={handleCommentUpdate}$/;"	c
+Submit	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            onSubmit={handleCommentCreate}$/;"	c
 TAB	client/src/shared/constants/keyCodes.js	/^  TAB: 9,$/;"	n
 TASK	api/build/src/constants/issues.d.ts	/^    TASK = "task",$/;"	e	enum:IssueType
 TASK	api/src/constants/issues.ts	/^  TASK = 'task',$/;"	e	enum:IssueType
@@ -568,20 +599,26 @@ Tooltip	client/src/shared/components/Tooltip/index.jsx	/^  const closeTooltip = 
 Tooltip	client/src/shared/components/Tooltip/index.jsx	/^  const openTooltip = () => setIsOpen(true);$/;"	c
 Tooltip	client/src/shared/components/Tooltip/index.jsx	/^  const renderTooltip = () => ($/;"	c
 TooltipPosition	client/src/shared/components/Tooltip/index.jsx	/^    const setTooltipPosition = () => {$/;"	c
-Tracking	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderTracking = () => ($/;"	c
-TrackingBarWidth	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const calculateTrackingBarWidth = () => {$/;"	c
-TrackingIcon	client/src/components/Project/Board/IssueDetails/RightActions/Styles.js	/^export const TrackingIcon = styled(Icon)`$/;"	c
-TrackingPreview	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderTrackingPreview = (onClick = () => {}) => ($/;"	c
+Tracking	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderTracking = () => ($/;"	c
+TrackingBarWidth	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const calculateTrackingBarWidth = () => {$/;"	c
+TrackingPreview	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^  const renderTrackingPreview = (onClick = () => {}) => ($/;"	c
 Type	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^  const renderType = () => ($/;"	c
 TypeButton	client/src/components/Project/Board/IssueDetails/TopActions/Styles.js	/^export const TypeButton = styled(Button)`$/;"	c
 TypeColors	client/src/shared/utils/styles.js	/^export const issueTypeColors = {$/;"	c
 TypeIcon	client/src/shared/components/IssueTypeIcon/Styles.js	/^export const TypeIcon = styled(Icon)`$/;"	c
 Types	client/src/components/Project/Board/Filters/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/Header/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Comments/BodyForm/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Comments/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^const propTypes = {$/;"	c
-Types	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/IssueDetails/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/Lists/Issue/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/components/Project/Board/Lists/index.jsx	/^const propTypes = {$/;"	c
@@ -610,8 +647,10 @@ Types	client/src/shared/components/Textarea/index.jsx	/^const propTypes = {$/;"	
 Types	client/src/shared/components/Tooltip/index.jsx	/^const propTypes = {$/;"	c
 Update	client/src/shared/utils/api.js	/^const optimisticUpdate = async ({$/;"	c
 Url	client/src/components/Project/Board/Filters/index.jsx	/^              avatarUrl={user.avatarUrl}$/;"	c
-Url	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={24} \/>$/;"	c
-Url	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={32} \/>$/;"	c
+Url	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^      <UserAvatar name={comment.user.name} avatarUrl={comment.user.avatarUrl} \/>$/;"	c
+Url	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^        <UserAvatar name={currentUser.name} avatarUrl={currentUser.avatarUrl} \/>$/;"	c
+Url	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={24} \/>$/;"	c
+Url	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^      <Avatar avatarUrl={user.avatarUrl} name={user.name} size={32} \/>$/;"	c
 Url	client/src/components/Project/Board/Lists/Issue/index.jsx	/^                    avatarUrl={user.avatarUrl}$/;"	c
 Url	client/src/shared/components/Avatar/index.jsx	/^        avatarUrl={avatarUrl}$/;"	c
 User	api/build/src/database/seeds/development/user.js	/^const generateUser = (data = {}) => ({$/;"	c
@@ -622,8 +661,10 @@ User	api/build/src/middleware/authentication.js	/^    req.currentUser = await (0
 User	api/build/src/middleware/authentication.js	/^exports.authenticateUser = (0, errors_1.catchErrors)(async (req, _res, next) => {$/;"	c
 User	api/src/entities/User.ts	/^class User extends BaseEntity {$/;"	c
 User	api/src/utils/typeorm.ts	/^  User,$/;"	C
+UserAvatar	client/src/components/Project/Board/IssueDetails/Comments/Comment/Styles.js	/^export const UserAvatar = styled(Avatar)`$/;"	c
+UserAvatar	client/src/components/Project/Board/IssueDetails/Comments/Create/Styles.js	/^export const UserAvatar = styled(Avatar)`$/;"	c
 UserId	client/src/components/Project/Board/Lists/index.jsx	/^  const currentUserId = get(currentUserData, "currentUser.id");$/;"	c
-UserValue	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^  const renderUserValue = (user, withBottomMargin, removeOptionValue) => ($/;"	c
+UserValue	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^  const renderUserValue = (user, withBottomMargin, removeOptionValue) => ($/;"	c
 User_1	api/build/src/controllers/authentication.js	/^const guestUser_1 = __importDefault(require("database\/seeds\/guestUser"));$/;"	c
 User_1	api/build/src/entities/index.js	/^var User_1 = require(".\/User");$/;"	c
 Users	api/build/src/database/seeds/development/index.js	/^const seedUsers = () => {$/;"	c
@@ -636,18 +677,21 @@ Validator	api/src/utils/validation.ts	/^type Validator = (value: Value, fieldVal
 Value	api/build/src/utils/validation.d.ts	/^declare type Value = any;$/;"	a
 Value	api/src/utils/validation.ts	/^type Value = any;$/;"	a
 Value	client/src/components/Project/Board/IssueDetails/Description/index.jsx	/^        defaultValue={issue.description}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderValue={({ value }) => renderPriorityItem(value)}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderValue={({ value }) => renderUserValue(getUserById(value), false)}$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderValue={({ value, removeOptionValue }) =>$/;"	c
-Value	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^        renderValue={({ value: status }) => ($/;"	c
+Value	client/src/components/Project/Board/IssueDetails/Priority/index.jsx	/^        renderValue={({ value }) => renderPriorityItem(value)}$/;"	c
+Value	client/src/components/Project/Board/IssueDetails/Status/index.jsx	/^      renderValue={({ value: status }) => ($/;"	c
 Value	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^        defaultValue={issue.title}$/;"	c
+Value	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        renderValue={({ value }) => renderUserValue(getUserById(value), false)}$/;"	c
+Value	client/src/components/Project/Board/IssueDetails/Users/index.jsx	/^        renderValue={({ value, removeOptionValue }) =>$/;"	c
 Value	client/src/shared/components/Select/index.jsx	/^          searchValue={searchValue}$/;"	c
 ValueEmpty	client/src/shared/components/Select/index.jsx	/^          isValueEmpty={isValueEmpty}$/;"	c
 ValueForInput	client/src/shared/components/DatePicker/index.jsx	/^  const formatValueForInput = () => {$/;"	c
 Variables	client/src/shared/hooks/api.js	/^        const additionalVariables = {$/;"	c
 Variables	client/src/shared/hooks/api.js	/^    (newVariables = {}) =>$/;"	c
 Variables	client/src/shared/hooks/api.js	/^    additionalVariables: {}$/;"	c
+WatchIcon	client/src/components/Project/Board/IssueDetails/Tracking/Styles.js	/^export const WatchIcon = styled(Icon)`$/;"	c
 WeekDayNames	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateWeekDayNames = () => moment.weekdaysMin(true);$/;"	c
+Working	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^            isWorking={isUpdating}$/;"	c
+Working	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^            isWorking={isCreating}$/;"	c
 Years	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateYears = () =>$/;"	c
 _moduleDirectories	api/package.json	/^  "_moduleDirectories": [$/;"	a
 additionalVariables	client/src/shared/hooks/api.js	/^    additionalVariables: {}$/;"	o
@@ -673,6 +717,8 @@ catch	api/build/src/errors/asyncCatch.js	/^        catch (error) {$/;"	f
 catch	api/build/src/index.js	/^    catch (error) {$/;"	f
 catch	api/build/src/utils/authToken.js	/^    catch (error) {$/;"	f
 catch	client/src/components/App/Authenticate.jsx	/^        } catch (error) {$/;"	f
+catch	client/src/components/Project/Board/IssueDetails/Comments/Comment/index.jsx	/^    } catch (error) {$/;"	f
+catch	client/src/components/Project/Board/IssueDetails/Comments/Create/index.jsx	/^    } catch (error) {$/;"	f
 catch	client/src/components/Project/Board/IssueDetails/TopActions/index.jsx	/^    } catch (error) {$/;"	f
 catch	client/src/shared/utils/api.js	/^  } catch (error) {$/;"	f
 catchErrors	api/build/src/errors/asyncCatch.d.ts	/^export declare const catchErrors: (requestHandler: RequestHandler) => RequestHandler;$/;"	C
@@ -683,6 +729,9 @@ clean	api/package.json	/^    "clean": "gts clean",$/;"	s	object:scripts
 code	api/build/src/errors/customErrors.d.ts	/^    code: string | number;$/;"	p	class:CustomError
 code	api/src/errors/customErrors.ts	/^    public code: string | number = 'INTERNAL_ERROR',$/;"	p	class:CustomError
 color	client/package.json	/^    "color": "^3.1.2",$/;"	s	object:dependencies
+comment	api/src/controllers/comments.ts	/^    const comment = await createEntity(Comment, req.body);$/;"	C
+comment	api/src/controllers/comments.ts	/^    const comment = await deleteEntity(Comment, req.params.commentId);$/;"	C
+comment	api/src/controllers/comments.ts	/^    const comment = await updateEntity(Comment, req.params.commentId, req.body);$/;"	C
 comments	api/build/src/entities/Issue.d.ts	/^    comments: Comment[];$/;"	p	class:Issue
 comments	api/build/src/entities/User.d.ts	/^    comments: Comment[];$/;"	p	class:User
 comments	api/src/entities/Issue.ts	/^  comments: Comment[];$/;"	p	class:Issue
@@ -857,9 +906,9 @@ if	api/build/src/utils/typeorm.js	/^    if (!instance) {$/;"	f
 if	api/build/src/utils/typeorm.js	/^    if ('validations' in Constructor) {$/;"	f
 if	api/build/src/utils/validation.js	/^            if (errorMessage !== false && !fieldValues[fieldName]) {$/;"	f
 if	client/src/components/App/Toast/index.jsx	/^      if (duration) {$/;"	f
-if	client/src/components/Project/Board/IssueDetails/RightActions/index.jsx	/^    if (!timeSpent) {$/;"	f
 if	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^          if (event.keyCode === KeyCodes.ENTER) {$/;"	f
 if	client/src/components/Project/Board/IssueDetails/Title/index.jsx	/^    if (errors.title) {$/;"	f
+if	client/src/components/Project/Board/IssueDetails/Tracking/index.jsx	/^    if (!timeSpent) {$/;"	f
 if	client/src/components/Project/Board/Lists/index.jsx	/^  if (!prevIssue && !nextIssue) {$/;"	f
 if	client/src/components/Project/Board/Lists/index.jsx	/^  if (myOnly && currentUserId) {$/;"	f
 if	client/src/components/Project/Board/Lists/index.jsx	/^  if (recent) {$/;"	f
@@ -918,6 +967,7 @@ issue	api/src/controllers/issues.ts	/^    const issue = deleteEntity(Issue, req.
 issue	api/src/controllers/issues.ts	/^    const issue = updateEntity(Issue, req.params.issueId, req.body);$/;"	C
 issue	api/src/entities/Comment.ts	/^  issue: Issue;$/;"	p	class:Comment
 issue	client/src/components/Project/Board/IssueDetails/index.jsx	/^      issue: { ...currentData.issue, ...fields }$/;"	o
+issueId	api/src/entities/Comment.ts	/^  issueId: number;$/;"	p	class:Comment
 issuePartial	api/src/serializers/issues.ts	/^export const issuePartial = (issue: Issue): Partial<Issue> =>$/;"	C
 issues	api/build/src/entities/Project.d.ts	/^    issues: Issue[];$/;"	p	class:Project
 issues	api/build/src/entities/User.d.ts	/^    issues: Issue[];$/;"	p	class:User
@@ -1069,6 +1119,7 @@ router	api/build/src/controllers/authentication.d.ts	/^declare const router: imp
 router	api/build/src/controllers/issues.d.ts	/^declare const router: import("express-serve-static-core").Router;$/;"	C
 router	api/build/src/controllers/projects.d.ts	/^declare const router: import("express-serve-static-core").Router;$/;"	C
 router	api/src/controllers/authentication.ts	/^const router = express.Router();$/;"	C
+router	api/src/controllers/comments.ts	/^const router = express.Router();$/;"	C
 router	api/src/controllers/issues.ts	/^const router = express.Router();$/;"	C
 router	api/src/controllers/projects.ts	/^const router = express.Router();$/;"	C
 router	api/src/controllers/users.ts	/^const router = express.Router();$/;"	C
@@ -1129,7 +1180,6 @@ updatedFields	client/src/components/Project/Board/Lists/index.jsx	/^      update
 url	api/build/src/entities/Project.d.ts	/^    url: string | null;$/;"	p	class:Project
 url	api/src/entities/Project.ts	/^  url: string | null;$/;"	p	class:Project
 url-loader	client/package.json	/^    "url-loader": "^3.0.0",$/;"	s	object:devDependencies
-useDeepCompareMemoize	client/src/shared/hooks/deepCompareMemoize.js	/^function useDeepCompareMemoize(value) {$/;"	f
 user	api/build/src/entities/Comment.d.ts	/^    user: User;$/;"	p	class:Comment
 user	api/src/controllers/authentication.ts	/^    const user = await seedGuestUserEntities();$/;"	C
 user	api/src/entities/Comment.ts	/^  user: User;$/;"	p	class:Comment

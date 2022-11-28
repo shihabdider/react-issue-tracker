@@ -6,6 +6,7 @@ import cors from 'cors';
 import createDatabaseConnection from 'database/connection';
 import {authenticateUser} from 'middleware/authentication';
 import authenticationRoutes from 'controllers/authentication';
+import commentsRoutes from 'controllers/comments';
 import projectsRoutes from 'controllers/projects';
 import issuesRoutes from 'controllers/issues';
 import usersRoutes from 'controllers/users';
@@ -39,6 +40,7 @@ const initializeExpress = (): void => {
   app.use('/', authenticateUser);
 
   app.use('/', issuesRoutes);
+  app.use('/', commentsRoutes);
   app.use('/', projectsRoutes);
   app.use('/', usersRoutes);
 

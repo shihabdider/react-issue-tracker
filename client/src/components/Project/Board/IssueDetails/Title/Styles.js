@@ -9,6 +9,7 @@ export const TitleTextarea = styled(Textarea)`
   width: 100%;
   textarea {
     background: #fff;
+    padding: 7px 7px 8px;
     border: none;
     resize: none;
     line-height: 1.28;
