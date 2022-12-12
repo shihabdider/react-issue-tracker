@@ -1,5 +1,4 @@
-import styled, { css } from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 import { color, sizes, font, mixin, zIndexValues } from "shared/utils/styles";
 
@@ -41,25 +40,19 @@ export const Divider = styled.div`
   border-top: 1px solid ${color.borderLight};
 `;
 
-export const LinkItem = styled(NavLink)`
+export const LinkItem = styled.div`
   position: relative;
   display: flex;
   padding: 8px 12px;
   border-radius: 3px;
-  color: ${color.textDark};
   ${mixin.clickable}
   ${props =>
-    !props.implemented
+    !props.to
       ? `cursor: not-allowed;`
-      : css`
-          &:hover {
-            background: ${color.backgroundLight};
-          }
-        `}
+      : `&:hover { background: ${color.backgroundLight}; }`}
   i {
     margin-right: 15px;
     font-size: 20px;
-    color: ${color.textDarkest};
   }
   &.active {
     color: ${color.primary};

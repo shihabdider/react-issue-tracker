@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink, useRouteMatch } from "react-router-dom";
 
 import { Icon, ProjectAvatar } from "shared/components";
 import {
@@ -15,18 +16,12 @@ import {
 } from "./Styles";
 
 const propTypes = {
-  projectName: PropTypes.string.isRequired,
-  matchPath: PropTypes.string.isRequired
+  projectName: PropTypes.string.isRequired
 };
 
-const ProjectSidebar = ({ projectName, matchPath }) => {
-  const renderLinkItem = (text, iconType, path = "") => (
-    <LinkItem exact to={`${matchPath}${path}`} implemented={path}>
-      <Icon type={iconType} />
-      <LinkText>{text}</LinkText>
-      {!path && <NotImplemented>Not implemented</NotImplemented>}
-    </LinkItem>
-  );
+const ProjectSidebar = ({ projectName }) => {
+  const match = useRouteMatch();
+
   return (
     <Sidebar>
       <ProjectInfo>
@@ -36,15 +31,27 @@ const ProjectSidebar = ({ projectName, matchPath }) => {
           <ProjectCategory>Software project</ProjectCategory>
         </ProjectTexts>
       </ProjectInfo>
-      {renderLinkItem("Kanban Board", "board", "/board")}
-      {renderLinkItem("Reports", "reports")}
+
+      {renderLinkItem(match, "Kanban Board", "board", "/board")}
+      {renderLinkItem(match, "Project Settings", "settings", "/settings")}
       <Divider />
-      {renderLinkItem("Releases", "shipping")}
-      {renderLinkItem("Issues and filters", "issues")}
-      {renderLinkItem("Pages", "page")}
-      {renderLinkItem("Components", "component")}
-      {renderLinkItem("Project settings", "settings")}
     </Sidebar>
+  );
+};
+
+const renderLinkItem = (match, text, iconType, path) => {
+  const isImplemented = !!path;
+
+  const linkItemProps = isImplemented
+    ? { as: NavLink, exact: true, to: `${match.path}${path}` }
+    : { as: "div" };
+
+  return (
+    <LinkItem {...linkItemProps}>
+      <Icon type={iconType} />
+      <LinkText>{text}</LinkText>
+      {!isImplemented && <NotImplemented>Not implemented</NotImplemented>}
+    </LinkItem>
   );
 };
 

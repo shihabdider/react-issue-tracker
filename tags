@@ -54,6 +54,7 @@
 ARROW_DOWN	client/src/shared/constants/keyCodes.js	/^  ARROW_DOWN: 40,$/;"	n
 ARROW_UP	client/src/shared/constants/keyCodes.js	/^  ARROW_UP: 38,$/;"	n
 ActionButton	client/src/Project/IssueCreateForm/Styles.js	/^export const ActionButton = styled(Button)`$/;"	c
+ActionButton	client/src/Project/ProjectSettings/Styles.js	/^export const ActionButton = styled(Button)`$/;"	c
 Active	client/src/Project/Board/Filters/index.jsx	/^            isActive={userIds.includes(user.id)}$/;"	c
 Active	client/src/Project/Board/Filters/index.jsx	/^        isActive={myOnly}$/;"	c
 Active	client/src/Project/Board/Filters/index.jsx	/^        isActive={recent}$/;"	c
@@ -84,6 +85,7 @@ BUG	api/src/constants/issues.ts	/^  BUG = 'bug',$/;"	e	enum:IssueType
 BUG	client/src/shared/constants/issues.js	/^  BUG: "bug",$/;"	n
 BUSINESS	api/build/src/constants/projects.d.ts	/^    BUSINESS = "business"$/;"	e	enum:ProjectCategory
 BUSINESS	api/src/constants/projects.ts	/^  BUSINESS = 'business',$/;"	e	enum:ProjectCategory
+BUSINESS	client/src/shared/constants/projects.js	/^  BUSINESS: "business"$/;"	n
 BadUserInputError	api/build/errors/customErrors.js	/^class BadUserInputError extends CustomError {$/;"	c
 BadUserInputError	api/build/src/errors/customErrors.js	/^class BadUserInputError extends CustomError {$/;"	c
 BadUserInputError	api/src/errors/customErrors.ts	/^export class BadUserInputError extends CustomError {$/;"	c
@@ -98,6 +100,7 @@ Board	client/src/Project/index.jsx	/^  const renderBoard = () => ($/;"	c
 BodyScrollLock	client/src/shared/components/Modal/index.jsx	/^const setBodyScrollLock = () => {$/;"	c
 BottomMargin	client/src/Project/IssueCreateForm/index.jsx	/^        withBottomMargin={!!removeOptionValue}$/;"	c
 BottomMargin	client/src/Project/IssueDetails/Users/index.jsx	/^      withBottomMargin={!!removeOptionValue}$/;"	c
+Breadcrumbs	client/src/shared/components/Breadcrumbs/index.jsx	/^const Breadcrumbs = ({ items }) => ($/;"	c
 Button	client/src/shared/components/Button/index.jsx	/^const Button = forwardRef($/;"	c
 CalledRef	client/src/shared/hooks/api.js	/^  const wasCalledRef = useRef(false);$/;"	c
 Cancel	client/build/main-121742718436dde3a71a.js	/^t.read=function(e,t,n,r,o){var i,a,u=8*o-r-1,l=(1<<u)-1,c=l>>1,s=-7,f=n?o-1:0,d=n?-1:1,p=e[t+f];/;"	c
@@ -352,6 +355,7 @@ For	client/src/shared/components/Form/Field.jsx	/^        {label && <FieldLabel 
 Form	client/src/shared/components/Form/index.jsx	/^const Form = ({ validate, validations, ...otherProps }) => ($/;"	c
 FormButton	client/src/Project/IssueDetails/Comments/BodyForm/Styles.js	/^export const FormButton = styled(Button)`$/;"	c
 FormElement	client/src/Project/IssueCreateForm/Styles.js	/^export const FormElement = styled(Form.Element)`$/;"	c
+FormElement	client/src/Project/ProjectSettings/Styles.js	/^export const FormElement = styled(Form.Element)`$/;"	c
 FormOpen	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            <ProTip setFormOpen={setFormOpen} \/>$/;"	c
 FrameRate	client/build/main-121742718436dde3a71a.js	/^ *\/var r,o,i,a,u;if("undefined"==typeof window||"function"!=typeof MessageChannel){var l=null,c/;"	c
 GuestAccount	client/src/App/Authenticate.jsx	/^    const createGuestAccount = async () => {$/;"	c
@@ -491,8 +495,7 @@ Link	client/src/Project/IssueDetails/Tracking/index.jsx	/^        renderLink={mo
 Link	client/src/shared/components/ConfirmModal/index.jsx	/^      renderLink={renderLink}$/;"	c
 Link	client/src/shared/components/Modal/index.jsx	/^  renderLink: () => {}$/;"	c
 LinkCopy	client/src/shared/components/CopyLinkButton.jsx	/^  const handleLinkCopy = () => {$/;"	c
-LinkItem	client/src/Project/Sidebar/Styles.js	/^export const LinkItem = styled(NavLink)`$/;"	c
-LinkItem	client/src/Project/Sidebar/index.jsx	/^  const renderLinkItem = (text, iconType, path = "") => ($/;"	c
+LinkItem	client/src/Project/Sidebar/index.jsx	/^const renderLinkItem = (match, text, iconType, path) => {$/;"	c
 ListIssues	client/src/Project/Board/Lists/index.jsx	/^    const allListIssues = getSortedListIssues(project.issues, status);$/;"	c
 ListIssues	client/src/Project/Board/Lists/index.jsx	/^    const filteredListIssues = getSortedListIssues(filteredIssues, status);$/;"	c
 ListPosition	api/build/controllers/issues.js	/^const calculateListPosition = (newIssue) => __awaiter(void 0, void 0, void 0, function* () {$/;"	c
@@ -507,6 +510,7 @@ Logo	client/src/shared/components/ProjectAvatar.jsx	/^const Logo = ({ className,
 LogoLink	client/src/Project/NavbarLeft/Styles.js	/^export const LogoLink = styled(NavLink)`$/;"	c
 MARKETING	api/build/src/constants/projects.d.ts	/^    MARKETING = "marketing",$/;"	e	enum:ProjectCategory
 MARKETING	api/src/constants/projects.ts	/^  MARKETING = 'marketing',$/;"	e	enum:ProjectCategory
+MARKETING	client/src/shared/constants/projects.js	/^  MARKETING: "marketing",$/;"	n
 MEDIUM	api/build/src/constants/issues.d.ts	/^    MEDIUM = "3",$/;"	e	enum:IssuePriority
 MEDIUM	api/src/constants/issues.ts	/^  MEDIUM = '3',$/;"	e	enum:IssuePriority
 MEDIUM	client/src/shared/constants/issues.js	/^  MEDIUM: "3",$/;"	n
@@ -586,6 +590,7 @@ Project	api/build/src/entities/Project.js	/^Project = __decorate([$/;"	c
 Project	api/build/src/entities/Project.js	/^let Project = class Project extends typeorm_1.BaseEntity {$/;"	c
 Project	api/src/entities/Project.ts	/^class Project extends BaseEntity {$/;"	c
 Project	client/src/Project/IssueDetails/index.jsx	/^            fetchProject={fetchProject}$/;"	c
+Project	client/src/Project/index.jsx	/^          <ProjectSettings project={project} fetchProject={fetchProject} \/>$/;"	c
 Project	client/src/Project/index.jsx	/^          fetchProject={fetchProject}$/;"	c
 Project	client/src/Project/index.jsx	/^      fetchProject={fetchProject}$/;"	c
 Project	client/src/Project/index.jsx	/^const Project = () => {$/;"	c
@@ -616,9 +621,12 @@ ProjectCategory	api/build/src/constants/projects.d.ts	/^export declare enum Proj
 ProjectCategory	api/build/src/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	c
 ProjectCategory	api/build/src/constants/projects.js	/^})(ProjectCategory = exports.ProjectCategory || (exports.ProjectCategory = {}));$/;"	o
 ProjectCategory	api/src/constants/projects.ts	/^export enum ProjectCategory {$/;"	g
+ProjectCategory	client/src/shared/constants/projects.js	/^export const ProjectCategory = {$/;"	c
+ProjectCategoryCopy	client/src/shared/constants/projects.js	/^export const ProjectCategoryCopy = {$/;"	c
 ProjectIssueCreateForm	client/src/Project/IssueCreateForm/index.jsx	/^const ProjectIssueCreateForm = ({ project, fetchProject, modalClose }) => {$/;"	c
 ProjectNavbarLeft	client/src/Project/NavbarLeft/index.jsx	/^const ProjectNavbarLeft = () => {$/;"	c
-ProjectSidebar	client/src/Project/Sidebar/index.jsx	/^const ProjectSidebar = ({ projectName, matchPath }) => {$/;"	c
+ProjectSettings	client/src/Project/ProjectSettings/index.jsx	/^const ProjectSettings = ({ project, fetchProject }) => {$/;"	c
+ProjectSidebar	client/src/Project/Sidebar/index.jsx	/^const ProjectSidebar = ({ projectName }) => {$/;"	c
 Project_1	api/build/entities/index.js	/^var Project_1 = require(".\/Project");$/;"	c
 Project_1	api/build/src/entities/index.js	/^var Project_1 = require(".\/Project");$/;"	c
 Projects	api/build/database/seeds/development/index.js	/^const seedProjects = (users) => {$/;"	c
@@ -684,6 +692,7 @@ SELECTED	api/src/constants/issues.ts	/^  SELECTED = 'selected',$/;"	e	enum:Issue
 SELECTED	client/src/shared/constants/issues.js	/^  SELECTED: "selected",$/;"	n
 SOFTWARE	api/build/src/constants/projects.d.ts	/^    SOFTWARE = "software",$/;"	e	enum:ProjectCategory
 SOFTWARE	api/src/constants/projects.ts	/^  SOFTWARE = 'software',$/;"	e	enum:ProjectCategory
+SOFTWARE	client/src/shared/constants/projects.js	/^  SOFTWARE: "software",$/;"	n
 STORY	api/build/src/constants/issues.d.ts	/^    STORY = "story"$/;"	e	enum:IssueType
 STORY	api/src/constants/issues.ts	/^  STORY = 'story',$/;"	e	enum:IssueType
 STORY	client/src/shared/constants/issues.js	/^  STORY: "story"$/;"	n
@@ -735,6 +744,7 @@ Styles	client/src/shared/components/Modal/Styles.js	/^const modalStyles = {$/;"	
 Submit	client/src/Project/IssueCreateForm/index.jsx	/^      onSubmit={async (values, form) => {$/;"	c
 Submit	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            onSubmit={handleCommentUpdate}$/;"	c
 Submit	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            onSubmit={handleCommentCreate}$/;"	c
+Submit	client/src/Project/ProjectSettings/index.jsx	/^      onSubmit={async (values, form) => {$/;"	c
 TAB	client/src/shared/constants/keyCodes.js	/^  TAB: 9,$/;"	n
 TASK	api/build/src/constants/issues.d.ts	/^    TASK = "task",$/;"	e	enum:IssueType
 TASK	api/src/constants/issues.ts	/^  TASK = 'task',$/;"	e	enum:IssueType
@@ -805,8 +815,10 @@ Types	client/src/Project/IssueDetails/Tracking/index.jsx	/^const propTypes = {$/
 Types	client/src/Project/IssueDetails/Type/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/Project/IssueDetails/Users/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/Project/IssueDetails/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/Project/ProjectSettings/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/Project/Sidebar/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Avatar/index.jsx	/^const propTypes = {$/;"	c
+Types	client/src/shared/components/Breadcrumbs/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/Button/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/ConfirmModal/index.jsx	/^const propTypes = {$/;"	c
 Types	client/src/shared/components/DatePicker/DateSection.jsx	/^const propTypes = {$/;"	c
@@ -888,6 +900,8 @@ ValueEmpty	client/src/shared/components/Select/index.jsx	/^          isValueEmpt
 ValueForInput	client/src/shared/components/DatePicker/index.jsx	/^  const formatValueForInput = () => {$/;"	c
 ValueRef	client/src/shared/components/TextEditor/index.jsx	/^  const initialValueRef = useRef(defaultValue || alsoDefaultValue || "");$/;"	c
 Values	client/src/Project/IssueCreateForm/index.jsx	/^      initialValues={{$/;"	c
+Values	client/src/Project/ProjectSettings/index.jsx	/^      initialValues={Form.initialValues(project, get => ({$/;"	c
+Values	client/src/shared/components/Form/index.jsx	/^Form.initialValues = (data, getFieldValues) =>$/;"	c
 Variables	client/src/shared/hooks/api.js	/^        const additionalVariables = {$/;"	c
 Variables	client/src/shared/hooks/api.js	/^    (newVariables = {}) =>$/;"	c
 Variables	client/src/shared/hooks/api.js	/^    additionalVariables: {}$/;"	c
@@ -900,6 +914,7 @@ Width	client/src/Project/IssueDetails/Users/index.jsx	/^        dropdownWidth={3
 Width	client/src/shared/components/Select/index.jsx	/^          dropdownWidth={dropdownWidth}$/;"	c
 Working	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^            isWorking={isUpdating}$/;"	c
 Working	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^            isWorking={isCreating}$/;"	c
+Working	client/src/Project/ProjectSettings/index.jsx	/^          <ActionButton type="submit" variant="primary" isWorking={isUpdating}>$/;"	c
 WorkingAlias	client/src/shared/hooks/api.js	/^const isWorkingAlias = {$/;"	c
 Xe	client/build/main-121742718436dde3a71a.js	/^ *\/(function(){var i="Expected a function",a="__lodash_placeholder__",u=[["ary",128],["bind",1]/;"	f
 Years	client/src/shared/components/DatePicker/DateSection.jsx	/^  const generateYears = () =>$/;"	c
@@ -977,6 +992,7 @@ catch	client/src/Project/IssueCreateForm/index.jsx	/^        } catch (error) {$/
 catch	client/src/Project/IssueDetails/Comments/Comment/index.jsx	/^    } catch (error) {$/;"	f
 catch	client/src/Project/IssueDetails/Comments/Create/index.jsx	/^    } catch (error) {$/;"	f
 catch	client/src/Project/IssueDetails/Delete.jsx	/^    } catch (error) {$/;"	f
+catch	client/src/Project/ProjectSettings/index.jsx	/^        } catch (error) {$/;"	f
 catch	client/src/shared/utils/api.js	/^  } catch (error) {$/;"	f
 catchErrors	api/build/src/errors/asyncCatch.d.ts	/^export declare const catchErrors: (requestHandler: RequestHandler) => RequestHandler;$/;"	C
 catchErrors	api/src/errors/asyncCatch.ts	/^export const catchErrors = (requestHandler: RequestHandler): RequestHandler => {$/;"	C
@@ -1485,7 +1501,7 @@ priority	api/src/entities/Issue.ts	/^  priority: IssuePriority;$/;"	p	class:Issu
 private	api/package.json	/^  "private": false,$/;"	b
 project	api/build/src/entities/Issue.d.ts	/^    project: Project;$/;"	p	class:Issue
 project	api/src/controllers/projects.ts	/^    const project = await findEntityOrThrow(Project, {$/;"	C
-project	api/src/controllers/projects.ts	/^    const project = updateEntity(Project, req.params.projectId, req.body);$/;"	C
+project	api/src/controllers/projects.ts	/^    const project = updateEntity(Project, req.currentUser.projectId, req.body);$/;"	C
 project	api/src/database/seeds/guestUser.ts	/^  const project = await seedProject(users);$/;"	C
 project	api/src/entities/Issue.ts	/^  project: Project;$/;"	p	class:Issue
 project	api/src/entities/User.ts	/^  project: Project;$/;"	p	class:User
@@ -1571,8 +1587,8 @@ sourceType	client/.eslintrc.json	/^    "sourceType": "module",$/;"	s	object:pars
 src	client/build/main-121742718436dde3a71a.js	/^!function(e){function t(t){for(var n,o,i=t[0],a=t[1],u=0,c=[];u<i.length;u++)o=i[u],Object.proto/;"	f
 start	api/package.json	/^    "start": "node -r .\/tsconfig-paths.js .\/build\/index.js",$/;"	s	object:scripts
 start	client/package.json	/^    "start": "node server.js",$/;"	s	object:scripts
+start:dev	api/package.json	/^    "start:dev": "nodemon --exec ts-node --files src\/index.ts",$/;"	s	object:scripts
 start:dev	client/package.json	/^    "start:dev": "webpack-dev-server",$/;"	s	object:scripts
-start:old	api/package.json	/^    "start:old": "nodemon --exec ts-node --files src\/index.ts",$/;"	s	object:scripts
 start:production	api/package.json	/^    "start:production": "pm2 start --name 'jira_api' node -- -r .\/tsconfig-paths.js build\/inde/;"	s	object:scripts
 start:test	api/package.json	/^    "start:test": "cross-env NODE_ENV='test' DB_DATABASE='jira_test' npm start",$/;"	s	object:scripts
 state	client/build/main-121742718436dde3a71a.js	/^ *\/var r=60103,o=60106,i=60107,a=60108,u=60114,l=60109,c=60110,s=60112,f=60113,d=60120,p=60115,/;"	o

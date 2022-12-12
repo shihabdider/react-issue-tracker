@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar";
 import Board from "./Board";
 import IssueDetails from "./IssueDetails";
 import IssueCreateForm from "./IssueCreateForm";
+import ProjectSettings from "./ProjectSettings";
 import { ProjectPage } from "./Styles";
 
 const Project = () => {
@@ -83,6 +84,12 @@ const Project = () => {
       <Route
         path={`${match.path}/board/issue/:issueId`}
         render={renderIssueDetailsModal}
+      />
+      <Route
+        path={`${match.path}/settings`}
+        render={() => (
+          <ProjectSettings project={project} fetchProject={fetchProject} />
+        )}
       />
       {match.isExact && <Redirect to={`${match.url}/board`} />}
     </ProjectPage>

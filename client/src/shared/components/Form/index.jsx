@@ -52,6 +52,12 @@ Form.Field = mapValues(
   )
 );
 
+Form.initialValues = (data, getFieldValues) =>
+  getFieldValues((key, defaultValue = "") => {
+    const value = get(data, key);
+    return value === undefined || value === null ? defaultValue : value;
+  });
+
 Form.is = is;
 
 Form.propTypes = propTypes;

@@ -26,9 +26,9 @@ router.get(
 );
 
 router.put(
-  '/projects/:projectId',
+  '/project',
   catchErrors(async (req, res) => {
-    const project = updateEntity(Project, req.params.projectId, req.body);
+    const project = updateEntity(Project, req.currentUser.projectId, req.body);
     res.respond({project});
   })
 );
