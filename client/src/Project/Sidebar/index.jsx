@@ -15,6 +15,8 @@ import {
   NotImplemented
 } from "./Styles";
 
+import projecticon from "./projecticon.png";
+
 const propTypes = {
   projectName: PropTypes.string.isRequired
 };
@@ -25,7 +27,7 @@ const ProjectSidebar = ({ projectName }) => {
   return (
     <Sidebar>
       <ProjectInfo>
-        <ProjectAvatar />
+        <ProjectAvatar src={projecticon} />
         <ProjectTexts>
           <ProjectName>{projectName}</ProjectName>
           <ProjectCategory>Software project</ProjectCategory>

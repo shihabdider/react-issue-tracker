@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-import { CopyLinkButton } from "shared/components";
+import { Button } from "shared/components";
 import { Breadcrumbs, Divider, Header, BoardName } from "./Styles";
 
 const propTypes = {
@@ -20,7 +20,13 @@ const ProjectBoardHeader = ({ projectName }) => {
       </Breadcrumbs>
       <Header>
         <BoardName>Kanban board</BoardName>
-        <CopyLinkButton />
+        <a
+          href="https://github.com/shihabdider/react-issue-tracker"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Button icon="github">Github Repo</Button>
+        </a>
       </Header>
     </>
   );

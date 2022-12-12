@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { font, sizes, color, mixin, zIndexValues } from "shared/utils/styles";
-import Logo from "shared/components/Logo";
+import ImgLogo from "shared/components/Logo";
 
 export const NavLeft = styled.aside`
   z-index: ${zIndexValues.navLeft};
@@ -26,7 +26,7 @@ export const LogoLink = styled(NavLink)`
   margin: 20px 0 10px;
   transition: left 0.1s;
 `;
-export const StyledLogo = styled(Logo)`
+export const StyledLogo = styled(ImgLogo)`
   display: inline-block;
   margin-left: 8px;
   padding: 10px;
