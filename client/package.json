@@ -4,9 +4,9 @@
   "author": "Shihab Dider",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && node server.js",
     "start:dev": "webpack-dev-server",
-    "build": "rm -rf build && webpack --config webpack.config.production.js --progress",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && rm -rf build && webpack --config webpack.config.production.js --progress",
     "pre-commit": "lint-staged"
   },
   "devDependencies": {
@@ -49,6 +49,7 @@
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
+    "moment-timezone": "^0.5.40",
     "prop-types": "^15.7.2",
     "query-string": "^6.9.0",
     "quill": "^1.3.7",
@@ -57,6 +58,7 @@
     "react-content-loader": "^6.2.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "5.1.2",
+    "react-scripts": "^5.0.1",
     "react-textarea-autosize": "^7.1.2",
     "react-transition-group": "^4.4.5",
     "regenerator-runtime": "^0.13.11",

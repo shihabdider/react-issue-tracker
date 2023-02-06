@@ -11,6 +11,7 @@ import {
   insertItemIntoArray
 } from "shared/utils/javascript";
 import { IssueStatus, IssueStatusCopy } from "shared/constants/issues";
+import CreateIssueButton from "./CreateIssueButton";
 import Issue from "./Issue";
 import { Lists, List, Title, IssuesCount, Issues } from "./Styles";
 
@@ -78,6 +79,7 @@ const ProjectBoardLists = ({ project, filters, updateLocalIssuesArray }) => {
               ))}
               {provided.placeholder}
             </Issues>
+            {status === "backlog" ? <CreateIssueButton /> : null}
           </List>
         )}
       </Droppable>

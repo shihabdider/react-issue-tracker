@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-import { color, sizes, font, mixin, zIndexValues } from "shared/utils/styles";
+import { color, font, mixin, zIndexValues } from "shared/utils/styles";
 
 export const Sidebar = styled.div`
   position: absolute;
   z-index: ${zIndexValues.navLeft - 1};
   top: 0;
-  left: ${sizes.appNavBarLeftWidth}px;
+  left: 0px;
   height: 100vh;
   width: 240px;
   padding: 0 16px;
@@ -25,13 +25,13 @@ export const ProjectTexts = styled.div`
 
 export const ProjectName = styled.div`
   color: ${color.textDark};
-  ${font.size(15)};
+  ${font.size(14)};
   ${font.medium};
 `;
 
 export const ProjectCategory = styled.div`
   color: ${color.textMedium};
-  ${font.size(13)};
+  ${font.size(12)};
 `;
 
 export const Divider = styled.div`
@@ -43,7 +43,7 @@ export const Divider = styled.div`
 export const LinkItem = styled.div`
   position: relative;
   display: flex;
-  padding: 8px 12px;
+  padding: 8px 10px 8px 17px;
   border-radius: 3px;
   ${mixin.clickable}
   ${props =>
@@ -55,6 +55,8 @@ export const LinkItem = styled.div`
     font-size: 20px;
   }
   &.active {
+    border-left: 4px solid blue;
+    border-radius: 4px;
     color: ${color.primary};
     background: ${color.backgroundLight};
     i {
@@ -65,7 +67,7 @@ export const LinkItem = styled.div`
 
 export const LinkText = styled.div`
   padding-top: 2px;
-  ${font.size(14.7)};
+  ${font.size(14)};
 `;
 
 export const NotImplemented = styled.div`

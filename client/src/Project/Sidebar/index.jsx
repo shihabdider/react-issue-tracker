@@ -34,9 +34,9 @@ const ProjectSidebar = ({ projectName }) => {
         </ProjectTexts>
       </ProjectInfo>
 
-      {renderLinkItem(match, "Kanban Board", "board", "/board")}
-      {renderLinkItem(match, "Project Settings", "settings", "/settings")}
+      {renderLinkItem(match, "Board", "board", "/board")}
       <Divider />
+      {renderLinkItem(match, "Project Settings", "settings", "/settings")}
     </Sidebar>
   );
 };
@@ -49,11 +49,13 @@ const renderLinkItem = (match, text, iconType, path) => {
     : { as: "div" };
 
   return (
-    <LinkItem {...linkItemProps}>
-      <Icon type={iconType} />
-      <LinkText>{text}</LinkText>
-      {!isImplemented && <NotImplemented>Not implemented</NotImplemented>}
-    </LinkItem>
+    <>
+      <LinkItem {...linkItemProps}>
+        <Icon type={iconType} />
+        <LinkText>{text}</LinkText>
+        {!isImplemented && <NotImplemented>Not implemented</NotImplemented>}
+      </LinkItem>
+    </>
   );
 };
 

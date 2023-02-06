@@ -46,6 +46,7 @@ const ProjectBoardIssueDetailsComment = ({ comment, fetchIssue }) => {
       toast.error(error);
     }
   };
+
   return (
     <Comment>
       <UserAvatar name={comment.user.name} avatarUrl={comment.user.avatarUrl} />

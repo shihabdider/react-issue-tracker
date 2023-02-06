@@ -4,7 +4,6 @@ import { Route, Redirect, useRouteMatch, useHistory } from "react-router-dom";
 import useApi from "shared/hooks/api";
 import { updateArrayItemById } from "shared/utils/javascript";
 import { PageLoader, PageError, Modal } from "shared/components";
-import NavbarLeft from "./NavbarLeft";
 import Sidebar from "./Sidebar";
 import Board from "./Board";
 import IssueDetails from "./IssueDetails";
@@ -74,7 +73,6 @@ const Project = () => {
 
   return (
     <ProjectPage>
-      <NavbarLeft />
       <Sidebar projectName={project.name} matchPath={match.path} />
       <Route path={`${match.path}/board`} render={renderBoard} />
       <Route

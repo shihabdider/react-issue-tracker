@@ -2,7 +2,7 @@ import Color from "color";
 import { IssueType, IssueStatus, IssuePriority } from "shared/constants/issues";
 
 export const color = {
-  primary: "#0B875B", // green
+  primary: "#0052cc", // green
   success: "#0052cc", // blue
   danger: "#E13C3C", // red
   warning: "#F89C1C", // orange
@@ -16,7 +16,7 @@ export const color = {
 
   backgroundDarkPrimary: "#0B875B",
   backgroundMedium: "#dfe1e6",
-  backgroundLight: "#ebecf0",
+  backgroundLight: "#e6effc",
   backgroundLightest: "#F4F5F7",
   backgroundLightPrimary: "#D2E5FE",
   backgroundLightSuccess: "#E4FCEF",

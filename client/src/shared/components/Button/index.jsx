@@ -53,17 +53,13 @@ const Button = forwardRef(
       }
     };
     const renderSpinner = () => (
-      <StyledSpinner
-        iconOnly={!children}
-        size={26}
-        color={propsColor === "primary" ? "#fff" : color.textDark}
-      />
+      <StyledSpinner iconOnly={!children} size={26} />
     );
     const renderIcon = () => (
       <Icon
         type={icon}
         size={iconSize}
-        color={propsColor === "primary" ? "#fff" : color.textDark}
+        color={propsColor === "primary" ? "#0052cc" : color.textDark}
       />
     );
     return (

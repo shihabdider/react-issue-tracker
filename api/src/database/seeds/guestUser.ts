@@ -25,17 +25,15 @@ const seedProject = (users: User[]): Promise<Project> =>
     users,
   });
 
-const seedGuestUserEntities = async (): Promise<void> => {
-  try {
-    const Connection = await createDatabaseConnection();
-    await Connection.dropDatabase();
-    await Connection.synchronize();
-    const users = await seedUsers();
-    await seedProject(users);
-    console.log('Seeding completed!');
-  } catch (error) {
-    console.log(error);
-  }
+const seedGuestUserEntities = async (): Promise<User> => {
+  const Connection = await createDatabaseConnection();
+  await Connection.dropDatabase();
+  await Connection.synchronize();
+  const users = await seedUsers();
+  await seedProject(users);
+  console.log('Seeding completed!');
+  return users[0];
 };
 
 seedGuestUserEntities();
+export default seedGuestUserEntities;

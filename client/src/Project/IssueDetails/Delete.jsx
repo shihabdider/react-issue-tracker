@@ -19,7 +19,9 @@ const ProjectBoardIssueDetailsDelete = ({
   const handleIssueDelete = async () => {
     try {
       await api.delete(`/issues/${issue.id}`);
-      await fetchProject();
+      await setTimeout(() => {
+        fetchProject();
+      }, 600);
       modalClose();
     } catch (error) {
       toast.error(error);

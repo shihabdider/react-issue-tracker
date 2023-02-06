@@ -87,9 +87,9 @@ const ProjectIssueCreateForm = ({ project, fetchProject, modalClose }) => {
         type: IssueType.TASK,
         title: "",
         description: "",
-        reporterId: null,
+        reporterId: 1,
         userIds: [],
-        priority: null
+        priority: IssuePriority.MEDIUM
       }}
       validations={{
         type: Form.is.required(),
@@ -104,7 +104,7 @@ const ProjectIssueCreateForm = ({ project, fetchProject, modalClose }) => {
             projectId: project.id,
             users: values.userIds.map(id => ({ id }))
           });
-          await fetchProject();
+          setTimeout(fetchProject, 200);
           modalClose();
         } catch (error) {
           if (error.data.fields) {
@@ -161,7 +161,12 @@ const ProjectIssueCreateForm = ({ project, fetchProject, modalClose }) => {
           renderValue={renderPriority}
         />
         <Actions>
-          <ActionButton type="submit" variant="primary" working={isCreating}>
+          <ActionButton
+            type="submit"
+            variant="primary"
+            color="primary"
+            working={isCreating}
+          >
             Create Issue
           </ActionButton>
           <ActionButton type="button" variant="empty" onClick={modalClose}>
