@@ -46,7 +46,8 @@
     "start:production": "pm2 start --name 'jira_api' node -- -r ./tsconfig-paths.js build/index.js",
     "build": "tsc",
     "pre-commit": "lint-staged",
-    "db-seed": "nodemon --exec ts-node --files src/database/seeds/development/index.ts"
+    "db-seed": "nodemon --exec ts-node --files src/database/seeds/development/index.ts",
+    "db-seed-prod": "nodemon --exec ts-node --files src/database/seeds/guestUser.ts"
   },
   "_moduleDirectories": [
     "src"
